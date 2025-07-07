@@ -1,0 +1,78 @@
+.hero {
+    height: calc(100vh - 60px);
+    background: url(../../assets/img/main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+    }
+
+    &__left {
+        &__text {
+            font-size: 24px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        &__title {
+            font-size: 42px;
+            font-weight: 500;
+            line-height: 50px;
+            padding: 20px 0px 50px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 1px;
+            font-weight: 200;
+            line-height: 26px;
+            border-left: 2px solid gray;
+            padding-left: 20px;
+            width: 90%;
+        }
+
+        &__btns {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 50px 0px 20px;
+
+            &-catalog {
+                font-size: 20px;
+                font-weight: 400;
+                padding: 16px 20px;
+                width: 270px;
+                border-radius: 4px;
+                border: 1px solid white;
+            }
+
+            &-company {
+                font-size: 20px;
+                font-weight: 400;
+                padding: 16px 20px;
+                width: 270px;
+                border-radius: 4px;
+                border: 1px solid white;
+            }
+        }
+    }
+
+    &__right {
+        position: absolute;
+        bottom: 45px;
+        right: 0;
+        img {
+            width: 800px;
+            height: 800px;
+            object-fit: contain;
+        }
+    }
+}

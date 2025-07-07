@@ -1,0 +1,67 @@
+.catalog {
+    background: url(../../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-text {
+            font-size: 22px;
+            font-weight: 400;
+            color: black;
+        }
+
+        &-title {
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 40px;
+            width: 70%;
+            span {
+                color: #065ca6;
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        padding: 30px 0px;
+    }
+
+    &__card {
+        height: 280px;
+        background-color: rgb(71, 131, 111);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    &__card__info {
+        background-color: #065ca6;
+        height: 50px;
+        transform: translateY(300px);
+        padding: 2px 6px;
+        border-radius: 0px 0px 6px 6px;
+
+        &-title {
+           font-size: 16px;
+           color: white;
+        }
+    }
+
+    &__card:hover .catalog__card__info {
+       transform: translateY(230px); 
+       transition: .6s;
+    }
+
+    &__container-desc {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(48, 47, 47)
+    }
+}
