@@ -1,0 +1,114 @@
+.information {
+    padding: 80px 0px;
+    background: url(../../assets/img/info.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
+    &__left {
+        &-top {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 5px;
+            padding-bottom: 30px;
+        }
+
+        &-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &-title {
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: gray;
+                padding-bottom: 30px;
+            }
+
+            &-desc {
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: rgb(211, 204, 204);
+            }
+
+        }
+
+        &-btns {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 30px 0px;
+
+            &-right,
+            &-left {
+                padding: 16px 20px;
+                width: 220px;
+                font-size: 15px;
+            }
+        }
+
+        &-top__text {
+           font-size: 20px;
+           font-weight: 400;
+           color: gray;
+        }
+
+        &-top__title {
+            font-size: 30px;
+            font-weight: 500;
+            color: white
+        }
+    }
+
+    &__right {
+        padding: 40px;
+        background-color: rgb(70, 136, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b254d 100%);
+        -webkit-backdrop-filter: blur(50px);
+        border-radius: 10px;
+
+        &__top {
+            border-bottom: 1px solid gray;
+            padding: 10px 0px;
+
+            &-title {
+                font-size: 20px;
+                letter-spacing: 0.5px;
+                color: white;
+                font-weight: 400;
+            }
+        }
+
+        &-boxs {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+            padding: 50px 0px;
+        }
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            &-title {
+                font-size: 62px;
+                color: rgb(218, 217, 217);
+            }
+
+            span {
+                font-size: 18px;
+                color: rgb(218, 217, 217);
+            }
+        }
+    }
+}

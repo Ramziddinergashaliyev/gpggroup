@@ -6,6 +6,7 @@
   left: 0;
   z-index: 100;
   transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
   &.scrolled {
     background-color: white;
@@ -25,15 +26,12 @@
       gap: 30px;
     }
 
-
-
     &__link {
       font-size: 22px;
       font-weight: 400;
       letter-spacing: 1px;
-      color: white;      
+      color: white;
     }
-
   }
 
   &.scrolled {
@@ -48,7 +46,7 @@
   &__container__btns {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 
     &-en,
     &-ru {
@@ -65,11 +63,49 @@
   }
 
   &__container__btn {
+    width: 200px;
     padding: 10px 30px;
     border-radius: 4px;
-    border: 1px solid blue;
-    background-color: blue;
+    border: 1px solid rgb(0, 129, 227);
+    background-color: rgb(0, 129, 227);
     color: white;
     font-size: 18px;
+  }
+
+  .header__nav__list-category {
+    position: relative;
+
+    &:hover .header__nav__category {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
+  .header__nav__category {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: all 0.6s ease;
+    width: 400px;
+    top: 50px;
+    left: 0;
+    border-radius: 6px;
+  }
+
+  .header__nav__category-list {
+    padding: 15px 20px;
+
+    &:hover {
+      background-color: #f8f8f8;
+      cursor: pointer;
+    }
   }
 }

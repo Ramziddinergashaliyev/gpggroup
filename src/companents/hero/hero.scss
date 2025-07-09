@@ -29,10 +29,10 @@
         }
 
         &__desc {
-            font-size: 16px;
+            font-size: 17px;
             color: rgba(255, 255, 255, 0.8);
             letter-spacing: 1px;
-            font-weight: 200;
+            font-weight: 400;
             line-height: 26px;
             border-left: 2px solid gray;
             padding-left: 20px;
@@ -48,19 +48,29 @@
             &-catalog {
                 font-size: 20px;
                 font-weight: 400;
-                padding: 16px 20px;
+                padding: 18px 30px;
                 width: 270px;
                 border-radius: 4px;
                 border: 1px solid white;
             }
-
+       
             &-company {
                 font-size: 20px;
                 font-weight: 400;
-                padding: 16px 20px;
+                padding: 18px 30px;
                 width: 270px;
                 border-radius: 4px;
+                background-color: rgb(0, 129, 227);
+                color: white;
+                border: 1px solid rgb(0, 129, 227);
+            }
+
+            &-company:hover,
+            &-catalog:hover {
+                background-color: rgba(0, 0, 0, 0.1);
                 border: 1px solid white;
+                color: white;
+                transition: .5s;
             }
         }
     }

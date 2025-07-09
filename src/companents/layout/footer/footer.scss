@@ -1,0 +1,43 @@
+.footer {
+    background-color: #0081e3;
+    padding: 40px 0px;
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+
+        &__item {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        &__title {
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+            padding-bottom: 10px;
+        }
+
+        &__list {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            color: white;
+        }
+
+        &__list-number {
+           display: flex;
+           align-items: flex-start;
+           flex-direction: column;
+           gap: 7px;
+
+           &-link {
+            font-size: 20px;
+            font-weight: 500;
+           }
+        }
+    }
+}

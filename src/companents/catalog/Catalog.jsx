@@ -1,13 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./catalog.scss";
 import { CATALOG } from "../../static";
 
 const Catalog = () => {
-    {
-        CATALOG?.map(el => (
-            console.log(el?.firstImg)
-        ))
-    }
+  const [hoveredId, setHoveredId] = useState(null);
   return (
     <div className="catalog">
       <div className="catalog__container container">
@@ -21,14 +17,20 @@ const Catalog = () => {
 
         <div className="catalog__cards">
           {CATALOG?.map((el) => (
-            <div key={el?.id}
+            <div
+              key={el?.id}
+              onMouseEnter={() => setHoveredId(el?.id)}
+              onMouseLeave={() => setHoveredId(null)}
               style={{
-                backgroundImage: `url(${el?.firstImg})`,
+                backgroundImage: `url(${
+                  hoveredId === el?.id ? el?.secondImg : el?.firstImg
+                })`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
+                transition: "background-image 0.4s ease-in-out",
               }}
-              className="catalog__card  animate__animated animate__flipInX"
+              className="catalog__card animate__animated animate__flipInX"
             >
               <div className="catalog__card__info">
                 <p className="catalog__card__info-title">{el?.title}</p>
