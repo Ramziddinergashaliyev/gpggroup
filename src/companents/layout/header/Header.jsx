@@ -34,7 +34,7 @@ const Header = () => {
                 Главная
               </NavLink>
             </li>
-            
+
             <li className="header__nav__list header__nav__list-category">
               <NavLink to="" className="header__nav__link">
                 Каталог
@@ -82,9 +82,11 @@ const Header = () => {
           <button className="header__container__btns-en">
             <img src={img2} alt="EN" />
           </button>
-          <button className="header__container__btn">Контакты</button>
+          <NavLink to={"/contact"}>
+            <button className="header__container__btn">Контакты</button>
+          </NavLink>
         </div>
-      </div>     
+      </div>
     </header>
   );
 };

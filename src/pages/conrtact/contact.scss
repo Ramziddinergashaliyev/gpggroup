@@ -1,0 +1,150 @@
+.contact {
+  &__top {
+    background: url(../../assets/icon/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      padding-top: 130px;
+
+      &-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(224, 222, 222);
+      }
+
+      &-title {
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+      }
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+
+    &__left {
+      &-title {
+        font-size: 28px;
+        font-weight: 500;
+        color: rgb(0, 129, 227);
+      }
+
+      &-text {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        font-weight: 400;
+        color: gray;
+        padding: 20px 0px;
+      }
+    }
+
+    &__left__item {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    &__left__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span {
+        font-size: 18px;
+        color: rgb(0, 129, 227);
+        font-weight: 600;
+      }
+
+      &-number {
+        font-size: 26px;
+        color: rgb(78, 76, 76);
+      }
+
+      &-mail {
+        font-size: 25px;
+        color: rgb(78, 76, 76);
+      }
+    }
+
+    &__left__addres {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 30px;
+
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(0, 129, 227);
+      }
+
+      &-add {
+        font-size: 18px;
+        color: rgb(78, 76, 76);
+        font-weight: 500;
+        left: 0.5px;
+      }
+    }
+  }
+
+  &__card__right {
+    background-color: #007aff;
+    padding: 30px;
+    border-radius: 6px;
+
+    &-title {
+      text-align: center;
+      font-size: 25px;
+      color: white;
+      padding-bottom: 30px;
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: white;
+      }
+
+      input {
+        padding: 16px;
+        outline: none;
+        border-radius: 3px;
+        border: 1px solid #aaa3;
+      }
+
+      textarea {
+        height: 100px;
+        padding: 12px;
+        outline: none;
+        resize: vertical;
+        border: 1px solid #aaa3;
+        border-radius: 3px;
+      }
+
+      &-btn {
+        padding: 12px;
+        background-color: #003366;
+        border: 1px solid #003366;
+        color: white;
+        font-size: 18px;
+        border-radius: 3px;
+      }
+    }
+  }
+}

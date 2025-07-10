@@ -1,0 +1,93 @@
+.partner {
+  &__top {
+    background: url(../../assets/icon/part-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
+
+  &__top__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+
+    &-text {
+      font-size: 16px;
+      font-weight: 400;
+      color: rgb(224, 222, 222);
+    }
+
+    &-title {
+      font-size: 30px;
+      font-weight: 500;
+      color: white;
+    }
+  }
+
+  &__bottom {
+    padding: 30px 0px;
+    &-desc {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgb(0, 129, 227);
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+        padding: 30px 0px;
+    }
+
+    .partner__bottom__card {
+  box-shadow: 1px 1px 10px #aaa4;
+  padding: 14px;
+  border-radius: 4px;
+  background-color: #fff;
+
+  // Kirishda animatsiya
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+
+  // Hoverda zoom effekti
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 20px #aaa6;
+  }
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 120px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  &-text {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 129, 227);
+    margin-top: 10px;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  }
+}

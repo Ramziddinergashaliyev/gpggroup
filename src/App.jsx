@@ -4,6 +4,7 @@ import Layout from './companents/layout/Layout'
 import Home from './pages/home/Home'
 import Company from './pages/company/Company'
 import Partner from './pages/partner/Partner'
+import Contact from './pages/conrtact/Contact'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route index  element={<Home/>} />
         <Route path='company' element={<Company/>}/>
         <Route path='partner' element={<Partner/>}/>
+        <Route path='contact' element={<Contact/>}/>
       </Route>
     </Routes>
   )
