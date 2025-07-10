@@ -72,7 +72,7 @@
     font-size: 18px;
   }
 
-  .header__nav__list-category {
+  &__nav__list-category {
     position: relative;
 
     &:hover .header__nav__category {
@@ -82,7 +82,7 @@
     }
   }
 
-  .header__nav__category {
+  &__nav__category {
     position: absolute;
     top: 100%;
     left: 0;
@@ -100,12 +100,108 @@
     border-radius: 6px;
   }
 
-  .header__nav__category-list {
+  &__nav__category-list {
     padding: 15px 20px;
 
     &:hover {
       background-color: #f8f8f8;
       cursor: pointer;
+    }
+  }
+
+  &__container__menu {
+    display: none;
+    
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 30px;
+    }
+  }
+
+  &__nav__btns {
+    display: none;
+  }
+
+  &__nav__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;  
+    background-color: transparent;
+    border: none;
+    font-size: 28px;  
+  }
+
+  &__nav__btns {
+    .header__container__btns-ru,
+    .header__container__btns-en {
+      padding: 5px 0px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  @media (max-width: 1570px) {
+    &__nav__item {
+      gap: 10px;
+    }
+
+    &__nav__link {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &__nav {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 50%;
+      height: 100vh;
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 140px;
+      }
+    }
+
+    &__nav__posetion {
+      top: 100%;
+    }
+
+    &__container__btns {
+      display: none;
+    }
+
+    &__nav__btns {
+      display: block;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__container__menu {
+      display: block;
+    }
+
+    &__nav__close {
+
     }
   }
 }
