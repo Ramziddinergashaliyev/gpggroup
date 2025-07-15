@@ -1,6 +1,6 @@
 .footer {
   background-color: #0081e3;
-  padding: 40px 0px;
+  padding: 40px 0px 10px;
 
   &__nav {
     display: grid;
@@ -16,16 +16,18 @@
 
     &__title {
       font-size: 22px;
-      font-weight: 700;
+      font-weight: 600;
       color: white;
       padding-bottom: 10px;
     }
 
     &__list {
-      font-size: 16px;
-      line-height: 20px;
+      color: white !important;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
       font-weight: 500;
-      color: white;
+      line-height: 24px;
+      word-wrap: break-word;
     }
 
     &__list-number {
@@ -38,6 +40,22 @@
         font-size: 20px;
         font-weight: 500;
       }
+    }
+  }
+
+  &__bottom {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 120px;
+    }
+
+    &-title {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 

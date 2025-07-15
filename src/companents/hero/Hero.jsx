@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../assets/img/hero.png";
 import "./hero.scss";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
               Каталог продукции
             </button>
             <button className="hero__left__btns-company animate__animated  animate__flipInX">
-              О компании
+              <NavLink to={"/company"}>О компании</NavLink>
             </button>
           </div>
         </div>

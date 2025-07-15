@@ -1,5 +1,6 @@
 import React from "react";
 import "./information.scss";
+import { NavLink } from "react-router-dom";
 
 const Information = () => {
   return (
@@ -33,21 +34,19 @@ const Information = () => {
           </div>
           <div className="information__left-btns">
             <button className="information__left-btns-left animate__animated animate__flipInX">
-              Подробнее о нас
+              <NavLink to={"/company"}>Подробнее о нас</NavLink>
             </button>
             <button className="information__left-btns-right animate__animated animate__flipInX">
-              Наши партнеры
+              <NavLink to={"/partner"}>Наши партнеры</NavLink>
             </button>
           </div>
         </div>
         <div className="information__right animate__animated  animate__zoomIn">
-          
           <div className="information__right__top">
             <h3 className="information__right__top-title">Компания в цифрах</h3>
           </div>
 
           <div className="information__right-boxs">
-
             <div className="information__right-box">
               <h2 className="information__right-box-title">20 +</h2>
               <span>Лет опыта</span>
@@ -64,7 +63,6 @@ const Information = () => {
               <h2 className="information__right-box-title">70 %</h2>
               <span>Реализация продукции по Узбекистану</span>
             </div>
-
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../assets/img/logo-black.svg";
-import logo1 from "../../assets/img/def.svg";
 import img from "../../assets/img/service.png";
 import img1 from "../../assets/img/service1.png";
 import img2 from "../../assets/img/service2.png";
@@ -42,7 +41,7 @@ const Service = () => {
             килограммов, с производительностью до 15 тонн в час. Наша
             инновационная инфраструктура гарантирует стабильное качество и
             надежность.
-          </p>
+          </p>         
         </div>
 
         <div className="service__container__right">

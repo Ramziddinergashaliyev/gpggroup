@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import { NavLink } from "react-router-dom";
+import img from "../../../assets/img/logo-white.svg"
 
 const Footer = () => {
   return (
@@ -19,13 +20,10 @@ const Footer = () => {
               <NavLink to={"/partner"}>Партнеры</NavLink>
             </li>
             <li className="footer__nav__list">
-              <NavLink>Новости</NavLink>
+              <NavLink to={"/disturb"}>Дистрибьюторы</NavLink>
             </li>
             <li className="footer__nav__list">
-              <NavLink>Дистрибьюторы</NavLink>
-            </li>
-            <li className="footer__nav__list">
-              <NavLink>Контакты</NavLink>
+              <NavLink to={"/contact"}>Контакты</NavLink>
             </li>
           </ul>
           <ul className="footer__nav__item">
@@ -53,8 +51,8 @@ const Footer = () => {
             <li>
               <h3 className="footer__nav__title">КОНТАКТЫ</h3>
             </li>
-            <li className="footer__nav__list">Номер телефона</li>
             <li className="footer__nav__list footer__nav__list-number">
+              <li className="footer__nav__list">Номер телефона</li>
               <a
                 className="footer__nav__list-number-link"
                 href="tel: +998 71 281 49 30"
@@ -78,6 +76,10 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
+      </div>
+      <div className="footer__bottom container">
+        <img src={img} alt="footer-icons" />
+        <p className="footer__bottom-title">© 2024 | Все права защищены</p>
       </div>
     </div>
   );
