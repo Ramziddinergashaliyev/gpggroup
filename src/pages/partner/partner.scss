@@ -127,5 +127,13 @@
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px;
     }
+
+    &__top__info-text {
+      font-size: 13px;
+    }
+
+    &__top__info-title {
+      font-size: 22px;
+    }
   }
 }
