@@ -22,6 +22,7 @@ const Service = () => {
         <p className="service__info-text">ТЕХНОЛОГИИ И ОБОРУДОВАНИЕ</p>
         <h2 className="service__info-title">Модернизация и новый уровень</h2>
       </div>
+      <div className="service__cards"></div>
       <div className="service__container">
         <div className="service__container__left">
           <img
@@ -43,6 +44,7 @@ const Service = () => {
             надежность.
           </p>
         </div>
+
         <div className="service__container__right">
           <Swiper
             direction={"vertical"}
@@ -57,22 +59,22 @@ const Service = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={img} alt="" />
+              <img src={img} alt="Swipper-img" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img1} alt="" />
+              <img src={img1} alt="Swipper-img" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="" />
+              <img src={img2} alt="Swipper-img" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img} alt="" />
+              <img src={img} alt="Swipper-img" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img1} alt="" />
+              <img src={img1} alt="Swipper-img" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="" />
+              <img src={img2} alt="Swipper-img" />
             </SwiperSlide>
           </Swiper>
         </div>

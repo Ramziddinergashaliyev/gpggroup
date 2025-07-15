@@ -121,16 +121,15 @@
 
   &__nav__menu {
     display: none;
-    
+
     &-btn {
       background: transparent;
       border: none;
-      color: white;
+      // color: white;
       font-size: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      
     }
   }
 
@@ -149,7 +148,6 @@
   }
 
   @media (max-width: 1010px) {
-
     &__container__btns {
       display: none;
     }

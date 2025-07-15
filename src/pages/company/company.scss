@@ -38,9 +38,11 @@
       gap: 20px;
 
       &-desc {
+        color: #0e304e;
         font-size: 15px;
-        font-weight: 400;
-        color: #6587a5;
+        font-weight: 300;
+        line-height: 140%;
+        word-wrap: break-word;
       }
     }
   }
@@ -96,5 +98,119 @@
   &__info__bottom-desc {
     padding-bottom: 30px;
     font-size: 15px;
+  }
+
+  @media (max-width: 800px) {
+    &__info {
+      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__top__info-desc {
+      font-size: 12px;
+    }
+
+    &__top__info-title {
+      font-size: 26px;
+    }
+
+    &__info {
+      padding: 20px 0px;
+    }
+
+    &__info__left-desc {
+      font-size: 12px;
+    }
+
+    &__info__left,
+    &__info__right {
+      gap: 6px;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__imgs {
+      img {
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 990px) {
+    &__information-imgs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 950px) {
+    &__imgs {
+      grid-template-columns: repeat(1, 1fr);
+      img {
+        height: 400px;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    &__information-imgs img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    &__imgs {
+      grid-template-columns: repeat(1, 1fr);
+      padding-bottom: 0px;
+      gap: 10px;
+      img {
+        height: 300px;
+      }
+    }
+
+    &__information-imgs {
+      gap: 8px;
+    }
+
+    &__box {
+      gap: 5px;
+      padding: 10px 0px;
+    }
+
+    &__imgs-top {
+      object-fit: cover;
+      border-right: none;
+      width: 100%;
+      padding-right: 0px;
+      border-radius: 4px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    &__information-imgs {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__imgs-top {
+      height: 190px !important;
+    }
+
+    &__info__bottom-desc {
+      padding-bottom: 10px;
+    }
+
+    &__imgs__sertificate {
+      gap: 5px;
+      img {
+        object-fit: contain;
+        height: 230px !important;
+      }
+    }
+
+    &__information-imgs {
+      padding-bottom: 10px;
+    }
   }
 }

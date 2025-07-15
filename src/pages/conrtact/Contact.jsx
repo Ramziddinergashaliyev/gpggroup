@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./contact.scss";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="contact">
       <div className="contact__top">
@@ -12,7 +16,6 @@ const Contact = () => {
       </div>
 
       <div className="contact__card container">
-
         <div className="contact__card__left">
           <h2 className="contact__card__left-title">
             Оставьте заявку или позвоните нам
@@ -50,7 +53,10 @@ const Contact = () => {
           </ul>
           <div className="contact__card__left__addres">
             <span>Адрес:</span>
-            <p className="contact__card__left__addres-add">100070, Республика Узбекистан, г. Ташкент, Яккасарайский р-н, ул. Глинка 14/3</p>
+            <p className="contact__card__left__addres-add">
+              100070, Республика Узбекистан, г. Ташкент, Яккасарайский р-н, ул.
+              Глинка 14/3
+            </p>
           </div>
         </div>
 
@@ -61,10 +67,12 @@ const Contact = () => {
             <input placeholder="Номер" type="text" />
             <textarea placeholder="Комментарий" name="" id=""></textarea>
             <button className="contact__card__right-form-btn">Оставить</button>
-            <span>Отправляя данную форму, вы соглашаетесь на обработку персональных данных.</span>
+            <span>
+              Отправляя данную форму, вы соглашаетесь на обработку персональных
+              данных.
+            </span>
           </form>
         </div>
-
       </div>
     </div>
   );

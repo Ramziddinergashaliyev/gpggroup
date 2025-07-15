@@ -8,7 +8,7 @@ const Arrow = () => {
     <div className="arrow">
       <div className="arrow__container container">
         <div className="arrow__left">
-          <img src={img} alt="" />
+          <img src={img} alt="Arrow-img" />
         </div>
         <div className="arrow__right">
             <h2 className="arrow__right__title">Партнерство и сотрудничество</h2>

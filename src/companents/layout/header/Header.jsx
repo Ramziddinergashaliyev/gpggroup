@@ -39,7 +39,7 @@ const Header = () => {
             </li>
 
             <li className="header__nav__list header__nav__list-category">
-              <NavLink to="" className="header__nav__link">
+              <NavLink className="header__nav__link">
                 Каталог
               </NavLink>
 
@@ -107,7 +107,11 @@ const Header = () => {
           </NavLink>
         </div>
         <div className="header__nav__menu">
-          <button onClick={() => setHide(true)} className="header__nav__menu-btn">
+          <button
+            style={{ color: isScrolled ? "black" : "white" }}
+            onClick={() => setHide(true)}
+            className="header__nav__menu-btn"
+          >
             <AiOutlineMenu />
           </button>
         </div>

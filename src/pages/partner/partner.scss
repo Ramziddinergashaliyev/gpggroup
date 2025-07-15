@@ -1,6 +1,6 @@
 .partner {
   &__top {
-    background: url(../../assets/icon/part-bg.jpg);
+    background: url(../../assets/icon/part.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,60 +34,98 @@
     }
 
     &__cards {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: 20px;
-        padding: 30px 0px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 30px 0px;
     }
 
     .partner__bottom__card {
-  box-shadow: 1px 1px 10px #aaa4;
-  padding: 14px;
-  border-radius: 4px;
-  background-color: #fff;
+      box-shadow: 1px 1px 10px #aaa4;
+      padding: 14px;
+      border-radius: 4px;
+      background-color: #fff;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  // Kirishda animatsiya
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease forwards;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 2px 2px 20px #aaa6;
+      }
 
-  // Hoverda zoom effekti
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+      img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 120px;
+        height: 200px;
+        object-fit: contain;
+      }
 
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 2px 20px #aaa6;
+      &-text {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        color: rgb(0, 129, 227);
+        margin-top: 10px;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 
-  img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 120px;
-    height: 200px;
-    object-fit: contain;
+  @media (max-width: 1200px) {
+    &__bottom-desc {
+      font-size: 16px;
+    }
+
+    &__bottom .partner__bottom__card img {
+      width: 100px;
+      height: 140px;
+    }
   }
 
-  &-text {
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(0, 129, 227);
-    margin-top: 10px;
+  @media (max-width: 1000px) {
+    &__bottom__cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
   }
-}
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-}
-to {
-    opacity: 1;
-    transform: translateY(0);
+  @media (max-width: 500px) {
+    &__bottom__card-text {
+      font-size: 12px !important;
+    }
+
+    &__bottom__cards {
+      padding: 10px 0px;
+    }
+
+    &__bottom {
+      padding: 10px 0px;
+    }
+
+    &__bottom-desc {
+      font-size: 14px;
+    }
   }
-}
 
+  @media (max-width: 400px) {
+    &__bottom__cards {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+    }
   }
 }
