@@ -5,18 +5,18 @@
     background-size: cover;
     background-position: center;
     height: 200px;
-
+    
     &-info {
       display: flex;
       flex-direction: column;
       padding-top: 130px;
-
+      
       &-text {
         font-size: 16px;
         font-weight: 400;
         color: rgb(224, 222, 222);
       }
-
+      
       &-title {
         font-size: 30px;
         font-weight: 500;
@@ -24,12 +24,12 @@
       }
     }
   }
-
+  
   &__card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-    padding: 40px 0px;
+    padding: 50px 0px;
 
     &__left {
       &-title {
@@ -145,6 +145,85 @@
         font-size: 18px;
         border-radius: 3px;
       }
+    }
+  }
+
+  @media (max-width: 1610px) {
+    &__card__left__list-mail,
+    &__card__left__list-number {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    &__card {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__card {
+      gap: 20px;
+      padding: 15px 0px;
+    }
+
+    &__card__right {
+      padding: 15px;
+    }
+
+    &__card__left-title {
+      font-size: 20px;
+    }
+
+    &__card__left-text {
+      font-size: 13px;
+    }
+
+    &__card__left__list {
+      span {
+        font-size: 18px;
+      }
+    }
+
+    &__card__left__item {
+      gap: 10px;
+    }
+
+    &__card__left__addres-add {
+      font-size: 15px;
+    }
+
+    &__card__left__addres {
+      padding-top: 10px;
+    }
+
+    &__card__left-text {
+      padding: 10px 0px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    &__card__left__item {
+      flex-direction: column;
+    }
+
+    &__card__right-title {
+      font-size: 18px;
+    }
+
+    &__card__right-form {
+      gap: 10px;
+    }
+
+    &__card__right-form span {
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 16px;
+      color: white;
+    }
+
+    &__card__right-title {
+      padding-bottom: 15px;
     }
   }
 }

@@ -52,7 +52,7 @@ const Footer = () => {
               <h3 className="footer__nav__title">КОНТАКТЫ</h3>
             </li>
             <li className="footer__nav__list footer__nav__list-number">
-              <li className="footer__nav__list">Номер телефона</li>
+              <span className="footer__nav__list">Номер телефона</span>
               <a
                 className="footer__nav__list-number-link"
                 href="tel: +998 71 281 49 30"
