@@ -42,7 +42,7 @@ const Company = () => {
         </div>
         <div className="company__info__right">
           <p className="company__info__left-desc">
-            Продукция компании 000 «Global Petrochemical Group» полностью
+            Продукция компании ООО «Global Petrochemical Group» полностью
             соответствует всем необходимым стандартам.
           </p>
 
@@ -59,8 +59,8 @@ const Company = () => {
       <div className="company__imgs container">
         <img className="company__imgs-top" src={img} alt="companyImg" />
         <div className="company__imgs__sertificate">
-          <img src={certificate} alt="sertificateImg" />
-          <img src={certificate1} alt="sertificateImg" />
+          <img src={certificate} alt="sertificateImg1" />
+          <img src={certificate1} alt="sertificateImg2" />
         </div>
       </div>
 
@@ -80,7 +80,7 @@ const Company = () => {
         </div>
         <div className="company__info__right-bottom">
           <p className="company__info__left-desc">
-            Продукция компании 000 «Global Petrochemical Group» полностью
+            Продукция компании ООО «Global Petrochemical Group» полностью
             соответствует всем необходимым стандартам.
           </p>
           <p className="company__info__left-desc">
@@ -97,32 +97,32 @@ const Company = () => {
         <img
           src={img3}
           alt="companyinfo-img"
-          className="company__information-img"
+          className="company__information-img1"
         />
         <img
           src={img2}
           alt="companyinfo-img"
-          className="company__information-img"
+          className="company__information-img2"
         />
         <img
           src={img1}
           alt="companyinfo-img"
-          className="company__information-img"
+          className="company__information-img3"
         />
         <img
           src={img6}
           alt="companyinfo-img"
-          className="company__information-img"
+          className="company__information-img4"
         />
         <img
           src={img5}
           alt="companyinfo-img"
-          className="company__information-img"
+          className="company__information-img5"
         />
         <img
           src={img4}
           alt="companyinfo-img"
-          className="company__information-img"
+          className="company__information-img6"
         />
       </div>
       <p className="company__info__left-desc company__info__bottom-desc  container">

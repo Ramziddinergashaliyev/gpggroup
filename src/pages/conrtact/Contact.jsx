@@ -30,13 +30,13 @@ const Contact = () => {
               <span>Номер телефона</span>
               <a
                 className="contact__card__left__list-number"
-                href="tel: +998 71 281 49 30"
+                href="tel:+998 71 281 49 30"
               >
                 +998 71 281 49 30
               </a>
               <a
                 className="contact__card__left__list-number"
-                href="tel: +998 71 203 20 31"
+                href="tel:+998 71 203 20 31"
               >
                 +998 71 203 20 31
               </a>
@@ -45,7 +45,7 @@ const Contact = () => {
               <span>E-mail:</span>
               <a
                 className="contact__card__left__list-mail"
-                href="mailTo: info@gpggroup.uz"
+                href="mailto: info@gpggroup.uz"
               >
                 info@gpggroup.uz
               </a>
@@ -58,11 +58,12 @@ const Contact = () => {
               Глинка 14/3
             </p>
           </div>
+    
         </div>
 
         <div className="contact__card__right">
           <p className="contact__card__right-title">Форма обратной связи</p>
-          <form action="" className="contact__card__right-form">
+          <form action="#" className="contact__card__right-form">
             <input placeholder="Имя" type="text" />
             <input placeholder="Номер" type="text" />
             <textarea placeholder="Комментарий" name="" id=""></textarea>
