@@ -86,26 +86,34 @@ const Header = () => {
             <button className="header__container__btns-ru header__nav__list-hide">
               <img src={img1} alt="RU" />
             </button>
+
             <button className="header__container__btns-en header__nav__list-hide">
               <img src={img2} alt="EN" />
             </button>
+
           </ul>
 
           <button onClick={() => setHide(false)} className="header__nav__close">
             <IoMdClose />
           </button>
+
         </nav>
         <div className="header__container__btns">
+
           <button className="header__container__btns-ru">
             <img src={img1} alt="RU" />
           </button>
+
           <button className="header__container__btns-en">
             <img src={img2} alt="EN" />
           </button>
+
           <NavLink to={"/contact"}>
             <button className="header__container__btn">Контакты</button>
           </NavLink>
+
         </div>
+        
         <div className="header__nav__menu">
           <button
             style={{ color: isScrolled ? "black" : "white" }}

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/img/hero.png";
+import img from "../../assets/img/hero.webp";
 import "./hero.scss";
 import { NavLink } from "react-router-dom";
 
