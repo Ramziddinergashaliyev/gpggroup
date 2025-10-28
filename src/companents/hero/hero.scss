@@ -1,9 +1,9 @@
 .hero {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 215px);
   // height: calc(100vh - 60px);
   // background: url(../../assets/img/main.jpg);
   background: url(../../assets/img/hBg.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 200px;
