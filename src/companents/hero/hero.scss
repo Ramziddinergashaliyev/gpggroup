@@ -1,6 +1,8 @@
 .hero {
   height: calc(100vh - 60px);
-  background: url(../../assets/img/main.jpg);
+  // height: calc(100vh - 60px);
+  // background: url(../../assets/img/main.jpg);
+  background: url(../../assets/img/hBg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +66,7 @@
         color: white;
         border: 1px solid rgb(0, 129, 227);
       }
-
+                        
       &-company:hover,
       &-catalog:hover {
         background-color: rgba(0, 0, 0, 0.1);
@@ -74,11 +76,12 @@
       }
     }
   }
-
+          
   &__right {
     position: absolute;
     bottom: 45px;
     right: 0;
+
     img {
       width: 800px;
       height: 800px;

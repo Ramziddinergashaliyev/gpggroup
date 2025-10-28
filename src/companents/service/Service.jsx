@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/img/logo-black.svg";
+import logo from "../../assets/img/icons.png";
 import img from "../../assets/img/service.png";
 import img1 from "../../assets/img/service1.png";
 import img2 from "../../assets/img/service2.png";
@@ -15,6 +15,7 @@ import "swiper/css/navigation";
 import { Mousewheel, Pagination } from "swiper/modules";
 
 const Service = () => {
+  
   return (
     <div className="service container">
       <div className="service__info">

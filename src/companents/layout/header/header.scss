@@ -17,6 +17,12 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+
+    &__icon {
+      width: 160px;
+      height: 60px;
+      object-fit: contain;
+    }
   }
 
   &__nav {
@@ -54,11 +60,13 @@
       align-items: center;
       justify-content: center;
       border: none;
+
       img {
         border-radius: 2px;
         background-color: transparent;
         object-fit: contain;
       }
+
     }
   }
 
@@ -161,6 +169,7 @@
       background-color: rgb(230, 230, 230);
       transition: 0.6s;
       z-index: 99;
+
       &__item {
         display: flex;
         flex-direction: column;
@@ -176,6 +185,7 @@
         line-height: 130%;
         word-wrap: break-word;
       }
+      
     }
 
     &__nav__list-hide {

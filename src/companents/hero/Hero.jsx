@@ -22,14 +22,16 @@ const Hero = () => {
             <button className="hero__left__btns-catalog animate__animated  animate__flipInX">
               Каталог продукции
             </button>
+
             <button className="hero__left__btns-company animate__animated  animate__flipInX">
               <NavLink to={"/company"}>О компании</NavLink>
             </button>
           </div>
         </div>
-        <div className="hero__right">
+        
+        {/* <div className="hero__right">
           <img src={img} alt="hero-right-img" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

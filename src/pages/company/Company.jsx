@@ -13,6 +13,7 @@ import img6 from "../../assets/img/service5.png";
 import "./company.scss";
 
 const Company = () => {
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

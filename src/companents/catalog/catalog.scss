@@ -20,7 +20,6 @@
     z-index: -1;
   }
 
-
   &__info {
     display: flex;
     flex-direction: column;
@@ -117,10 +116,12 @@
       transform: translateY(200px);
       transition: 0.4s;
     }
+
   }
 
   @media (max-width: 550px) {
     padding: 15px 0px;
+    
     &__cards {
       grid-template-columns: repeat(1, 1fr);
       padding: 10px 0px;
@@ -138,6 +139,7 @@
     &__card__info {
       transform: translateY(220px);
       padding: 5px 0px 0px 5px;
+
       &-title {
         font-size: 13px !important;
         line-height: 15px;
