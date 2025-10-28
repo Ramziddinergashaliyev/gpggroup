@@ -45,7 +45,6 @@ const Header = () => {
             </li>
                  
             <li className="header__nav__list header__nav__list-category">
-
               <NavLink className="header__nav__link">
                 Каталог
               </NavLink>
