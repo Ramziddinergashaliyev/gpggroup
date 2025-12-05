@@ -6,6 +6,7 @@ import Company from "./pages/company/Company";
 import Partner from "./pages/partner/Partner";
 import Contact from "./pages/conrtact/Contact";
 import Distrub from "./pages/disturb/Distrub";
+import CatalogItem from "./pages/catalogItem/CatalogItem";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="partner" element={<Partner />} />
         <Route path="contact" element={<Contact />} />
         <Route path="disturb" element={<Distrub />} />
+        <Route path="catalog-item" element={<CatalogItem />} />
       </Route>
     </Routes>
   );

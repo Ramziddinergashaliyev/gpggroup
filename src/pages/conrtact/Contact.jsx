@@ -1,82 +1,66 @@
-import React, { useEffect } from "react";
-import "./contact.scss";
+import React, { useEffect } from 'react'
+import img from "../../assets/img/contact.jpg"
+import "./contact.scss"
 
 const Contact = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
+  useEffect(() => {
+    scrollTo(0, 0)
+  }, [])
+  
   return (
-    <div className="contact">
-      <div className="contact__top">
-        <div className="contact__top-info container">
-          <p className="contact__top-info-text">ОБРАТНАЯ СВЯЗЬ</p>
-          <h2 className="contact__top-info-title">Наши контакты</h2>
+    <div className='contact'>
+      <div className="contact-bg">
+        <div className="contact-top container">
+          <div className="contact-top-left">
+            <h3 className="contact-top-left-title">Let’s Talk</h3>
+            <p className='contact-top-left-text'>Whether you're exploring a new market, validating a strategy, or seeking tailored research support, our team is here to assist. Connect with our experts; we’re just a message away.</p>
+          </div>
+          <div className="contact-top-right">
+            <img src={img} alt="contact-img" />
+          </div>
         </div>
       </div>
 
-      <div className="contact__card container">
-        <div className="contact__card__left">
-          <h2 className="contact__card__left-title">
-            Оставьте заявку или позвоните нам
-          </h2>
-          <p className="contact__card__left-text">
-            Если у вас возникли какие-либо вопросы или вам нужна дополнительная
-            информация, мы всегда на связи. Оставьте заявку, и наши специалисты
-            свяжутся с вами в кратчайшие сроки.
-          </p>
-          <ul className="contact__card__left__item">
-            <li className="contact__card__left__list">
-              <span>Номер телефона</span>
-              <a
-                className="contact__card__left__list-number"
-                href="tel:+998 71 281 49 30"
-              >
-                +998 71 281 49 30
-              </a>
-              <a
-                className="contact__card__left__list-number"
-                href="tel:+998 71 203 20 31"
-              >
-                +998 71 203 20 31
-              </a>
-            </li>
-            <li className="contact__card__left__list">
-              <span>E-mail:</span>
-              <a
-                className="contact__card__left__list-mail"
-                href="mailto: info@gpggroup.uz"
-              >
-                info@gpggroup.uz
-              </a>
-            </li>
-          </ul>
-          <div className="contact__card__left__addres">
-            <span>Адрес:</span>
-            <p className="contact__card__left__addres-add">
-              100070, Республика Узбекистан, г. Ташкент, Яккасарайский р-н, ул.
-              Глинка 14/3
-            </p>
+      <div className="contact-form container">
+        <div className="contact-form-right">
+          <div className="contact-form-right-item">
+            <h2>Email</h2>
+            <p>info@gpggroup.uz</p>
           </div>
-    
+          <div className="contact-form-right-item">
+            <h2>Phone Number</h2>
+            <p>+998 71 281 49 30</p>
+            <p>+998 71 281 49 30</p>
+          </div>
+          <div className="contact-form-right-item">
+            <h2>Address</h2>
+            <p>100070, Республика Узбекистан, г. Ташкент, Яккасарайский р-н, ул. Глинка 14/3</p>
+          </div>
         </div>
 
-        <div className="contact__card__right">
-          <p className="contact__card__right-title">Форма обратной связи</p>
-          <form action="#" className="contact__card__right-form">
-            <input placeholder="Имя" type="text" />
-            <input placeholder="Номер" type="text" />
-            <textarea placeholder="Комментарий" name="" id=""></textarea>
-            <button className="contact__card__right-form-btn">Оставить</button>
-            <span>
-              Отправляя данную форму, вы соглашаетесь на обработку персональных
-              данных.
-            </span>
+        <div className="contact-form-left">
+          <h2 className="contact-form-left-title">Contact Us</h2>
+          <form className='contact-form-left-item' action="">
+            <div className="contact-form-left-item-top">
+              <input placeholder='Full Name' type="text" name="" id="" />
+              <input placeholder='Email' type="text" name="" id="" />
+              <input placeholder='Phone Number' type="number" name="" id="" />
+              <input placeholder='Company' type="text" name="" id="" />
+            </div>
+            <div className='contact-form-left-item-bottom'>
+              <textarea placeholder='Message' name="" id=""></textarea>
+              <button className='contact-form-left-item-bottom-btn'>Let's Talk</button>
+            </div>
           </form>
         </div>
       </div>
-    </div>
-  );
-};
 
-export default Contact;
+      <div className="contact-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3248.230692956812!2d69.136341!3d41.200520000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDEyJzAxLjkiTiA2OcKwMDgnMTAuOCJF!5e1!3m2!1sen!2s!4v1762319654663!5m2!1sen!2s" style={{ width: "100%", height: "450px", border: "0px" }} loading="lazy"></iframe>
+      </div>
+    </div>
+  )
+}
+
+export default Contact

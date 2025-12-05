@@ -1,88 +1,69 @@
-import React from "react";
-import "./footer.scss";
-import { NavLink } from "react-router-dom";
-import img from "../../../assets/img/logo-white.svg"
+import React from 'react'
+import img from "../../../assets/img/footerbg.png"
+import "./footer.scss"
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer__container container">
-        <nav className="footer__nav">
-          <ul className="footer__nav__item">
-            <h3 className="footer__nav__title">КОМПАНИЯ</h3>
-            <li className="footer__nav__list">
-              <NavLink to={"/"}>Главная</NavLink>
-            </li>
-            <li className="footer__nav__list">
-              <NavLink to={"/company"}>О компании</NavLink>
-            </li>
-            <li className="footer__nav__list">
-              <NavLink to={"/partner"}>Партнеры</NavLink>
-            </li>
-            <li className="footer__nav__list">
-              <NavLink to={"/disturb"}>Дистрибьюторы</NavLink>
-            </li>
-            <li className="footer__nav__list">
-              <NavLink to={"/contact"}>Контакты</NavLink>
-            </li>
-          </ul>
-          <ul className="footer__nav__item">
-            <li>
-              <h3 className="footer__nav__title">ПРОДУКЦИЯ</h3>
-            </li>
-            <li className="footer__nav__list">Антифриз</li>
-            <li className="footer__nav__list">
-              Моторные масла для легковой и легкой коммерческой техники
-            </li>
-            <li className="footer__nav__list">
-              Моторные масла для дизельных двигателей
-            </li>
-            <li className="footer__nav__list">Тормозная жидкость</li>
-          </ul>
-          <ul className="footer__nav__item">
-            <li>
-              <h3 className="footer__nav__title">ПРОДУКЦИЯ</h3>
-            </li>
-            <li className="footer__nav__list">Гидравлические масла</li>
-            <li className="footer__nav__list">Стеклоомыватели</li>
-            <li className="footer__nav__list">Теплоносители</li>
-          </ul>
-          <ul className="footer__nav__item">
-            <li>
-              <h3 className="footer__nav__title">КОНТАКТЫ</h3>
-            </li>
-            <li className="footer__nav__list footer__nav__list-number">
-              <span className="footer__nav__list">Номер телефона</span>
-              <a
-                className="footer__nav__list-number-link"
-                href="tel: +998 71 281 49 30"
-              >
-                +998 71 281 49 30
-              </a>
-              <a
-                className="footer__nav__list-number-link"
-                href="tel: +998 71 203 20 31"
-              >
-                +998 71 203 20 31
-              </a>
-            </li>
-            <li className="footer__nav__list">Адрес</li>
-            <li className="footer__nav__list">
-              100070, Республика Узбекистан, г. Ташкент, Яккасарайский р-н, ул.
-              Глинка 14/3
-            </li>
-            <li className="footer__nav__list">
-              <a href="mailto: info@gpggroup.uz">info@gpggroup.uz</a>
-            </li>
-          </ul>
-        </nav>
+    <div className='footer'>
+      <div className="footer-img">
+        <img src={img} alt="footerImg" />
       </div>
-      <div className="footer__bottom container">
-        <img src={img} alt="footer-icons" />
-        <p className="footer__bottom-title">© 2024 | Все права защищены</p>
+      <div className="footer-bg">
+        <div className="footer-info container">
+
+          <div className="footer-info-item">
+            <h2 className='footer-info-item-title'>COMPANY</h2>
+            <p className="footer-info-item-text">Home</p>
+            <p className="footer-info-item-text">About company</p>
+            <p className="footer-info-item-text">Partners</p>
+            <p className="footer-info-item-text">Distributors</p>
+          </div>
+
+          <div className="footer-info-item">
+            <h2 className='footer-info-item-title'>PRODUCTS</h2>
+            <p className="footer-info-item-text">Antifreeze</p>
+            <p className="footer-info-item-text">Motor oils for passenger cars and light commercial vehicles</p>
+            <p className="footer-info-item-text">Motor oils for diesel engines</p>
+            <p className="footer-info-item-text">Brake fluid</p>
+            <p className="footer-info-item-text">Hydraulic oils</p>
+            <p className="footer-info-item-text">Window washers</p>
+            <p className="footer-info-item-text">Coolers</p>
+          </div>
+        
+          <div className="footer-info-item">
+            <h2 className='footer-info-item-title'>ADDRESS</h2>
+            <p className="footer-info-item-text-number">
+              <span className="footer-info-item-text-span">Номер телефона</span>
+              <span>+998 71 281 49 30</span>
+              <span>+998 71 203 20 31</span>
+            </p>
+            <p className="footer-info-item-text-address">
+              <span className="footer-info-item-text-span">Адрес</span>
+              <span>
+                100070, Republic of Uzbekistan, Tashkent, Yakkasaray district, st. Glinka 14/3
+              </span>
+            </p>
+            <p className="footer-info-item-text-email">
+              <span className="footer-info-item-text-span">Электронная почта</span>
+              <span>info@gpggroup.uz</span>
+            </p>
+          </div>
+
+          <div className="footer-info-item">
+            <h2 className='footer-info-item-title'>LEAVE A MESSAGE</h2>
+            <form className="footer-info-item-form" action="">
+              <input placeholder='name' type="text" />
+              <input placeholder='phone' type="text" />
+              <input placeholder='email' type="text" />
+              <input placeholder='message' type="text" />
+              <button className="footer-info-item-form-btn">Send Now</button>
+            </form>
+          </div>
+
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
