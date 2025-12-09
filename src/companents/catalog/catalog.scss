@@ -276,6 +276,8 @@
     position: relative;
     aspect-ratio: 1;
     cursor: pointer;
+    height: 220px;
+    width: 100%;
     opacity: 0;
     transform: translateY(80px) scale(0.8);
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -301,6 +303,7 @@
 
       .catalog__item-overlay {
         background: #0002;
+        backdrop-filter: blur(0px);
       }
 
       .catalog__item-content {
@@ -347,6 +350,7 @@
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 14px;
+      height: 220px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -356,7 +360,7 @@
 
     &-image {
       width: 100%;
-      height: 100%;
+      height: 220px;
       object-fit: cover;
       transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -364,9 +368,10 @@
     &-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.3);
+      background: #0001;
       backdrop-filter: blur(2px);
       border-radius: 10px;
+      height: 220px;
       display: flex;
       align-items: end;
       justify-content: center;
