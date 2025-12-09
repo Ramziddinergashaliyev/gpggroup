@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
-import white from "../../../assets/img/logo-white.svg";
+import white from "../../../assets/img/logo-white.png";
 import black from "../../../assets/img/icons.png";
 import img1 from "../../../assets/img/ru.svg";
 import img2 from "../../../assets/img/en.svg";
