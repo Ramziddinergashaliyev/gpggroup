@@ -364,9 +364,13 @@
 
     &-image {
       width: 100%;
-      height: 220px;
+      height: 280px;
       object-fit: cover;
       transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+      @media (max-width:1580px) {
+        height: 220px;
+      }
     }
 
     &-overlay {
@@ -375,12 +379,15 @@
       background: #0001;
       backdrop-filter: blur(2px);
       border-radius: 10px;
-      height: 220px;
+      height: 280px;
       display: flex;
       align-items: end;
       justify-content: center;
       transition: all 0.5s ease;
       z-index: 2;
+      @media (max-width:1580px) {
+        height: 220px;
+      }
     }
 
     &-content {
