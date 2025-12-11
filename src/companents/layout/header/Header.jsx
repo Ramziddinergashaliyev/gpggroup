@@ -11,6 +11,10 @@ import { AiOutlineMenu } from "react-icons/ai";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hide, setHide] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState('English');
+
+  const languages = ['English', 'Русский'];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,7 +93,7 @@ const Header = () => {
                 </NavLink>
               </li>
 
-              <li className="header__nav__list header__nav__list-hide">
+              <li className="header__nav__list">
                 <NavLink to="/contact" className="header__nav__link">
                   Контакты
                 </NavLink>
@@ -110,18 +114,31 @@ const Header = () => {
             </button>
           </nav>
 
-          <div className="header__container__btns">
-            <button className="header__container__btns-ru">
-              <img src={img1} alt="RU" />
+          <div className="language-selector">
+            <button
+              className={`select-button ${isScrolled ? "select-button-bg" : ""}`}
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {selected}
+              <span className={`arrow ${isOpen ? 'open' : ''}`}>▼</span>
             </button>
 
-            <button className="header__container__btns-en">
-              <img src={img2} alt="EN" />
-            </button>
-
-            <NavLink to={"/contact"}>
-              <button className="header__container__btn">Контакты</button>
-            </NavLink>
+            {isOpen && (
+              <div className="dropdown">
+                {languages.map((lang) => (
+                  <div
+                    key={lang}
+                    className={`option ${selected === lang ? 'selected' : ''}`}
+                    onClick={() => {
+                      setSelected(lang);
+                      setIsOpen(false);
+                    }}
+                  >
+                    {lang}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="header__nav__menu">
