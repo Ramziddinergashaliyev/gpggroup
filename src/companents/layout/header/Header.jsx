@@ -106,7 +106,6 @@ const Header = () => {
               <button className="header__container__btns-en header__nav__list-hide">
                 <img src={img2} alt="EN" />
               </button>
-
             </ul>
 
             <button onClick={() => setHide(false)} className="header__nav__close">

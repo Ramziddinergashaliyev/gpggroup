@@ -61,10 +61,14 @@ import React, { useEffect, useState } from "react";
 import "./catalog.scss";
 import { CATALOG } from "../../static";
 import { NavLink } from "react-router-dom";
+import { useGetCategorysQuery } from "../../context/api/categoryApi";
 
 const Catalog = () => {
   const [hoveredId, setHoveredId] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
+  const { data } = useGetCategorysQuery()
+  console.log(data);
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
