@@ -60,6 +60,7 @@
 import React, { useEffect, useState } from "react";
 import "./catalog.scss";
 import { CATALOG } from "../../static";
+import { NavLink } from "react-router-dom";
 
 const Catalog = () => {
   const [hoveredId, setHoveredId] = useState(null);
@@ -97,32 +98,32 @@ const Catalog = () => {
 
         <div className="catalog__grid">
           {CATALOG.map((el, index) => (
-            <div
-              key={el.id}
-              className={`catalog__item ${isVisible ? 'animate' : ''} ${hoveredId === el.id ? 'active' : ''}`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-              onMouseEnter={() => setHoveredId(el.id)}
-              onMouseLeave={() => setHoveredId(null)}
-            >
-              <div className="catalog__item-bg">
-                <div className="catalog__item-glow"></div>
-              </div>
-                  
-              <div className="catalog__item-image-wrap">
-                <img
-                  src={hoveredId === el.id ? el.secondImg : el.firstImg}
-                  alt={el.title}
-                  className="catalog__item-image"
-                />
-              </div>
-              
-              <div className="catalog__item-overlay">
-                <div className="catalog__item-content">
-                  <h3 className="catalog__item-title">{el.title}</h3>
-                  <div className="catalog__item-line"></div>
+            <NavLink key={el.id} to={`/singleCatalog/${10}`}>
+              <div
+                className={`catalog__item ${isVisible ? 'animate' : ''} ${hoveredId === el.id ? 'active' : ''}`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+                onMouseEnter={() => setHoveredId(el.id)}
+                onMouseLeave={() => setHoveredId(null)}
+              >
+                <div className="catalog__item-bg">
+                  <div className="catalog__item-glow"></div>
+                </div>
+                <div className="catalog__item-image-wrap">
+                  <img
+                    src={hoveredId === el.id ? el.secondImg : el.firstImg}
+                    alt={el.title}
+                    className="catalog__item-image"
+                  />
+                </div>
+
+                <div className="catalog__item-overlay">
+                  <div className="catalog__item-content">
+                    <h3 className="catalog__item-title">{el.title}</h3>
+                    <div className="catalog__item-line"></div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </NavLink>
           ))}
         </div>
       </div>

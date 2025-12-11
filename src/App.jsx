@@ -7,6 +7,8 @@ import Partner from "./pages/partner/Partner";
 import Contact from "./pages/conrtact/Contact";
 import Distrub from "./pages/disturb/Distrub";
 import CatalogItem from "./pages/catalogItem/CatalogItem";
+import SingleCatalog from "./pages/singleCatalog/SingleCatalog";
+import SingleProduct from "./pages/singleProduct/SingleProduct";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="partner" element={<Partner />} />
         <Route path="contact" element={<Contact />} />
         <Route path="disturb" element={<Distrub />} />
+        <Route path="singleCatalog/10" element={<SingleCatalog />} />
+        <Route path="singleProduct/10" element={<SingleProduct />} />
         <Route path="catalog-item" element={<CatalogItem />} />
       </Route>
     </Routes>

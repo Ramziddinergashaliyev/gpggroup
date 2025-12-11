@@ -223,14 +223,11 @@
     align-items: flex-start;
     gap: 14px;
 
-    &-title {
+    &-about {
       font-size: 46px;
       line-height: 62px;
-      color: #333;
+      color: white;
       font-weight: 700;
-      opacity: 0;
-      animation: slideInRight 1s ease-out 0.4s forwards;
-      position: relative;
     }
 
     &-text {
