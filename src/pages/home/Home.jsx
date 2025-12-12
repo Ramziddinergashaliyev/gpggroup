@@ -14,7 +14,6 @@ const Home = () => {
     <div>
       <Hero />
       <Made/>
-      {/* <Filter/> */}
       <Catalog />
       <Lube/>
       <Service />
