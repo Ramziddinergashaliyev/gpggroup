@@ -184,7 +184,7 @@
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 14px;
-      height: 280px;
+      height: 260px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -197,7 +197,7 @@
 
     &-image {
       width: 100%;
-      height: 280px;
+      height: 260px;
       object-fit: cover;
       transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 
