@@ -18,7 +18,7 @@
       align-items: start;
       flex-direction: column;
       gap: 5px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     &-bottom {
@@ -31,14 +31,14 @@
         font-weight: 400;
         letter-spacing: 1px;
         color: white;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
       }
 
       &-desc {
-        font-size: 15px;
-        font-weight: 400;
-        letter-spacing: 1px;
-        color: rgb(211, 204, 204);
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        color: rgb(255, 254, 254);
       }
     }
 

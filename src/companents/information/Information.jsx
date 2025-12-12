@@ -7,6 +7,7 @@ const Information = () => {
     <div className="information">
       <div className="information__container container">
         <div className="information__left">
+
           <div className="information__left-top">
             <p className="information__left-top__text">
               НАДЕЖНЫЙ ПРОИЗВОДИТЕЛЬ
@@ -15,8 +16,8 @@ const Information = () => {
               Global Petrochemical Group
             </h2>
           </div>
-          <div className="information-middle-boxs">
 
+          <div className="information-middle-boxs">
             <div className="information-middle-boxs-top">
             </div>
             <div className="information-middle-boxs-bottom">
@@ -44,7 +45,6 @@ const Information = () => {
           </div>
 
           <div className="information__left-btns">
-
             <button className="information__left-btns-left animate__animated animate__flipInX">
               <NavLink to={"/company"}>Подробнее о нас</NavLink>
             </button>
@@ -52,8 +52,8 @@ const Information = () => {
             <button className="information__left-btns-right animate__animated animate__flipInX">
               <NavLink to={"/partner"}>Наши партнеры</NavLink>
             </button>
-
           </div>
+
         </div>
 
         <div className="information__right animate__animated  animate__zoomIn"  data-aos="flip-right">
@@ -63,7 +63,6 @@ const Information = () => {
           </div>
 
           <div className="information__right-boxs">
-
             <div className="information__right-box">
               <h2 className="information__right-box-title">20 +</h2>
               <span>Лет опыта</span>
@@ -76,12 +75,12 @@ const Information = () => {
               <h2 className="information__right-box-title">300 +</h2>
               <span>Специалистов</span>
             </div>
-
             <div className="information__right-box">
               <h2 className="information__right-box-title">70 %</h2>
               <span>Реализация продукции по Узбекистану</span>
             </div>
           </div>
+
         </div>
       </div>
     </div>

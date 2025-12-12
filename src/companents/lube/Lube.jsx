@@ -33,8 +33,8 @@ const Lube = () => {
 
                 <div className="lube-imgs">
                     <img src={img1} alt="img-green" className="lube-imgs-img" />
-                    <img src={img2} alt="img-blue" className="lube-imgs-img" />
-                    <img src={img3} alt="img-red" className="lube-imgs-img" />
+                    <img src={img2} alt="img-blue" className="lube-imgs-img lube-imgs-blue" />
+                    <img src={img3} alt="img-red" className="lube-imgs-img lube-imgs-red" />
                 </div>
 
                 <div className="lube-benefits">
