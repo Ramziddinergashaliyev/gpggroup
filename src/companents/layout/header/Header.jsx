@@ -152,6 +152,13 @@ const Header = () => {
         </div>
 
       </div>
+      {
+        hide
+        ?
+        <div onClick={() => setHide(false)} className="header__overlay"></div>
+        :
+        <></>
+      }
     </header>
   );
 };

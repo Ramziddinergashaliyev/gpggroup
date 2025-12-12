@@ -33,7 +33,7 @@ const Company = () => {
           </div>
 
           <div className="company-info-right">
-            <h3 className='company-info-right-about'>About</h3>
+            <h3 className='company-info-right-about'>About Us</h3>
             <p className="company-info-right-text">GPG Lubricants, one of the leading lubricant manufacturers in our country, is the pioneer of innovations in the sector by combining its 25 years of experience with developing technologies in the world and R&D studies. Thanks to the experience it has gained, it offers quality, trust and easy accessibility to the solution partners in the sector for the needs of the day.</p>
           </div>
         </div>

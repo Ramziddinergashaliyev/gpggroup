@@ -3,6 +3,7 @@ import img from "../../assets/img/contact.jpg"
 import "./contact.scss"
 
 const Contact = () => {
+  
   useEffect(() => {
     scrollTo(0, 0)
   }, [])
