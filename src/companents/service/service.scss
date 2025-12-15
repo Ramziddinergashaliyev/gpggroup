@@ -413,7 +413,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
-
+    
     .service-top-title {
       font-size: 36px;
       line-height: 44px;
@@ -421,6 +421,7 @@
       margin: 0;
       color: rgb(152, 201, 54);
     }
+
   }
 
   .service-bottom {
@@ -440,18 +441,17 @@
         transform: translateX(50px);
         animation: fadeInRight 0.8s ease forwards;
       }
+      
     }
 
     .image-wrapper {
       position: relative;
       overflow: hidden;
       border-radius: 12px;
-      // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
 
       &:hover {
         transform: translateY(-8px);
-        // box-shadow: 0 15px 40px rgba(0, 102, 204, 0.2);
 
         .service-bottom-img {
           transform: scale(1.1);

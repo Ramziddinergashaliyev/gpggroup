@@ -8,8 +8,6 @@ const Catalog = ({ hide }) => {
   const [hoveredId, setHoveredId] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const { data } = useGetCategorysQuery()
-  console.log(data);
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,7 +17,6 @@ const Catalog = ({ hide }) => {
   return (
     <div className="catalog">
       <div className="catalog__particles">
-
         {[...Array(20)].map((_, i) => (
           <div key={i} className="catalog__particle" style={{
             left: `${Math.random() * 100}%`,
@@ -27,7 +24,6 @@ const Catalog = ({ hide }) => {
             animationDuration: `${15 + Math.random() * 10}s`
           }}></div>
         ))}
-        
       </div>
 
       <div className="catalog__container container">
@@ -53,15 +49,18 @@ const Catalog = ({ hide }) => {
         <div className="catalog__grid">
           {data?.map((el, index) => (
             <NavLink key={el?.id} to={`/singleCatalog/${el?.id}`}>
+
               <div
                 className={`catalog__item ${isVisible ? 'animate' : ''} ${hoveredId === el.id ? 'active' : ''}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onMouseEnter={() => setHoveredId(el.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
+
                 <div className="catalog__item-bg">
                   <div className="catalog__item-glow"></div>
                 </div>
+
                 <div className="catalog__item-image-wrap">
                   <img
                     src={hoveredId === el.id ? el.images[1] : el.images[0]}
@@ -76,6 +75,7 @@ const Catalog = ({ hide }) => {
                     <div className="catalog__item-line"></div>
                   </div>
                 </div>
+
               </div>
             </NavLink>
           ))}
