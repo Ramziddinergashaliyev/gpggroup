@@ -19,7 +19,7 @@ const App = () => {
         <Route path="partner" element={<Partner />} />
         <Route path="contact" element={<Contact />} />
         <Route path="disturb" element={<Distrub />} />
-        <Route path="singleCatalog/10" element={<SingleCatalog />} />
+        <Route path="singleCatalog/:id" element={<SingleCatalog />} />
         <Route path="singleProduct/10" element={<SingleProduct />} />
         <Route path="catalog-item" element={<CatalogItem />} />
       </Route>

@@ -4,7 +4,7 @@ import { logout } from "../slices/authSlice";
 const baseQuery = async (args, api, extraOptions) => {
   const { dispatch } = api;
   const rawBaseQuery = fetchBaseQuery({
-    baseUrl: "https://gpg-backend.zeabur.app/",
+    baseUrl: "http://103.125.219.167:3000/",
     prepareHeaders: (headers) => {
       const token = localStorage.getItem("x-auth-token");
       if (token) {
@@ -25,6 +25,7 @@ const baseQuery = async (args, api, extraOptions) => {
   }
   return result;
 };
+
 const baseQueryWithRetry = retry(baseQuery, { maxRetries: 0 });
 
 export const api = createApi({

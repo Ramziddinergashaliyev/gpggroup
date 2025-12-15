@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import img from "../../assets/img/service.png";
-import img1 from "../../assets/img/service1.png";
+// import img from "../../assets/img/service.png";
+// import img1 from "../../assets/img/service1.png";
+import img from "../../assets/img/service.webp";
+import img1 from "../../assets/img/service1.webp";
 import "./service.scss"
 
 const Service = () => {
@@ -8,6 +10,7 @@ const Service = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -20,11 +23,13 @@ const Service = () => {
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
+
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
     };
+
   }, []);
 
   return (

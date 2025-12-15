@@ -19,6 +19,7 @@ const Catalog = ({ hide }) => {
   return (
     <div className="catalog">
       <div className="catalog__particles">
+
         {[...Array(20)].map((_, i) => (
           <div key={i} className="catalog__particle" style={{
             left: `${Math.random() * 100}%`,
@@ -26,9 +27,11 @@ const Catalog = ({ hide }) => {
             animationDuration: `${15 + Math.random() * 10}s`
           }}></div>
         ))}
+        
       </div>
 
       <div className="catalog__container container">
+
         {
           !hide
             ?
@@ -48,8 +51,8 @@ const Catalog = ({ hide }) => {
         }
 
         <div className="catalog__grid">
-          {CATALOG.map((el, index) => (
-            <NavLink key={el.id} to={`/singleCatalog/${10}`}>
+          {data?.map((el, index) => (
+            <NavLink key={el?.id} to={`/singleCatalog/${el?.id}`}>
               <div
                 className={`catalog__item ${isVisible ? 'animate' : ''} ${hoveredId === el.id ? 'active' : ''}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -61,7 +64,7 @@ const Catalog = ({ hide }) => {
                 </div>
                 <div className="catalog__item-image-wrap">
                   <img
-                    src={hoveredId === el.id ? el.secondImg : el.firstImg}
+                    src={hoveredId === el.id ? el.images[1] : el.images[0]}
                     alt={el.title}
                     className="catalog__item-image"
                   />
@@ -69,7 +72,7 @@ const Catalog = ({ hide }) => {
 
                 <div className="catalog__item-overlay">
                   <div className="catalog__item-content">
-                    <h3 className="catalog__item-title">{el.title}</h3>
+                    <h3 className="catalog__item-title">{el?.nameRu}</h3>
                     <div className="catalog__item-line"></div>
                   </div>
                 </div>

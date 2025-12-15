@@ -1,6 +1,7 @@
 .information {
   padding: 80px 0px;
-  background: url(../../assets/img/gpg.jpg);
+  // background: url(../../assets/img/gpg.jpg);
+  background: url(../../assets/img/inforbg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -14,6 +15,11 @@
 
   &__left {
     width: 80%;
+
+    @media (max-width:1580px) {
+      width: 100%;
+    }
+
     &-top {
       display: flex;
       align-items: start;
@@ -37,7 +43,7 @@
 
       &-desc {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 24px;
         font-weight: 500;
         color: rgb(255, 254, 254);
       }

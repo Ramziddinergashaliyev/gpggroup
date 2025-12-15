@@ -12,9 +12,9 @@ import company2 from "../../assets/img/certificat2.png"
 import company3 from "../../assets/img/company.png"
 
 import photo1 from "../../assets/img/service.png"
-import photo2 from "../../assets/img/service1.png"
+import photo2 from "../../assets/img/service1.webp"
 import photo3 from "../../assets/img/service2.png"
-import photo4 from "../../assets/img/service3.png"
+import photo4 from "../../assets/img/service.webp"
 import photo5 from "../../assets/img/service4.png"
 import photo6 from "../../assets/img/service5.png"
 
@@ -78,6 +78,7 @@ const Company = () => {
         </div>
 
         <p className="company-desc container">Компания GPG работает совместно с крупнейшей мировой компанией S-Oil Corporation, Южная Корея, входящей в пятерку мировых лидеров по производству смазочных материалов для всех видов легкомоторной и тяжелой автотехники.</p>
+
       </div>
 
       <div className="company-vision">
@@ -131,6 +132,7 @@ const Company = () => {
               <span>Base oil & Protection</span>
             </div>
           </div>
+          
         </div>
       </div>
 

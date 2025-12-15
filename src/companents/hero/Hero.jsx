@@ -247,21 +247,18 @@ import './hero.scss';
 
 const SLIDES = [
   {
-    // img: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920",
     img: img,
     title: "Лидер в области производства моторных масел в Узбекистане",
     desc: "Leading company in the production of motor oils, coolants and auto chemicals that meet world standards",
     tag: "INNOVATION"
   },
   {
-    // img: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=1920",
     img: img2,
     title: "Лидер в области производства моторных масел в Узбекистане",
     desc: "Leading company in the production of motor oils, coolants and auto chemicals that meet world standards",
     tag: "PARTNERSHIP"
   },
   {
-    // img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920",
     img: img3,
     title: "Лидер в области производства моторных масел в Узбекистане",
     desc: "Leading company in the production of motor oils, coolants and auto chemicals that meet world standards",
@@ -295,6 +292,7 @@ const Hero = () => {
   return (
     <div className="hero-ultra">
       <div className="hero-ultra__bg-wrapper">
+
         {SLIDES.map((slide, index) => (
           <div
             key={index}
@@ -302,6 +300,7 @@ const Hero = () => {
             style={{ backgroundImage: `url(${slide.img})` }}
           />
         ))}
+
         <div className="hero-ultra__overlay" />
       </div>
 
@@ -325,18 +324,6 @@ const Hero = () => {
           <p className="hero-ultra__text" key={`desc-${activeIndex}`}>
             {SLIDES[activeIndex].desc}
           </p>
-
-          {/* <div className="hero-ultra__buttons">
-            <button className="hero-ultra__btn hero-ultra__btn--fill">
-              <span>Product catalog</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2"/>
-              </svg>
-            </button>
-            <button className="hero-ultra__btn hero-ultra__btn--ghost">
-              About the company
-            </button>
-          </div> */}
         </div>
 
         <div className="hero-ultra__sidebar">
