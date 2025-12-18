@@ -400,11 +400,11 @@
     position: relative;
     opacity: 0;
     transform: translateY(30px);
-
+    
     &.fade-in-up {
       animation: fadeInUp 0.8s ease forwards;
     }
-
+    
     .service-top-text {
       font-size: 18px;
       line-height: 20px;
@@ -413,7 +413,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
-    
+      
     .service-top-title {
       font-size: 36px;
       line-height: 44px;
@@ -421,17 +421,16 @@
       margin: 0;
       color: rgb(152, 201, 54);
     }
-
   }
-
+  
   .service-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px 30px;
-
+    
     .service-bottom-item {
       opacity: 0;
-
+      
       &.fade-in-left {
         transform: translateX(-50px);
         animation: fadeInLeft 0.8s ease forwards;
@@ -441,7 +440,7 @@
         transform: translateX(50px);
         animation: fadeInRight 0.8s ease forwards;
       }
-      
+
     }
 
     .image-wrapper {

@@ -16,6 +16,7 @@ const Card = () => {
           <div className="card-box-icon">
             <img src={el?.icon} alt={el?.title} loading="lazy" />
           </div>
+          
           <div className="card-box-info">
             <h2 className="card-box-info-title">{el?.title}</h2>
             <p className="card-box-info-text">{el?.text}</p>

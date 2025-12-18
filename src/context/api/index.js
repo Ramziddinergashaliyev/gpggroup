@@ -27,7 +27,6 @@ const baseQuery = async (args, api, extraOptions) => {
 };
 
 const baseQueryWithRetry = retry(baseQuery, { maxRetries: 0 });
-
 export const api = createApi({
   reducerPath: "myApi",
   baseQuery: baseQueryWithRetry,
