@@ -56,7 +56,7 @@ const Information = () => {
 
         </div>
 
-        <div className="information__right animate__animated  animate__zoomIn"  data-aos="flip-right">
+        <div className="information__right animate__animated  animate__zoomIn" data-aos="flip-right">
 
           <div className="information__right__top">
             <h3 className="information__right__top-title">Компания в цифрах</h3>
@@ -67,14 +67,17 @@ const Information = () => {
               <h2 className="information__right-box-title">20 +</h2>
               <span>Лет опыта</span>
             </div>
+            
             <div className="information__right-box">
               <h2 className="information__right-box-title">100 +</h2>
               <span>Наименований позиций</span>
             </div>
+
             <div className="information__right-box">
               <h2 className="information__right-box-title">300 +</h2>
               <span>Специалистов</span>
             </div>
+
             <div className="information__right-box">
               <h2 className="information__right-box-title">70 %</h2>
               <span>Реализация продукции по Узбекистану</span>

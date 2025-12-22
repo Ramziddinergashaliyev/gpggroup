@@ -87,19 +87,6 @@
         transition: .4s;
       }
 
-      // &::before {
-      //   content: '';
-      //   position: absolute;
-      //   top: -10px;
-      //   left: -10px;
-      //   right: 10px;
-      //   bottom: 10px;
-      //   background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
-      //   border-radius: 20px;
-      //   z-index: -1;
-      //   animation: rotateGlow 10s linear infinite;
-      // }
-
       img {
         width: 100%;
         height: 450px;
@@ -280,6 +267,7 @@
             transition: all 0.3s ease;
             background: #fafafa;
             position: relative;
+            width: 100%;
 
             &::placeholder {
               color: #aaa;
@@ -410,7 +398,7 @@
   }
 
   &-maps {
-    padding: 10px 0px 80px;
+    padding: 10px 0px;
     animation: fadeInUp 1.2s ease-out;
     position: relative;
 
@@ -422,11 +410,146 @@
       transition: all 0.5s ease;
       animation: mapZoomIn 1s ease-out;
       margin-top: 30px;
+    }
 
-      &:hover {
-        box-shadow: 0 25px 70px rgba(71, 156, 210, 0.3);
-        transform: scale(1.01);
+    @media (max-width:500px) {
+      iframe {
+        height: 400px !important;
       }
+    }
+
+  }
+
+  @media (max-width:1150px) {
+    &-top-right {
+      height: 350px;
+
+      img {
+        height: 350px !important;
+      }
+    }
+    
+    &-top {
+      grid-gap: 20px;
+    }
+
+    &-form {
+      grid-template-columns: 1fr;
+    }
+
+    &-form-right {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width:800px) {
+    &-top {
+      grid-template-columns: 1fr;
+    }
+
+    &-top-right {
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  @media (max-width:550px) {
+    &-form {
+      padding: 30px 0px;
+      gap: 20px;
+    }
+
+    &-form-right {
+      gap: 10px;
+    }
+
+    &-form-left-item-top {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+
+    &-form-left-item {
+      grid-gap: 10px;
+    }
+
+    &-form-left {
+      padding: 15px !important;
+    }
+  }
+
+  @media (max-width:450px) {
+    &-top-right {
+      width: 300px;
+      height: 250px !important;
+
+      img {
+        width: 300px;
+        height: 250px !important;
+      }
+    }
+
+    &-top-left-title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &-top-left-text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-top {
+      padding: 40px 0px;
+    }
+  }
+
+  @media (max-width:400px) {
+    &-form-right-item {
+      padding: 10px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &-form-left-item-top {
+      input {
+        padding: 10px;
+      }
+    }
+
+    &-form-left-item-bottom {
+      gap: 10px;
+      textarea {
+        height: 80px;
+      }
+    }
+
+    &-form-left-item-bottom-btn {
+      padding: 10px 30px;
+    }
+
+    &-form-left-title {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width:350px) {
+    &-top-right {
+      width: 280px;
+      height: 200px !important;
+
+      img {
+        width: 280px;
+        height: 200px !important;
+      }
+    }
+
+    &-top-left-text {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }
@@ -624,77 +747,5 @@
   to {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-@media (max-width: 1024px) {
-  .contact {
-    &-top {
-      grid-gap: 40px;
-      padding: 60px 0;
-    }
-
-    &-form {
-      grid-template-columns: 300px 1fr;
-      gap: 40px;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .contact {
-    &-top {
-      grid-template-columns: 1fr;
-      padding: 50px 0;
-
-      &-left-title {
-        font-size: 36px;
-        line-height: 46px;
-      }
-    }
-
-    &-form {
-      grid-template-columns: 1fr;
-      padding: 50px 0;
-      gap: 40px;
-
-      &-left {
-        order: 2;
-      }
-
-      &-right {
-        order: 1;
-      }
-    }
-
-    &-maps {
-      padding: 50px 0;
-
-      iframe {
-        height: 350px;
-      }
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .contact {
-    &-form {
-      &-left {
-        padding: 40px 25px;
-
-        &-title {
-          font-size: 28px;
-        }
-
-        &-item-top {
-          grid-template-columns: 1fr;
-        }
-      }
-    }
-
-    &-maps iframe {
-      height: 300px;
-    }
   }
 }

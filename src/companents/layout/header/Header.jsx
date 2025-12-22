@@ -7,14 +7,17 @@ import img1 from "../../../assets/img/ru.svg";
 import img2 from "../../../assets/img/en.svg";
 import { IoMdClose } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useGetCategorysQuery } from "../../../context/api/categoryApi";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hide, setHide] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState('English');
-
   const languages = ['English', 'Русский'];
+  const { data } = useGetCategorysQuery();
+  console.log(data);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,34 +53,16 @@ const Header = () => {
                 <NavLink to={"/catalog-item"} className="header__nav__link">
                   Каталог
                 </NavLink>
-
                 <ul className="header__nav__category">
-                  <li className="header__nav__category-list">Антифриз</li>
-
-                  <li className="header__nav__category-list">
-                    Моторные масла для легковой и легкой коммерческой техники
-                  </li>
-
-                  <li className="header__nav__category-list">
-                    Моторные масла для дизельных двигателей
-                  </li>
-
-                  <li className="header__nav__category-list">
-                    Тормозная жидкость
-                  </li>
-
-                  <li className="header__nav__category-list">
-                    Трансмиссионные масла
-                  </li>
-
-                  <li className="header__nav__category-list">
-                    Гидравлические масла
-                  </li>
-
-                  <li className="header__nav__category-list">Стеклоомыватели</li>
-
-                  <li className="header__nav__category-list">Теплоносители</li>
-
+                  {
+                    data?.map(el => (
+                      <li key={el?.id} className="header__nav__category-list">
+                        <NavLink to={`/singleCatalog/${el?.id}`}>
+                          {el?.nameRu}
+                        </NavLink>
+                      </li>
+                    ))
+                  }
                 </ul>
               </li>
 
@@ -154,10 +139,10 @@ const Header = () => {
       </div>
       {
         hide
-        ?
-        <div onClick={() => setHide(false)} className="header__overlay"></div>
-        :
-        <></>
+          ?
+          <div onClick={() => setHide(false)} className="header__overlay"></div>
+          :
+          <></>
       }
     </header>
   );

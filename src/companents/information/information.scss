@@ -106,6 +106,7 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 15px;
+    transition: .6s;
 
     &__top {
       padding: 10px 0px;
@@ -140,6 +141,11 @@
         font-size: 16px;
         color: rgb(218, 217, 217);
       }
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 20px white;
+      transform: scale(1.02);
     }
   }
 

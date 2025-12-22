@@ -724,7 +724,7 @@
       }
     }
   }
-  
+
   &__container {
     position: relative;
     padding: 15px 0px;
@@ -737,7 +737,7 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  
+
     &.animate {
       opacity: 1;
       transform: translateY(0);
@@ -801,7 +801,7 @@
 
   &__card {
     position: relative;
-    height: 220px;
+    height: 280px;
     border-radius: 0;
     overflow: hidden;
     cursor: pointer;
@@ -811,6 +811,8 @@
     background: #000;
     border-radius: 0px 7px 0px 0px;
     z-index: 100;
+
+
 
     clip-path: polygon(8% 0%,
         100% 0%,
@@ -913,6 +915,12 @@
       text-transform: uppercase;
       display: block;
       transition: color 0.3s ease;
+    }
+  }
+
+  @media (max-width:1580px) {
+    &__card {
+      height: 220px;
     }
   }
 
@@ -1085,10 +1093,10 @@
     }
 
     &-text {
-     padding-bottom: 10px;
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 20px;
+      padding-bottom: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
     }
 
     &-top-title {
@@ -1176,9 +1184,9 @@
     }
 
     &__card-title {
-       font-size: 10px;
-       font-weight: 400;
-       line-height: 16px;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 16px;
     }
   }
 }

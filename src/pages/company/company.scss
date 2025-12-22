@@ -1,5 +1,5 @@
 .company {
-  padding-top: 85px;
+  padding: 85px 0px;
 
   &-bg {
     display: flex;
@@ -124,7 +124,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 50px 0px;
+    padding: 50px 0px 100px;
     position: relative;
 
     &::before {
