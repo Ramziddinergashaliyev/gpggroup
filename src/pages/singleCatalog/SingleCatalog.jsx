@@ -106,6 +106,8 @@ const SingleCatalog = () => {
     const { id } = useParams()
 
     const { data: brands } = useGetCategoryByIdQuery(id)
+    console.log(brands);
+    
 
     const handleBrandClick = (el) => {
         setData(el)
@@ -132,8 +134,10 @@ const SingleCatalog = () => {
 
             <div className="singleCatalog-top">
                 <div className="singleCatalog-top-info container">
-                    <button className="singleCatalog-top-info-btn"><FaArrowLeft />Категории</button>
-                    <p className="singleCatalog-top-info-title">Антифриз</p>
+                    <NavLink to="/catalog-item">
+                        <button className="singleCatalog-top-info-btn"><FaArrowLeft />Категории</button>
+                    </NavLink>
+                    <p className="singleCatalog-top-info-title">{brands?.nameRu}</p>
                 </div>
             </div>
 
@@ -171,7 +175,7 @@ const SingleCatalog = () => {
                             currentProducts?.map(el => (
                                 <div key={el?.id} className="singleCatalog-result-right-card">
 
-                                    <NavLink to={'/singleProduct/10'}>
+                                    <NavLink to={`/singleProduct/${el?.id}`}>
                                         <div className="singleCatalog-result-right-card-imgs">
                                             <img src={el?.images[1] ? el?.images[1] : el?.images[0]} alt="singleCatalog-imgs" />
                                         </div>

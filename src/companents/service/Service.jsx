@@ -40,6 +40,7 @@ const Service = () => {
         <div className="service-top-line"></div>
       </div>
       <div className="service-bottom">
+
         <div className={`service-bottom-item ${isVisible ? 'fade-in-left' : ''}`} style={{ animationDelay: '0.2s' }}>
           <div className="image-wrapper">
             <img 
@@ -73,6 +74,7 @@ const Service = () => {
             <div className="image-overlay"></div>
           </div>
         </div>
+        
       </div>
     </div>
   );

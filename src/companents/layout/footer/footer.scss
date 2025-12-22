@@ -4,16 +4,16 @@
   }
 
   &-img {
-    margin-bottom: -4px; 
-    
+    margin-bottom: -4px;
+
     img {
       width: 100%;
       height: 450px;
       object-fit: cover;
-      display: block; 
+      display: block;
     }
   }
-  
+
   &-info {
     display: grid;
     grid-template-columns: 180px 1fr 1fr 1fr;
@@ -44,21 +44,21 @@
         color: #eee;
         gap: 5px;
       }
-      
+
       &-address {
         display: flex;
         flex-direction: column;
         color: #eee;
         gap: 5px;
       }
-      
+
       &-email {
         display: flex;
         flex-direction: column;
         color: #eee;
         gap: 5px;
       }
-      
+
       &-span {
         font-size: 14px;
         font-weight: 400;
@@ -70,13 +70,13 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
-      
+
       input {
         padding: 8px;
         border: 1px solid white;
         outline: none;
       }
-      
+
       &-btn {
         padding: 8px;
         font-size: 14px;
@@ -85,6 +85,36 @@
         border: none;
         border-radius: 2px;
       }
+    }
+  }
+
+  @media (max-width:1050px) {
+    &-info {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+    }
+  }
+
+  @media (max-width:500px) {
+    &-info {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+
+    &-img img {
+      height: 300px;
+    }
+
+    &-info-item-title {
+      padding-bottom: 0px;
+    }
+
+    &-info-item {
+      gap: 5px;
+    }
+
+    &-info-item-form {
+      padding-top: 10px;
     }
   }
 }

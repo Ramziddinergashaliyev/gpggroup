@@ -1,6 +1,5 @@
 .information {
   padding: 80px 0px;
-  // background: url(../../assets/img/gpg.jpg);
   background: url(../../assets/img/inforbg.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,7 +207,8 @@
     }
 
     &__left-bottom-desc {
-      font-size: 13px;
+      font-size: 14px;
+      line-height: 22px;
     }
 
     &__left-top {

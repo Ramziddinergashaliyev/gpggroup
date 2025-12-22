@@ -13,6 +13,7 @@ const Lube = () => {
 
     return (
         <div className='lube'>
+
             <div className="lube-bg-lines">
                 <div className="line line-1"></div>
                 <div className="line line-2"></div>
@@ -39,6 +40,7 @@ const Lube = () => {
 
                 <div className="lube-benefits">
                     <div className="benefits-grid">
+                        
                         <div className="benefit-card benefit-1">
                             <div className="benefit-content">
                                 <p className="benefit-text">
@@ -47,6 +49,7 @@ const Lube = () => {
                                 </p>
                             </div>
                         </div>
+
                         <div className="benefit-card benefit-2">
                             <div className="benefit-content">
                                 <p className="benefit-text">
@@ -55,6 +58,7 @@ const Lube = () => {
                                 </p>
                             </div>
                         </div>
+
                         <div className="benefit-card benefit-3">
                             <div className="benefit-content">
                                 <p className="benefit-text">
@@ -63,6 +67,7 @@ const Lube = () => {
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

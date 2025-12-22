@@ -1,3 +1,69 @@
+// .singleProduct {
+//     padding-top: 125px;
+
+//     &-top {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-gap: 40px;
+
+//         &-left {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 20px;
+
+//             &-big {
+//                 background-color: #aaa1;
+//                 border-radius: 6px;
+//                 padding: 40px;
+//                 img {
+//                     width: 100%;
+//                     height: 400px;
+//                     object-fit: contain;
+//                 }
+
+//             }
+
+//             &-small {
+//                 display: grid;
+//                 grid-template-columns: repeat(4,1fr);
+//                 gap: 20px;
+
+//                 img {
+//                     padding: 10px;
+//                     width: 100%;
+//                     height: 100px;
+//                     object-fit: contain;
+//                     background-color: #aaa1;
+//                     border: 1px solid rgb(71, 156, 210);
+//                     border-radius: 6px;
+//                 }
+//             }
+//         }
+
+//         &-right {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-start;
+
+//             &-title {
+//                 font-size: 32px;
+//                 font-weight: 400;
+//                 color: #444;
+//                 padding-bottom: 10px;
+//             }
+
+//             &-text {
+//                 font-size: 16px;
+//                 font-weight: 400;
+//                 color: #444;
+//                 line-height: 26px;
+//             }
+//         }
+//     }
+
+
+// }
+
 .singleProduct {
     padding-top: 125px;
 
@@ -12,20 +78,30 @@
             gap: 20px;
 
             &-big {
-                    width: 100%;
-                    height: 450px;
-                    background-color: #aaa2;
-            }
-
-            &-small {
-                display: flex;
-                align-items: center;
-                gap: 20px;
+                background-color: #aaa1;
+                border-radius: 6px;
+                padding: 40px;
 
                 img {
                     width: 100%;
-                    height: 120px;
-                    background-color: #aaa2;
+                    height: 400px;
+                    object-fit: contain;
+                }
+            }
+
+            &-small {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+
+                img {
+                    padding: 10px;
+                    width: 100%;
+                    height: 100px;
+                    object-fit: contain;
+                    background-color: #aaa1;
+                    border: 1px solid rgb(71, 156, 210);
+                    border-radius: 6px;
                 }
             }
         }
@@ -47,6 +123,88 @@
                 font-weight: 400;
                 color: #444;
                 line-height: 26px;
+            }
+        }
+    }
+
+    .single-table {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        &-top {
+            background-color: rgb(71, 156, 210);
+            padding: 20px 30px;
+            border-radius: 6px 6px 0 0;
+
+            &-title {
+                color: white;
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+
+        &-title {
+            background-color: #f5f5f5;
+            padding: 20px 30px;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(71, 156, 210);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+
+            thead {
+                tr {
+                    background-color: #f5f5f5;
+
+                    th {
+                        padding: 18px 30px;
+                        text-align: left;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #333;
+                        border: 1px solid #e0e0e0;
+
+                        &:first-child {
+                            width: 45%;
+                        }
+
+                        &:nth-child(2) {
+                            width: 25%;
+                        }
+
+                        &:last-child {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid #e0e0e0;
+
+                    &:hover {
+                        background-color: #fafafa;
+                    }
+
+                    td {
+                        padding: 18px 30px;
+                        font-size: 16px;
+                        color: #444;
+                        font-weight: 400;
+                        border: 1px solid #e0e0e0;
+
+                        &:first-child {
+                            font-weight: 500;
+                        }
+                    }
+                }
             }
         }
     }

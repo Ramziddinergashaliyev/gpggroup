@@ -1,8 +1,14 @@
 import React from 'react'
 import img from "../../../assets/img/footerbg.png"
 import "./footer.scss"
+import { useGetCategorysQuery } from '../../../context/api/categoryApi'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
+  const { data } = useGetCategorysQuery();
+  console.log(data);
+  
+
   return (
     <div className='footer'>
       <div className="footer-img">
@@ -21,13 +27,11 @@ const Footer = () => {
 
           <div className="footer-info-item">
             <h2 className='footer-info-item-title'>PRODUCTS</h2>
-            <p className="footer-info-item-text">Antifreeze</p>
-            <p className="footer-info-item-text">Motor oils for passenger cars and light commercial vehicles</p>
-            <p className="footer-info-item-text">Motor oils for diesel engines</p>
-            <p className="footer-info-item-text">Brake fluid</p>
-            <p className="footer-info-item-text">Hydraulic oils</p>
-            <p className="footer-info-item-text">Window washers</p>
-            <p className="footer-info-item-text">Coolers</p>
+            {
+              data?.map(el => (
+                <NavLink key={el?.id} to={`/singleCatalog/${el?.id}`} className="footer-info-item-text">{el?.nameRu}</NavLink>
+              ))
+            }
           </div>
         
           <div className="footer-info-item">

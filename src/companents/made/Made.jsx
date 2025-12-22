@@ -11,6 +11,7 @@ const Made = () => {
                     <h2 className="made-left-info-title">GPG <br /> Lubricants</h2>
                     <p className='made-left-info-text'>Made in Uzbekistan</p>
                 </div>
+
                 <button className='made-left-info-btn'>
                     Shop now
                     <span className="btn-arrow">→</span>
