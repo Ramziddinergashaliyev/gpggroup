@@ -44,20 +44,20 @@ const Header = () => {
             <ul className="header__nav__item">
 
               <li className="header__nav__list">
-                <NavLink to="/" className="header__nav__link">
+                <NavLink onClick={() => setHide(false)} to="/" className="header__nav__link">
                   Главная
                 </NavLink>
               </li>
 
               <li className="header__nav__list header__nav__list-category">
-                <NavLink to={"/catalog-item"} className="header__nav__link">
+                <NavLink onClick={() => setHide(false)} to={"/catalog-item"} className="header__nav__link">
                   Каталог
                 </NavLink>
                 <ul className="header__nav__category">
                   {
                     data?.map(el => (
                       <li key={el?.id} className="header__nav__category-list">
-                        <NavLink to={`/singleCatalog/${el?.id}`}>
+                        <NavLink onClick={() => setHide(false)} to={`/singleCatalog/${el?.id}`}>
                           {el?.nameRu}
                         </NavLink>
                       </li>
@@ -67,19 +67,19 @@ const Header = () => {
               </li>
 
               <li className="header__nav__list">
-                <NavLink to="/company" className="header__nav__link">
+                <NavLink onClick={() => setHide(false)} to="/company" className="header__nav__link">
                   О компании
                 </NavLink>
               </li>
 
               <li className="header__nav__list">
-                <NavLink to="/partner" className="header__nav__link">
+                <NavLink onClick={() => setHide(false)} to="/partner" className="header__nav__link">
                   Партнеры
                 </NavLink>
               </li>
 
               <li className="header__nav__list">
-                <NavLink to="/contact" className="header__nav__link">
+                <NavLink onClick={() => setHide(false)} to="/contact" className="header__nav__link">
                   Контакты
                 </NavLink>
               </li>

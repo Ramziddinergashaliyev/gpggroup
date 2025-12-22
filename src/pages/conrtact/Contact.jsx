@@ -17,6 +17,7 @@ const Contact = () => {
             <h3 className="contact-top-left-title">Let’s Talk</h3>
             <p className='contact-top-left-text'>Whether you're exploring a new market, validating a strategy, or seeking tailored research support, our team is here to assist. Connect with our experts; we’re just a message away.</p>
           </div>
+
           <div className="contact-top-right">
             <img src={img} alt="contact-img" />
           </div>
@@ -32,7 +33,7 @@ const Contact = () => {
           <div className="contact-form-right-item">
             <h2>Phone Number</h2>
             <p>+998 71 281 49 30</p>
-            <p>+998 71 281 49 30</p>
+            <p>+998 71 281 49 30</p> 
           </div>
           <div className="contact-form-right-item">
             <h2>Address</h2>
@@ -55,6 +56,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
+
       </div>
 
       <div className="contact-maps">

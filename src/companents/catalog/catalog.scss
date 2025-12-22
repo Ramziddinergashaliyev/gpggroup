@@ -799,6 +799,8 @@
     color: inherit;
   }
 
+  &
+
   &__card {
     position: relative;
     height: 260px;
@@ -811,8 +813,6 @@
     background: #000;
     border-radius: 0px 7px 0px 0px;
     z-index: 100;
-
-
 
     clip-path: polygon(8% 0%,
         100% 0%,
