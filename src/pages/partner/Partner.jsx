@@ -20,7 +20,6 @@ const Partner = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formData);
     setFormData(initialState)
   }
 
@@ -38,6 +37,7 @@ const Partner = () => {
             <p className="partner-top-left-text">We believe in the power of collaboration to drive innovation and success. Our Partner Program is designed to build strong, mutually beneficial collaborations that enhance market intelligence capabilities and deliver exceptional value to clients worldwide.</p>
             <button onClick={() => setHide(true)} className="partner-top-left-btn">Become a Partner</button>
           </div>
+
           <div className="partner-top-right">
             <img src={img} alt="partner-img" className="partner-top-right-img" />
           </div>
@@ -62,7 +62,6 @@ const Partner = () => {
       }
 
       <div className="partner__bottom container">
-
         <p className="partner__bottom-desc">
           Компания Global Petrochemical Group в течении нескольких лет является
           главным поставщиком таких компании как:
@@ -76,24 +75,27 @@ const Partner = () => {
             </div>
           ))}
         </div>
-
       </div>
 
       <div className="partner-bg">
+
         <div className="partner-bg-container container">
           <div className="partner-bg-left">
             <span className="partner-bg-left-desc">AWARDS & ACCREDITATIONS</span>
             <h2 className="partner-bg-left-title">Recognized by Experts. Trusted by Leaders.</h2>
             <p className="partner-bg-left-text">A trusted intelligence partner to global decision-makers across 90+ countries.</p>
           </div>
+
           <div className="partner-bg-right"></div>
         </div>
+
       </div>
 
       <div className="partner-info container">
         <div className="partner-info-left">
           <img src={img1} alt="partner-img" className="partner-info-left-img" />
         </div>
+
         <div className="partner-info-right">
           <h2 className="partner-info-right-title">Unlocking Growth Together</h2>
           <p className="partner-info-right-text">As your strategic growth partner, we offer exclusive access to our proprietary research, deep industry insights, and collaborative opportunities to drive real impact. Partnering with us means working directly with publishers, ensuring high-quality, original data to fuel business growth and market expansion.</p>
@@ -101,10 +103,12 @@ const Partner = () => {
       </div>
 
       <div className="partner-drive">
+
         <div className="partner-drive-info container">
           <h2 className="partner-drive-info-title">Partner with Us and Drive Growth Together</h2>
           <NavLink to={"/contact"} className="partner-drive-info-btn">Contact Us</NavLink>
         </div>
+
       </div>
 
     </div>

@@ -18,7 +18,6 @@ const Header = () => {
   const { data } = useGetCategorysQuery();
   console.log(data);
 
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -91,14 +90,17 @@ const Header = () => {
               <button className="header__container__btns-en header__nav__list-hide">
                 <img src={img2} alt="EN" />
               </button>
+
             </ul>
 
             <button onClick={() => setHide(false)} className="header__nav__close">
               <IoMdClose />
             </button>
+
           </nav>
 
           <div className="language-selector">
+
             <button
               className={`select-button ${isScrolled ? "select-button-bg" : ""}`}
               onClick={() => setIsOpen(!isOpen)}
@@ -123,9 +125,11 @@ const Header = () => {
                 ))}
               </div>
             )}
+
           </div>
 
           <div className="header__nav__menu">
+
             <button
               style={{ color: isScrolled ? "black" : "white" }}
               onClick={() => setHide(true)}
@@ -133,10 +137,13 @@ const Header = () => {
             >
               <AiOutlineMenu />
             </button>
+
           </div>
+
         </div>
 
       </div>
+
       {
         hide
           ?
@@ -144,6 +151,7 @@ const Header = () => {
           :
           <></>
       }
+
     </header>
   );
 };
