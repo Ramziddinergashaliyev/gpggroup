@@ -188,7 +188,6 @@ const SingleCatalog = () => {
         scrollTo(0, 0)
     }
 
-    // Spinner component
     const Spinner = () => (
         <div style={{
             width: '40px',
@@ -326,4 +325,5 @@ const SingleCatalog = () => {
         </>
     )
 }
+
 export default SingleCatalog
