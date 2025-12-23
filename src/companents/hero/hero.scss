@@ -450,8 +450,8 @@
     }
 
     &__text {
-       font-size: 16px !important;
-       line-height: 24px !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
     }
 
     &__slide-label {
@@ -460,9 +460,9 @@
     }
 
     &__tag-wrapper {
-       display: none;
+      display: none;
     }
- 
+
     &__container {
       padding: 120px 0px;
     }
@@ -493,6 +493,7 @@
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -542,6 +543,7 @@
 }
 
 @keyframes scrollLine {
+
   0%,
   100% {
     transform: translateY(0);

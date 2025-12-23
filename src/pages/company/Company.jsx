@@ -21,8 +21,8 @@ import photo6 from "../../assets/img/service5.png"
 const Company = () => {
 
   useEffect(() => {
-    scrollTo(0,0)
-  },[])
+    scrollTo(0, 0)
+  }, [])
 
   return (
     <div className='company'>
@@ -63,7 +63,7 @@ const Company = () => {
           </div>
         </div>
 
-        {/* <div className="company-bottom-info container">
+        <div className="company-bottom-info container">
           <p className="company-bottom-info-text">В 2023 году в компании ООО "Global Petrochemical Group" была произведена полная замена оборудования в цехе полиэтиленовых материалов. Установлена оборудование с автоматической обрезкой облоя. На оборудованиях установлены новейшие системы МOOG, что позволяет контролировать равномерную толщину стенок тары.</p>
           <p className="company-bottom-info-text">Высокотехнологичные формы тары с автоматической обрезкой облоя и высокоэффективным охлаждением позволяют выпускать качественную тару. Установлены высокоскоростные автоматические линии розлива от Jiangsu Tom Intelligent Equipment Co. Ltd позволяющие производить розлив тары от 1 до 10 килограмма производительностью до 15 тон в час в каждой линии. Установлены линии розлива бочек скоростью налива 45 секунд и линии IBC кубовок.</p>
         </div>
@@ -75,13 +75,13 @@ const Company = () => {
           <img className='company-photos-img' src={photo4} alt="company-photo four" />
           <img className='company-photos-img' src={photo5} alt="company-photo fife" />
           <img className='company-photos-img' src={photo6} alt="company-photo six" />
-        </div> */}
+        </div>
 
-        {/* <p className="company-desc container">Компания GPG работает совместно с крупнейшей мировой компанией S-Oil Corporation, Южная Корея, входящей в пятерку мировых лидеров по производству смазочных материалов для всех видов легкомоторной и тяжелой автотехники.</p> */}
+        <p className="company-desc container">Компания GPG работает совместно с крупнейшей мировой компанией S-Oil Corporation, Южная Корея, входящей в пятерку мировых лидеров по производству смазочных материалов для всех видов легкомоторной и тяжелой автотехники.</p>
 
       </div>
 
-      {/* <div className="company-vision">
+      <div className="company-vision">
         <div className="container company-vision-container">
 
           <div className="company-vision-top">
@@ -134,7 +134,7 @@ const Company = () => {
           </div>
           
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }

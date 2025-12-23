@@ -72,6 +72,7 @@ const Hero = () => {
 
       <div className="hero-ultra__container container">
         <div className="hero-ultra__content">
+
           <div className="hero-ultra__tag-wrapper">
             <span className="hero-ultra__tag">{SLIDES[activeIndex].tag}</span>
             <div className="hero-ultra__tag-line" />
@@ -96,7 +97,7 @@ const Hero = () => {
               >
                 <div className="hero-ultra__slide-num">0{index + 1}</div>
                 <div className="hero-ultra__slide-bar">
-                  <div 
+                  <div
                     className="hero-ultra__slide-progress"
                     style={{ width: index === activeIndex ? `${progress}%` : '0%' }}
                   />
