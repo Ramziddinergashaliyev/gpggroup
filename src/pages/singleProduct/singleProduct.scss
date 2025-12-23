@@ -1,177 +1,47 @@
-// .singleProduct {
-//     padding-top: 125px;
-
-//     &-top {
-//         display: grid;
-//         grid-template-columns: repeat(2, 1fr);
-//         grid-gap: 40px;
-
-//         &-left {
-//             display: flex;
-//             flex-direction: column;
-//             gap: 20px;
-
-//             &-big {
-//                 background-color: #aaa1;
-//                 border-radius: 6px;
-//                 padding: 40px;
-
-//                 img {
-//                     width: 100%;
-//                     height: 400px;
-//                     object-fit: contain;
-//                 }
-//             }
-
-//             &-small {
-//                 display: grid;
-//                 grid-template-columns: repeat(4, 1fr);
-//                 gap: 20px;
-
-//                 img {
-//                     padding: 10px;
-//                     width: 100%;
-//                     height: 100px;
-//                     object-fit: contain;
-//                     background-color: #aaa1;
-//                     border: 1px solid #aaa3;
-//                     border-radius: 6px;
-//                 }
-//             }
-//         }
-
-//         &-right {
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-start;
-
-//             &-title {
-//                 font-size: 32px;
-//                 font-weight: 400;
-//                 color: #444;
-//                 padding-bottom: 10px;
-//             }
-
-//             &-text {
-//                 font-size: 16px;
-//                 font-weight: 400;
-//                 color: #444;
-//                 line-height: 26px;
-//             }
-//         }
-//     }
-
-//     &-small-image {
-//         transition: all 0.3s ease;
-//         border: 1px solid transparent;
-//         border-radius: 8px;
-//         overflow: hidden;
-
-//         &:hover {
-//             border-color: #3498db;
-//             opacity: 0.8;
-//         }
-
-//         &.active {
-//             border-color: #3498db;
-//             box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
-//             transform: scale(1.05);
-//         }
-//     }
-
-//     .single-table {
-//         margin-top: 60px;
-//         margin-bottom: 60px;
-
-//         &-top {
-//             background-color: rgb(71, 156, 210);
-//             padding: 20px 30px;
-//             border-radius: 6px 6px 0 0;
-
-//             &-title {
-//                 color: white;
-//                 font-size: 18px;
-//                 font-weight: 400;
-//                 margin: 0;
-//             }
-//         }
-
-//         &-title {
-//             background-color: #f5f5f5;
-//             padding: 20px 30px;
-//             margin: 0;
-//             font-size: 18px;
-//             font-weight: 500;
-//             color: rgb(71, 156, 210);
-//         }
-
-//         table {
-//             width: 100%;
-//             border-collapse: collapse;
-//             background-color: white;
-
-//             thead {
-//                 tr {
-//                     background-color: #f5f5f5;
-
-//                     th {
-//                         padding: 18px 30px;
-//                         text-align: left;
-//                         font-size: 16px;
-//                         font-weight: 700;
-//                         color: #333;
-//                         border: 1px solid #e0e0e0;
-
-//                         &:first-child {
-//                             width: 45%;
-//                         }
-
-//                         &:nth-child(2) {
-//                             width: 25%;
-//                         }
-
-//                         &:last-child {
-//                             width: 30%;
-//                         }
-//                     }
-//                 }
-//             }
-
-//             tbody {
-                
-//                 tr {
-//                     border-bottom: 1px solid #e0e0e0;
-
-//                     &:hover {
-//                         background-color: #fafafa;
-//                     }
-
-//                     td {
-//                         padding: 18px 30px;
-//                         font-size: 16px;
-//                         color: #444;
-//                         font-weight: 400;
-//                         border: 1px solid #e0e0e0;
-
-//                         &:first-child {
-//                             font-weight: 500;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-
-// }
-
 .singleProduct {
-    padding-top: 125px;
+    
+    &-bg {
+        background: url("../../assets/bg/catalogProduct.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
 
+        &-text {
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+            padding-top: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            cursor: pointer;
+            transition: .6s;
+
+            svg {
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+            }
+
+            &:hover {
+                letter-spacing: .5px;
+                gap: 12px;
+            }
+        }
+    }
+    
     &-top {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
+        padding-top: 55px;
 
         &-left {
             display: flex;
@@ -329,73 +199,44 @@
         }
     }
 
-    // Swiper Styles
     .single-cards {
-        margin-top: 60px;
-        margin-bottom: 60px;
-        padding: 40px 0;
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px 0px;  
+        scroll-behavior: smooth;
 
-        .mySwiper {
-            padding: 20px 0px;
-            
-            .swiper-slide {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
 
-            .swiper-button-next,
-            .swiper-button-prev {
-                color: rgb(71, 156, 210);
-                background-color: white;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease;
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
 
-                &:after {
-                    font-size: 20px;
-                    font-weight: bold;
-                }
+        &::-webkit-scrollbar-thumb {
+            background: rgb(71, 156, 210);
+            border-radius: 10px;
+        }
 
-                &:hover {
-                    background-color: rgb(71, 156, 210);
-                    color: white;
-                    transform: scale(1.1);
-                }
-            }
-
-            .swiper-pagination {
-                bottom: -10px;
-
-                .swiper-pagination-bullet {
-                    width: 12px;
-                    height: 12px;
-                    background-color: #ccc;
-                    opacity: 1;
-                    transition: all 0.3s ease;
-
-                    &-active {
-                        background-color: rgb(71, 156, 210);
-                        width: 30px;
-                        border-radius: 6px;
-                    }
-                }
-            }
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgb(51, 136, 190);
         }
 
         .single-card {
+            min-width: 23.5%;
+            flex-shrink: 0;
             background-color: white;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             cursor: pointer;
+            border: 1px solid #aaa5;
 
             &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                transform: translateY(-1px);
+                box-shadow: 1px 1px 10px rgba(150, 150, 150, 0.15);
             }
 
             &-img {
@@ -430,12 +271,11 @@
     }
 }
 
-// Responsive styles
 @media (max-width: 1024px) {
     .singleProduct {
         .single-cards {
-            .mySwiper {
-                padding: 20px 50px;
+            .single-card {
+                min-width: 250px;
             }
         }
     }
@@ -448,11 +288,9 @@
         }
 
         .single-cards {
-            .mySwiper {
-                padding: 20px 40px;
-            }
-
             .single-card {
+                min-width: 220px;
+
                 &-img {
                     height: 250px;
                 }
