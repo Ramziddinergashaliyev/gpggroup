@@ -2,6 +2,7 @@ import img1 from "../assets/icon/part1.png"
 import img2 from "../assets/icon/part2.png"
 import img3 from "../assets/icon/part3.png"
 import img4 from "../assets/icon/part4.png"
+import img5 from "../assets/icon/part5.jpg"
 
 import winn from "../assets/img/lube1.png"
 
@@ -91,6 +92,11 @@ export const PARTNER = [
     id: 4,
     icon: img4,
     title: "Навоийский горно-металлургический комбинат",
+  },
+  {
+    id: 5,
+    icon: img5,
+    title: "УзАвто Моторс",
   },
 ]
 
