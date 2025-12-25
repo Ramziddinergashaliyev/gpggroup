@@ -18,6 +18,7 @@ const Header = () => {
   const { data } = useGetCategorysQuery();
   console.log(data);
 
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -43,20 +44,20 @@ const Header = () => {
             <ul className="header__nav__item">
 
               <li className="header__nav__list">
-                <NavLink onClick={() => setHide(false)} to="/" className="header__nav__link">
+                <NavLink to="/" className="header__nav__link">
                   Главная
                 </NavLink>
               </li>
 
               <li className="header__nav__list header__nav__list-category">
-                <NavLink onClick={() => setHide(false)} to={"/catalog-item"} className="header__nav__link">
+                <NavLink to={"/catalog-item"} className="header__nav__link">
                   Каталог
                 </NavLink>
                 <ul className="header__nav__category">
                   {
                     data?.map(el => (
                       <li key={el?.id} className="header__nav__category-list">
-                        <NavLink onClick={() => setHide(false)} to={`/singleCatalog/${el?.id}`}>
+                        <NavLink to={`/singleCatalog/${el?.id}`}>
                           {el?.nameRu}
                         </NavLink>
                       </li>
@@ -66,19 +67,19 @@ const Header = () => {
               </li>
 
               <li className="header__nav__list">
-                <NavLink onClick={() => setHide(false)} to="/company" className="header__nav__link">
+                <NavLink to="/company" className="header__nav__link">
                   О компании
                 </NavLink>
               </li>
 
               <li className="header__nav__list">
-                <NavLink onClick={() => setHide(false)} to="/partner" className="header__nav__link">
+                <NavLink to="/partner" className="header__nav__link">
                   Партнеры
                 </NavLink>
               </li>
 
               <li className="header__nav__list">
-                <NavLink onClick={() => setHide(false)} to="/contact" className="header__nav__link">
+                <NavLink to="/contact" className="header__nav__link">
                   Контакты
                 </NavLink>
               </li>
@@ -90,17 +91,14 @@ const Header = () => {
               <button className="header__container__btns-en header__nav__list-hide">
                 <img src={img2} alt="EN" />
               </button>
-
             </ul>
 
             <button onClick={() => setHide(false)} className="header__nav__close">
               <IoMdClose />
             </button>
-
           </nav>
 
           <div className="language-selector">
-
             <button
               className={`select-button ${isScrolled ? "select-button-bg" : ""}`}
               onClick={() => setIsOpen(!isOpen)}
@@ -125,11 +123,9 @@ const Header = () => {
                 ))}
               </div>
             )}
-
           </div>
 
           <div className="header__nav__menu">
-
             <button
               style={{ color: isScrolled ? "black" : "white" }}
               onClick={() => setHide(true)}
@@ -137,13 +133,10 @@ const Header = () => {
             >
               <AiOutlineMenu />
             </button>
-
           </div>
-
         </div>
 
       </div>
-
       {
         hide
           ?
@@ -151,9 +144,136 @@ const Header = () => {
           :
           <></>
       }
-
     </header>
   );
 };
 
 export default Header;
+
+
+// import React, { useState } from 'react'
+// import { NavLink } from 'react-router-dom'
+// import { FiSearch } from 'react-icons/fi'
+// import { GrLanguage } from 'react-icons/gr'
+// import { ChevronDown } from 'lucide-react'
+// import black from "../../../assets/img/icons.png";
+// import './header.scss'
+
+// const Header = () => {
+//   const [showCategories, setShowCategories] = useState(false)
+
+//   const categories = [
+//     { id: 1, name: 'Электроника', link: '/category/electronics' },
+//     { id: 2, name: 'Одежда', link: '/category/clothing' },
+//     { id: 3, name: 'Мебель', link: '/category/furniture' },
+//     { id: 4, name: 'Спорт', link: '/category/sports' },
+//     { id: 5, name: 'Книги', link: '/category/books' },
+//   ]
+
+//   return (
+//     <div className='header'>
+//       <nav className="header-nav container">
+//         <div className="header-nav-icons">
+//           <img src={black} alt="header-logo" />
+//         </div>
+//         <ul className="header-nav-item">
+//           <li className="header-nav-list">
+//             <NavLink className={"header-nav-item-link"} to="/products">
+//               Главная
+//             </NavLink>
+//           </li>
+//           <li 
+//             className="header-nav-list header-nav-list-dropdown"
+//             onMouseEnter={() => setShowCategories(true)}
+//             onMouseLeave={() => setShowCategories(false)}
+//           >
+//             <NavLink className={"header-nav-item-link"} to="/services">
+//               Каталог
+//               <ChevronDown className={`dropdown-icon ${showCategories ? 'rotate' : ''}`} />
+//             </NavLink>
+//             <div className={`dropdown-menu ${showCategories ? 'show' : ''}`}>
+//               <ul className="dropdown-list">
+//                 {categories.map((category) => (
+//                   <li key={category.id} className="dropdown-item">
+//                     <NavLink to={category.link} className="dropdown-link">
+//                       {category.name}
+//                     </NavLink>
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           </li>
+//           <li className="header-nav-list">
+//             <NavLink className={"header-nav-item-link"} to="/company">
+//               О компании
+//             </NavLink>
+//           </li>
+//           <li className="header-nav-list">
+//             <NavLink className={"header-nav-item-link"} to="/contact">
+//               Партнеры
+//             </NavLink>
+//           </li>
+//         </ul>
+//         <div className="header-nav-logos">
+//           <FiSearch />
+//           <div className="header-nav-logos-lenguage">
+//             <GrLanguage />
+//             <select name="language" id="language-select">
+//               <option value="Pусский">Pусский</option>
+//               <option value="English">English</option>
+//             </select>
+//           </div>
+//         </div>
+//       </nav>
+//     </div>
+//   )
+// }
+
+// export default Header
+
+
+// import React from 'react'
+// import img from "../../../assets/img/icons.png"
+// import { NavLink } from 'react-router-dom'
+// import { FiSearch } from 'react-icons/fi'
+
+// import "./header.scss"
+// import { GrLanguage } from 'react-icons/gr'
+
+// const Header = () => {
+//   return (
+//     <div className='header'>
+//       <nav className="header-nav container">
+//         <div className="header-nav-icons">
+//           <img src={img} alt="header-logo" />
+//         </div>
+//         <ul className="header-nav-item">
+//           <li className="header-nav-list">
+//             <NavLink className={"header-nav-item-link"} to="/products">Главная</NavLink>
+//           </li>
+//           <li className="header-nav-list">
+//             <NavLink className={"header-nav-item-link"} to="/services">Каталог</NavLink>
+//           </li>
+//           <li className="header-nav-list">
+//             <NavLink className={"header-nav-item-link"} to="/company">О компании</NavLink>
+//           </li>
+//           <li className="header-nav-list">
+//             <NavLink className={"header-nav-item-link"} to="/contact">Партнеры</NavLink>
+//           </li>
+//         </ul>
+//         <div className="header-nav-logos">
+//           <FiSearch />
+//           <div className="header-nav-logos-lenguage">
+//             <GrLanguage />
+//             <select name="language" id="language-select">
+//               <option value="Pусский">Pусский</option>
+//               <option value="English">English</option>
+//             </select>
+//           </div>
+//         </div>
+//       </nav>
+//     </div>
+//   )
+// }
+
+// export default Header

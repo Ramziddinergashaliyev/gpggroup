@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 // import img from "../../assets/img/hBg.jpg"
 import img from "../../assets/hero/new.webp"
-import img2 from "../../assets/img/hero-bg.jpg"
+// import img2 from "../../assets/img/hero-bg.jpg"
+import img2 from "../../assets/bg/gpg.jpg"
 import img3 from "../../assets/img/info.jpg"
 import './hero.scss';
 
