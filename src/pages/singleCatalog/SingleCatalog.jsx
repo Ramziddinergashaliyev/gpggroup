@@ -209,7 +209,7 @@ const SingleCatalog = () => {
                     }
                 `}
             </style>
-            
+
             <div className='singleCatalog'>
                 <div className="singleCatalog-top">
                     <div className="singleCatalog-top-info container">
@@ -267,11 +267,11 @@ const SingleCatalog = () => {
                                                         <Spinner />
                                                     </div>
                                                 )}
-                                                <img 
-                                                    src={el?.images[1] ? el?.images[1] : el?.images[0]} 
+                                                <img
+                                                    src={el?.images[1] ? el?.images[1] : el?.images[0]}
                                                     alt="singleCatalog-imgs"
                                                     onLoad={() => handleImageLoad(el?.id)}
-                                                    style={{ 
+                                                    style={{
                                                         opacity: imageLoading[el?.id] ? 0 : 1,
                                                         transition: 'opacity 0.3s ease-in-out'
                                                     }}
@@ -281,7 +281,9 @@ const SingleCatalog = () => {
 
                                         <div className="singleCatalog-result-right-card-info">
                                             <h3 className="singleCatalog-result-right-card-info-title">{el?.nameEn}</h3>
-                                            <button className='singleCatalog-result-right-card-info-btn'>Learn more</button>
+                                            <NavLink to={`/singleProduct/${el?.id}`}>
+                                                <button className='singleCatalog-result-right-card-info-btn'>Learn more</button>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 ))
