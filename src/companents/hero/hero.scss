@@ -1,9 +1,13 @@
 .hero-ultra {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 850px;
   overflow: hidden;
   background: #0a0e27;
+
+  @media (max-width:1590px) {
+    height: 700px;
+  }
 
   &__bg-wrapper {
     position: absolute;

@@ -150,7 +150,6 @@ const Header = () => {
 
 export default Header;
 
-
 // import React, { useState } from 'react'
 // import { NavLink } from 'react-router-dom'
 // import { FiSearch } from 'react-icons/fi'
@@ -212,53 +211,6 @@ export default Header;
 //             <NavLink className={"header-nav-item-link"} to="/contact">
 //               Партнеры
 //             </NavLink>
-//           </li>
-//         </ul>
-//         <div className="header-nav-logos">
-//           <FiSearch />
-//           <div className="header-nav-logos-lenguage">
-//             <GrLanguage />
-//             <select name="language" id="language-select">
-//               <option value="Pусский">Pусский</option>
-//               <option value="English">English</option>
-//             </select>
-//           </div>
-//         </div>
-//       </nav>
-//     </div>
-//   )
-// }
-
-// export default Header
-
-
-// import React from 'react'
-// import img from "../../../assets/img/icons.png"
-// import { NavLink } from 'react-router-dom'
-// import { FiSearch } from 'react-icons/fi'
-
-// import "./header.scss"
-// import { GrLanguage } from 'react-icons/gr'
-
-// const Header = () => {
-//   return (
-//     <div className='header'>
-//       <nav className="header-nav container">
-//         <div className="header-nav-icons">
-//           <img src={img} alt="header-logo" />
-//         </div>
-//         <ul className="header-nav-item">
-//           <li className="header-nav-list">
-//             <NavLink className={"header-nav-item-link"} to="/products">Главная</NavLink>
-//           </li>
-//           <li className="header-nav-list">
-//             <NavLink className={"header-nav-item-link"} to="/services">Каталог</NavLink>
-//           </li>
-//           <li className="header-nav-list">
-//             <NavLink className={"header-nav-item-link"} to="/company">О компании</NavLink>
-//           </li>
-//           <li className="header-nav-list">
-//             <NavLink className={"header-nav-item-link"} to="/contact">Партнеры</NavLink>
 //           </li>
 //         </ul>
 //         <div className="header-nav-logos">
