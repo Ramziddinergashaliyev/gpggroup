@@ -736,6 +736,7 @@
 
 
     @media (max-width: 768px) {
+      width: 90%;
       font-size: 18px;
     }
   }
@@ -953,7 +954,6 @@
     @media (max-width: 900px) {
       flex-direction: row;
     }
-
   }
 
   &__social-link {
