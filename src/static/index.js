@@ -100,6 +100,34 @@ export const PARTNER = [
   },
 ]
 
+export const PARTNEREN = [
+  {
+    id: 1,
+    icon: img1,
+    title: "Navoi Mining and Metallurgical Plant",
+  },
+  {
+    id: 2,
+    icon: img2,
+    title: "Ministry of the Republic of Uzbekistan",
+  },
+  {
+    id: 3,
+    icon: img3,
+    title: "Almalyk Mining and Metallurgical Plant",
+  },
+  {
+    id: 4,
+    icon: img4,
+    title: "Construction and installation works",
+  },
+  {
+    id: 5,
+    icon: img5,
+    title: "UzAvto Motors",
+  },
+]
+
 export const SLIDES = [
   {
     img: slide1,
@@ -121,26 +149,53 @@ export const SLIDES = [
 export const BOX = [
   {
     id: 1,
+    title: "Гарантия качества",
+    text: "Мы осуществляем строгий контроль качества на каждом этапе, обеспечивая, чтобы все продукты постоянно соответствовали или превосходили мировые стандарты производительности и надежности.",
+    icon: logo1,
+  },
+  {
+    id: 2,
+    title: "Техническая экспертиза",
+    text: "Наши опытные инженеры и специалисты по смазочным материалам предоставляют экспертную консультацию и техническую поддержку, помогая вам выбирать оптимальные смазочные материалы для каждого применения.",
+    icon: logo2,
+  },
+  {
+    id: 3,
+    title: "Экологическая ответственность",
+    text: "Произведенные в Узбекистане, мы разрабатываем экологически чистые смазочные материалы, которые минимизируют воздействие на окружающую среду при одновременном обеспечении превосходных характеристик, надежности и эффективности для всех применений.",
+    icon: logo3,
+  },
+  {
+    id: 4,
+    title: "Удовлетворенность клиентов",
+    text: "Мы уделяем первостепенное внимание удовлетворенности клиентов, предоставляя исключительное обслуживание, надежные поставки, упрощенный порядок заказов, оперативную доставку и четкую, эффективную коммуникацию на протяжении всего процесса.",
+    icon: logo4,
+  },
+]
+
+export const BOXEN = [
+  {
+    id: 1,
     title: "Quality Assurance",
-    text: "We adhere to strict quality control measures throughout the manufacturing process, ensuring that every product meets or exceeds industry standards",
+    text: "We implement strict quality control at every stage, ensuring all products consistently meet or exceed global standards for performance and reliability.",
     icon: logo1,
   },
   {
     id: 2,
     title: "Technical Expertise",
-    text: "Backed by a team of experienced engineers and lubricant specialists, we offer technical support and guidance to help you select the right lubricant.",
+    text: "Our experienced engineers and lubricant specialists provide expert guidance and technical support, helping you select optimal lubricants for every application.",
     icon: logo2,
   },
   {
     id: 3,
     title: "Environmental Responsibility",
-    text: "Gulf Oil and Chemicals FZE is committed to develop eco-friendly lubricants that minimize environmental impact without compromising performance.",
+    text: "Produced in Uzbekistan, we develop eco-friendly lubricants that minimize environmental impact while ensuring superior performance, reliability, and efficiency for all applications.",
     icon: logo3,
   },
   {
     id: 4,
     title: "Customer Satisfaction",
-    text: "Your satisfaction is our top priority. We strive to provide exceptional customer service, ensuring prompt delivery, easy ordering processes, and effective communication.",
+    text: "We prioritize customer satisfaction by delivering exceptional service, reliable supply, streamlined ordering, prompt delivery, and clear, effective communication throughout.",
     icon: logo4,
   },
 ]

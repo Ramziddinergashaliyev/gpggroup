@@ -3,9 +3,11 @@ import img1 from "../../assets/img/lube1.png"
 import img2 from "../../assets/img/lube2.png"
 import img3 from "../../assets/img/lube3.png"
 import './lube.scss';
+import { useTranslation } from 'react-i18next';
 
 const Lube = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const { t, i18n } = useTranslation()
 
     useEffect(() => {
         setIsVisible(true);
@@ -25,10 +27,9 @@ const Lube = () => {
 
             <div className={`container lube-container ${isVisible ? 'visible' : ''}`}>
                 <div className="lube-header">
-                    <h3 className='lube-subtitle'>PAO boosting Technology of K1 Lube</h3>
+                    <h3 className='lube-subtitle'>{t("Advanced")}</h3>
                     <p className="lube-description">
-                        PAO Boosting Technology of K1 Lube provides a powerful and comfortable driving experience with PAO Strength.<br />
-                        K1 Lube helps you enjoy a premium performance with powerful PAO
+                        {t("develops")}
                     </p>
                 </div>
 
@@ -40,12 +41,12 @@ const Lube = () => {
 
                 <div className="lube-benefits">
                     <div className="benefits-grid">
-                        
+
                         <div className="benefit-card benefit-1">
                             <div className="benefit-content">
                                 <p className="benefit-text">
-                                    <span className="benefit-main">Strengthening</span>
-                                    <span className="benefit-sub">Viscosity Properties</span>
+                                    <span className="benefit-main">{t("Thermal")}</span>
+                                    <span className="benefit-sub">{t("Control")}</span>
                                 </p>
                             </div>
                         </div>
@@ -53,8 +54,8 @@ const Lube = () => {
                         <div className="benefit-card benefit-2">
                             <div className="benefit-content">
                                 <p className="benefit-text">
-                                    <span className="benefit-main">Keeping</span>
-                                    <span className="benefit-sub">Engine Power</span>
+                                    <span className="benefit-main">{t("Cooling")}</span>
+                                    <span className="benefit-sub">{t("Efficiency")}</span>
                                 </p>
                             </div>
                         </div>
@@ -62,8 +63,8 @@ const Lube = () => {
                         <div className="benefit-card benefit-3">
                             <div className="benefit-content">
                                 <p className="benefit-text">
-                                    <span className="benefit-main">Extending</span>
-                                    <span className="benefit-sub">Drain Interval</span>
+                                    <span className="benefit-main">{t("Temperature")}</span>
+                                    <span className="benefit-sub">{t("Stability")}</span>
                                 </p>
                             </div>
                         </div>

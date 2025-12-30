@@ -4,10 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import img from "../../assets/img/service.webp";
 import img1 from "../../assets/img/service1.webp";
 import "./service.scss"
+import { useTranslation } from "react-i18next";
 
 const Service = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
 
@@ -35,8 +37,8 @@ const Service = () => {
   return (
     <div className="service container" ref={sectionRef}>
       <div className={`service-top ${isVisible ? 'fade-in-up' : ''}`}>
-        <p className="service-top-text">ТЕХНОЛОГИИ И ОБОРУДОВАНИЕ</p>
-        <h2 className="service-top-title">Модернизация и новый уровень</h2>
+        <p className="service-top-text">{t("ОБОРУДОВАНИЕ")}</p>
+        <h2 className="service-top-title">{t("уровень")}</h2>
         <div className="service-top-line"></div>
       </div>
       <div className="service-bottom">
@@ -52,15 +54,17 @@ const Service = () => {
           </div>
         </div>
         
+       {/* 998470990 Miraxmedov Yunus */}
+        
         <div className={`service-bottom-item ${isVisible ? 'fade-in-right' : ''}`} style={{ animationDelay: '0.4s' }}>
           <p className="service-bottom-text">
-            В ООО "Global Petrochemical Group" мы используем самые современные решения в производстве тары и розлива продукции. Наши высокотехнологичные автоматические линии обеспечивают точность, равномерность и эффективность на каждом этапе.
+            {t("используем")}
           </p>
         </div>
         
         <div className={`service-bottom-item ${isVisible ? 'fade-in-left' : ''}`} style={{ animationDelay: '0.6s' }}>
           <p className="service-bottom-text">
-            Линии розлива, разработанные ведущими мировыми производителями, обеспечивают высокую скорость и точность налива от 1 до 10 килограммов, с производительностью до 15 тонн в час. Наша инновационная инфраструктура гарантирует стабильное качество и надежность.
+            {t("Линии")}
           </p>
         </div>
         

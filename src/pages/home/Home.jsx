@@ -8,6 +8,7 @@ import Filter from "../../companents/filter/Filter";
 import Card from "../../companents/card/Card";
 import Made from "../../companents/made/Made";
 import Lube from "../../companents/lube/Lube";
+import Leazy from "../../companents/leazy/Leazy";
 
 const Home = () => {
   return (

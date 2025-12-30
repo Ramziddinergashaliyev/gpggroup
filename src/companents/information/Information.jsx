@@ -1,8 +1,12 @@
 import React from "react";
 import "./information.scss";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Information = () => {
+
+  const { t, i18n } = useTranslation()
+
   return (
     <div className="information">
       <div className="information__container container">
@@ -10,10 +14,10 @@ const Information = () => {
 
           <div className="information__left-top">
             <p className="information__left-top__text">
-              НАДЕЖНЫЙ ПРОИЗВОДИТЕЛЬ
+              {t("ПРОИЗВОДИТЕЛЬ")}
             </p>
             <h2 className="information__left-top__title">
-              Global Petrochemical Group
+              {t("GPG")}
             </h2>
           </div>
 
@@ -28,29 +32,26 @@ const Information = () => {
 
           <div className="information__left-bottom">
             <h3 className="information__left-bottom-title">
-              Технологическое превосходство для вашего автомобиля
+              {t("Технологическое")}
             </h3>
             <p className="information__left-bottom-desc">
-              ООО "Global Petrochemical Group" — ведущий производитель моторных
-              масел, охлаждающих жидкостей и автохимии в Узбекистане.
+              {t("ведущий")}
             </p>
             <p className="information__left-bottom-desc">
-              Мы гордимся, что наши изделия соответствуют требованиям UzTR
-              783-024:2017 и допущены к использованию в транспортных средствах.
+              {t("UzTR")}
             </p>
             <p className="information__left-bottom-desc">
-              «Global Petrochemical Group» — ваш надежный партнер в защите
-              автомобиля.
+              {t("reliable")}
             </p>
           </div>
 
           <div className="information__left-btns">
             <button className="information__left-btns-left animate__animated animate__flipInX">
-              <NavLink to={"/company"}>Подробнее о нас</NavLink>
+              <NavLink to={"/company"}>{t("Подробнее о нас")}</NavLink>
             </button>
 
             <button className="information__left-btns-right animate__animated animate__flipInX">
-              <NavLink to={"/partner"}>Наши партнеры</NavLink>
+              <NavLink to={"/partner"}>{t("Наши")}</NavLink>
             </button>
           </div>
 

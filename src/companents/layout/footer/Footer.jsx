@@ -3,11 +3,11 @@ import img from "../../../assets/img/footerbg.png"
 import "./footer.scss"
 import { useGetCategorysQuery } from '../../../context/api/categoryApi'
 import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
   const { data } = useGetCategorysQuery();
-  console.log(data);
-  
+  const { t, i18n } = useTranslation()
 
   return (
     <div className='footer'>
@@ -18,49 +18,55 @@ const Footer = () => {
         <div className="footer-info container">
 
           <div className="footer-info-item">
-            <h2 className='footer-info-item-title'>COMPANY</h2>
-            <p className="footer-info-item-text">Home</p>
-            <p className="footer-info-item-text">About company</p>
-            <p className="footer-info-item-text">Partners</p>
-            <p className="footer-info-item-text">Distributors</p>
+            <h2 className="footer-info-item-title">{t("COMPANY")}</h2>
+            <p className="footer-info-item-text">{t("Главная")}</p>
+            <p className="footer-info-item-text">{t("About")}</p>
+            <p className="footer-info-item-text">{t("Партнеры")}</p>
+            <p className="footer-info-item-text">{t("Distributors")}</p>
           </div>
 
           <div className="footer-info-item">
-            <h2 className='footer-info-item-title'>PRODUCTS</h2>
+            <h2 className='footer-info-item-title'>{t("PRODUCTS")}</h2>
             {
               data?.map(el => (
-                <NavLink key={el?.id} to={`/singleCatalog/${el?.id}`} className="footer-info-item-text">{el?.nameRu}</NavLink>
+                <NavLink key={el?.id} to={`/singleCatalog/${el?.id}`} className="footer-info-item-text">{
+                  i18n?.language === "en"
+                    ?
+                    el?.nameEn
+                    :
+                    el?.nameRu
+                }</NavLink>
               ))
             }
           </div>
-        
+
           <div className="footer-info-item">
-            <h2 className='footer-info-item-title'>ADDRESS</h2>
+            <h2 className='footer-info-item-title'>{t("ADDRESS")}</h2>
             <p className="footer-info-item-text-number">
-              <span className="footer-info-item-text-span">Номер телефона</span>
+              <span className="footer-info-item-text-span">{t("Номер")}</span>
               <span>+998 71 281 49 30</span>
               <span>+998 71 203 20 31</span>
             </p>
             <p className="footer-info-item-text-address">
-              <span className="footer-info-item-text-span">Адрес</span>
+              <span className="footer-info-item-text-span">{t("Address")}</span>
               <span>
-                100070, Republic of Uzbekistan, Tashkent, Yakkasaray district, st. Glinka 14/3
+                {t("add")}
               </span>
             </p>
             <p className="footer-info-item-text-email">
-              <span className="footer-info-item-text-span">Электронная почта</span>
+              <span className="footer-info-item-text-span">{t("e-mail")}</span>
               <span>info@gpggroup.uz</span>
             </p>
           </div>
 
           <div className="footer-info-item">
-            <h2 className='footer-info-item-title'>LEAVE A MESSAGE</h2>
+            <h2 className='footer-info-item-title'>{t("MESSAGE")}</h2>
             <form className="footer-info-item-form" action="">
-              <input placeholder='name' type="text" />
-              <input placeholder='phone' type="text" />
-              <input placeholder='email' type="text" />
-              <input placeholder='message' type="text" />
-              <button className="footer-info-item-form-btn">Send Now</button>
+              <input placeholder={t('name')} type="text" />
+              <input placeholder={t('phone')} type="text" />
+              <input placeholder={t('email')} type="text" />
+              <input placeholder={t('message')} type="text" />
+              <button className="footer-info-item-form-btn">{t("Send Now")}</button>
             </form>
           </div>
 

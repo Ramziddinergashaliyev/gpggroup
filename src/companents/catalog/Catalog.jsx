@@ -4,11 +4,16 @@ import "./catalog.scss"
 import { useGetCategorysQuery } from "../../context/api/categoryApi";
 import img from "../../assets/bg/catalog.webp"
 import CatalogLoading from "../catalogLoading/CatalogLoading";
+import { useTranslation } from "react-i18next";
 
 const Catalog = ({ hide }) => {
   const [hoveredId, setHoveredId] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const { data, isLoading } = useGetCategorysQuery()
+  const { t, i18n } = useTranslation()
+
+  console.log(i18n?.language);
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,8 +23,8 @@ const Catalog = ({ hide }) => {
   return (
     <div className="photo-catalog">
       <div className="photo-catalog-top container">
-        <span className="photo-catalog-top-text">КАТЕГОРИИ ПРОДУКЦИИ</span>
-        <h3 className="photo-catalog-top-title"><span>Высококачественные моторные масла</span>, охлаждающие жидкости и авто-химия</h3>
+        <span className="photo-catalog-top-text">{t("КАТЕГОРИИ")}</span>
+        <h3 className="photo-catalog-top-title"><span>{t("Высококачественные")}</span>, {t("охлаждающие")}</h3>
       </div>
       <div className="photo-catalog__container container">
         
@@ -29,7 +34,7 @@ const Catalog = ({ hide }) => {
             <CatalogLoading/>
             :
             <div className="photo-catalog__grid">
-              {data?.map((el, index) => (
+              {data?.slice(0,8)?.map((el, index) => (
                 <NavLink key={el.id} to={`/singleCatalog/${el.id}`} className="photo-catalog__link">
 
                   <div
@@ -49,7 +54,7 @@ const Catalog = ({ hide }) => {
                     </div>
 
                     <div className="photo-catalog__card-label">
-                      <span className="photo-catalog__card-title">{el.nameRu}</span>
+                      <span className="photo-catalog__card-title">{i18n?.language === "ru" ? el?.nameRu : el?.nameEn}</span>
                     </div>
 
                   </div>
@@ -59,7 +64,7 @@ const Catalog = ({ hide }) => {
             </div>
         }
       </div>
-      <p className="photo-catalog-text container">All our products have successfully passed tests in accredited laboratories and are certified by the Agency for Standardization, Metrology and Certification "Uzstandard". "Global Petrochemical Group" is your reliable partner in ensuring the durability and reliability of your car.</p>
+      <p className="photo-catalog-text container">{t("All our")}</p>
     </div>
   );
 };

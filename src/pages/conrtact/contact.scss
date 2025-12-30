@@ -18,6 +18,8 @@
       animation: wave 15s ease-in-out infinite;
     }
 
+    
+
     &::after {
       content: '';
       position: absolute;
@@ -108,13 +110,13 @@
     display: grid;
     grid-template-columns: 350px 1fr;
     padding: 80px 0;
-    gap: 50px;
+    gap: 30px;
     animation: fadeInUp 1s ease-out;
 
     &-right {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 30px;
 
       &-item {
         padding: 30px;
@@ -219,7 +221,7 @@
 
     &-left {
       background: #fff;
-      padding: 50px 40px;
+      padding: 30px 40px 40px;
       border-radius: 20px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
       animation: slideInLeft 0.8s ease-out;

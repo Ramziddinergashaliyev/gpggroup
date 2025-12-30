@@ -694,7 +694,7 @@
 
 .photo-catalog {
   position: relative;
-  background: url(../../assets/bg/catalog.webp);
+  background: url(../../assets/bg/catalogBg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -717,7 +717,7 @@
       font-weight: 500;
       color: #000;
       line-height: 32px;
-      width: 60%;
+      width: 70%;
 
       span {
         color: rgb(71, 156, 210);
@@ -912,6 +912,11 @@
       text-transform: uppercase;
       display: block;
       transition: color 0.3s ease;
+      width: 90%;
+    }
+
+    @media (max-width:450px) {
+      width: 100%;
     }
   }
 
@@ -1019,6 +1024,7 @@
   }
 
   @keyframes pulse {
+
     0%,
     100% {
       transform: scale(1);

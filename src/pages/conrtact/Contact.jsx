@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
-import img from "../../assets/img/contact.jpg"
+import img from "../../assets/img/contact.webp"
 import "./contact.scss"
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     scrollTo(0, 0)
@@ -14,8 +16,8 @@ const Contact = () => {
       <div className="contact-bg">
         <div className="contact-top container">
           <div className="contact-top-left">
-            <h3 className="contact-top-left-title">Let’s Talk</h3>
-            <p className='contact-top-left-text'>Whether you're exploring a new market, validating a strategy, or seeking tailored research support, our team is here to assist. Connect with our experts; we’re just a message away.</p>
+            <h3 className="contact-top-left-title">{t("Let's Talk")}</h3>
+            <p className='contact-top-left-text'>{t("Whether")}</p>
           </div>
 
           <div className="contact-top-right">
@@ -27,22 +29,22 @@ const Contact = () => {
       <div className="contact-form container">
         <div className="contact-form-right">
           <div className="contact-form-right-item">
-            <h2>Email</h2>
+            <h2>{t("Email")}</h2>
             <p>info@gpggroup.uz</p>
           </div>
           <div className="contact-form-right-item">
-            <h2>Phone Number</h2>
+            <h2>{t("Phone Number")}</h2>
             <p>+998 71 281 49 30</p>
             <p>+998 71 281 49 30</p> 
           </div>
           <div className="contact-form-right-item">
-            <h2>Address</h2>
-            <p>100070, Республика Узбекистан, г. Ташкент, Яккасарайский р-н, ул. Глинка 14/3</p>
+            <h2>{t("Address")}</h2>
+            <p>{t("add")}</p>
           </div>
         </div>
 
         <div className="contact-form-left">
-          <h2 className="contact-form-left-title">Contact Us</h2>
+          <h2 className="contact-form-left-title">{t("Contact Us")}</h2>
           <form className='contact-form-left-item' action="">
             <div className="contact-form-left-item-top">
               <input placeholder='Full Name' type="text" name="" id="" />
@@ -52,7 +54,7 @@ const Contact = () => {
             </div>
             <div className='contact-form-left-item-bottom'>
               <textarea placeholder='Message' name="" id=""></textarea>
-              <button className='contact-form-left-item-bottom-btn'>Let's Talk</button>
+              <button className='contact-form-left-item-bottom-btn'>{t("Let's Talk")}</button>
             </div>
           </form>
         </div>
