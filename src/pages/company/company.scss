@@ -19,6 +19,7 @@
       background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(71, 156, 210, 0.3) 100%);
       animation: bgPulse 8s ease-in-out infinite;
     }
+
   }
 
   &-info {
@@ -493,11 +494,31 @@
       font-size: 14px;
       line-height: 20px;
     }
+
+    &-desc {
+      padding-bottom: 30px;
+    }
   }
 
   @media (max-width:520px) {
     &-vision-middle {
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mySwiper {
+      padding-top: 0px;
+    }
+
+    &-bottom-info {
+      padding: 40px 0px 20px;
+    }
+
+    &-vision {
+      padding: 30px 0px 30px;
+    }
+
+    &-vision-container {
+      gap: 20px;
     }
   }
 
@@ -518,6 +539,7 @@
 }
 
 @keyframes bgPulse {
+
   0%,
   100% {
     opacity: 1;

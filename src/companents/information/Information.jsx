@@ -46,13 +46,17 @@ const Information = () => {
           </div>
 
           <div className="information__left-btns">
-            <button className="information__left-btns-left animate__animated animate__flipInX">
-              <NavLink to={"/company"}>{t("Подробнее о нас")}</NavLink>
-            </button>
+            <NavLink to={"/company"}>
+              <button className="information__left-btns-left animate__animated animate__flipInX">
+                {t("Подробнее о нас")}
+              </button>
+            </NavLink>
 
-            <button className="information__left-btns-right animate__animated animate__flipInX">
-              <NavLink to={"/partner"}>{t("Наши")}</NavLink>
-            </button>
+            <NavLink to={"/partner"}>
+              <button className="information__left-btns-right animate__animated animate__flipInX">
+                {t("Наши")}
+              </button>
+            </NavLink>
           </div>
 
         </div>
@@ -68,7 +72,7 @@ const Information = () => {
               <h2 className="information__right-box-title">20 +</h2>
               <span>Лет опыта</span>
             </div>
-            
+
             <div className="information__right-box">
               <h2 className="information__right-box-title">100 +</h2>
               <span>Наименований позиций</span>

@@ -25,7 +25,6 @@ const Header = () => {
 
   console.log(i18n?.language);
 
-
   const languages = [
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
     { code: 'en', name: 'English', flag: '🇬🇧' }
@@ -79,7 +78,7 @@ const Header = () => {
   return (
     <div className={`header ${isScrolled ? "scrolled" : ""}`}>
       <nav className="header-nav container">
-
+        
         <div className="header-nav-icons">
 
           <NavLink to={"/"}>
@@ -98,7 +97,7 @@ const Header = () => {
           </div>
 
           <li className="header-nav-list">
-            <NavLink className={"header-nav-item-link"} to="/">{t('Главная')}</NavLink>
+            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/">{t('Главная')}</NavLink>
           </li>
 
           <li
@@ -107,7 +106,7 @@ const Header = () => {
             onMouseLeave={() => setShowCategories(false)}
           >
 
-            <NavLink className={"header-nav-item-link"} to="/catalog-item">
+            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/catalog-item">
               {t("Каталог")}
             </NavLink>
 
@@ -120,7 +119,7 @@ const Header = () => {
                     className="category-item"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
-                    <NavLink to={`/singleCatalog/${category?.id}`} className="category-link">
+                    <NavLink onClick={() => setHide(false)} to={`/singleCatalog/${category?.id}`} className="category-link">
                       {
                         i18n?.language === "ru"
                           ?
@@ -131,7 +130,6 @@ const Header = () => {
                           <>
                             {category?.nameEn}
                           </>
-
                       }
                     </NavLink>
                   </li>
@@ -141,15 +139,15 @@ const Header = () => {
           </li>
 
           <li className="header-nav-list">
-            <NavLink className={"header-nav-item-link"} to="/company">{t("About")}</NavLink>
+            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/company">{t("About")}</NavLink>
           </li>
 
           <li className="header-nav-list">
-            <NavLink className={"header-nav-item-link"} to="/partner">{t("Партнеры")}</NavLink>
+            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/partner">{t("Партнеры")}</NavLink>
           </li>
 
           <li className="header-nav-list">
-            <NavLink className={"header-nav-item-link"} to="/contact">{t("Контакты")}</NavLink>
+            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/contact">{t("Контакты")}</NavLink>
           </li>
 
           <div className="header-nav-logos-lenguage header-nav-logos-lenguage-two">

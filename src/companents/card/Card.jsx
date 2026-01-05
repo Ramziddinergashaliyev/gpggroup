@@ -9,7 +9,6 @@ const Card = () => {
   console.log(i18n);
 
   const BOXLANG = i18n?.language === "en" ? BOXEN : BOX
-  
 
   return (
     <div className="card container">

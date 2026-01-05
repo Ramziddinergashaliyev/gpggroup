@@ -45,26 +45,15 @@
     }
 }
 
-@media (max-width: 1100px) {
-    .loading__wrapper {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .loading__wrapper {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 590px) {
-    .loading__wrapper {
+@media (max-width: 1200px) {
+    .catalogLoading__wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 350px) {
-    .loading__wrapper {
+@media (max-width: 768px) {
+    .catalogLoading__wrapper {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 }

@@ -3,25 +3,29 @@ import "./made.scss"
 import img from "../../assets/img/win.png"
 import img1 from "../../assets/img/win1.png"
 import { useTranslation } from 'react-i18next'
+import { NavLink } from 'react-router-dom'
 
 const Made = () => {
 
     const { t, i18n } = useTranslation()
-    console.log(i18n);
-    
 
     return (
         <div className='made container'>
+
             <div className="made-left">
+
                 <div className="made-left-info">
                     <h2 className="made-left-info-title">{t("ГПГ")} <br /> {t("Lubricants")}</h2>
                     <p className='made-left-info-text'>{t("Made")}</p>
                 </div>
 
-                <button className='made-left-info-btn'>
-                    {t("Shop now")}
-                    <span className="btn-arrow">→</span>
-                </button>
+                <NavLink to={"/contact"}>
+                    <button className='made-left-info-btn'>
+                        {t("Контакты")}
+                        <span className="btn-arrow">→</span>
+                    </button>
+                </NavLink>
+
             </div>
 
             <div className="made-right">
@@ -37,6 +41,7 @@ const Made = () => {
             <div className="made-img-bottom">
                 <img className='made-img-bottom-one' src={img1} alt="Rubaat Premium Oil" />
             </div>
+
         </div>
     )
 }

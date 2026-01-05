@@ -52,7 +52,7 @@ const Catalog = ({ hide }) => {
                       />
                       <div className="photo-catalog__card-gradient"></div>
                     </div>
-
+                          
                     <div className="photo-catalog__card-label">
                       <span className="photo-catalog__card-title">{i18n?.language === "ru" ? el?.nameRu : el?.nameEn}</span>
                     </div>

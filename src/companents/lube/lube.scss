@@ -50,7 +50,6 @@
                 width: 75%;
                 animation-delay: 3s;
             }
-
         }
 
     }
@@ -70,9 +69,6 @@
     &-container {
         position: relative;
         z-index: 2;
-        // max-width: 1400px;
-        // margin: 0 auto;
-        // padding: 40px 20px;
         opacity: 0;
         transform: translateY(30px);
         transition: all 1s ease-out;

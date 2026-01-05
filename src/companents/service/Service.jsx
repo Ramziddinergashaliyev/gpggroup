@@ -54,8 +54,6 @@ const Service = () => {
           </div>
         </div>
         
-       {/* 998470990 Miraxmedov Yunus */}
-        
         <div className={`service-bottom-item ${isVisible ? 'fade-in-right' : ''}`} style={{ animationDelay: '0.4s' }}>
           <p className="service-bottom-text">
             {t("используем")}

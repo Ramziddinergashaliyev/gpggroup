@@ -588,8 +588,6 @@ const SingleProduct = () => {
     const { data: productData } = useGetProductsQuery()
     const { t, i18n } = useTranslation()
     const navigate = useNavigate()
-    console.log(data);
-    
 
     const selectData = productData?.filter(product =>
         product?.brand?.id === data?.brand?.id &&
@@ -654,7 +652,7 @@ const SingleProduct = () => {
         const isTransmissionOil = categoryNameRu === "Трансмиссионные масла" ||
             categoryNameEn === "Transmission oils"
 
-        if ( data?.id === 61 || !data?.sae || (!isMotorOil && !isDieselOil && !isTransmissionOil)) {
+        if (data?.id === 61 || !data?.sae || (!isMotorOil && !isDieselOil && !isTransmissionOil)) {
             return null
         }
 
@@ -680,49 +678,49 @@ const SingleProduct = () => {
 
                         <tbody className='single-table-item-tbody'>
                             <tr className='single-table-item-tbody-tr'>
-                                <td className='single-table-item-tbody-td'>SAE viscosity grade</td>
+                                <td className='single-table-item-tbody-td'>{t("sae")}</td>
                                 {data?.sae?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
                             </tr>
 
                             <tr className='single-table-item-tbody-tr'>
-                                <td className='single-table-item-tbody-td'>Density at 20°C, g/cm3</td>
+                                <td className='single-table-item-tbody-td'>{t("Density")}</td>
                                 {data?.density?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
                             </tr>
 
                             <tr className='single-table-item-tbody-tr'>
-                                <td className='single-table-item-tbody-td'>Kinematic viscosity at 40 °C, mm2/s</td>
+                                <td className='single-table-item-tbody-td'>{t("viscosity")}</td>
                                 {data?.kinematic_one?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
                             </tr>
 
                             <tr className='single-table-item-tbody-tr'>
-                                <td className='single-table-item-tbody-td'>Kinematic viscosity at 100 °C, mm2/s</td>
+                                <td className='single-table-item-tbody-td'>{t("Kinematic")}</td>
                                 {data?.kinematic_two?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
                             </tr>
 
                             <tr className='single-table-item-tbody-tr'>
-                                <td className='single-table-item-tbody-td'>Viscosity index</td>
+                                <td className='single-table-item-tbody-td'>{t("index")}</td>
                                 {data?.viscosityIndex?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
                             </tr>
 
                             <tr className='single-table-item-tbody-tr'>
-                                <td className='single-table-item-tbody-td'>Flash point in open crucible °C</td>
+                                <td className='single-table-item-tbody-td'>{t("Flash")}</td>
                                 {data?.flash?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
                             </tr>
 
                             <tr className='single-table-item-tbody-tr'>
-                                <td className='single-table-item-tbody-td'>Solidification temperature, °C</td>
+                                <td className='single-table-item-tbody-td'>{t("Solidification")}</td>
                                 {data?.temperature?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
@@ -730,7 +728,7 @@ const SingleProduct = () => {
 
                             {showBaseNumber && (
                                 <tr className='single-table-item-tbody-tr'>
-                                    <td className='single-table-item-tbody-td'>Base number, mg KOH/g</td>
+                                    <td className='single-table-item-tbody-td'>{t("Base")}</td>
                                     {data?.base?.map((el, index) => (
                                         <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                     ))}
@@ -757,7 +755,9 @@ const SingleProduct = () => {
             </style>
 
             <div className='singleProduct'>
+
                 <div className="singleProduct-bg">
+
                     <h2 onClick={() => navigate(-1)} className='singleProduct-bg-text container'>
                         <FaArrowLeft />{
                             i18n?.language === "ru" ?
@@ -766,6 +766,7 @@ const SingleProduct = () => {
                                 data?.brand?.category?.nameEn
                         }
                     </h2>
+
                 </div>
 
                 <div className="container">
@@ -825,7 +826,7 @@ const SingleProduct = () => {
                                                     top: '50%',
                                                     left: '50%',
                                                     transform: 'translate(-50%, -50%)',
-                                                    zIndex: 10
+                                                    zIndex: 10,
                                                 }}>
                                                     <div style={{
                                                         width: '20px',
@@ -833,7 +834,7 @@ const SingleProduct = () => {
                                                         border: '3px solid #f3f3f3',
                                                         borderTop: '3px solid #3498db',
                                                         borderRadius: '50%',
-                                                        animation: 'spin 1s linear infinite'
+                                                        animation: 'spin 1s linear infinite',
                                                     }} />
                                                 </div>
                                             )}
@@ -853,37 +854,48 @@ const SingleProduct = () => {
                             </div>
 
                             <div className="singleProduct-top-right">
+
                                 <h4 className='singleProduct-top-right-title'>{data?.nameRu}</h4>
+
                                 <p className="singleProduct-top-right-text">
                                     {i18n?.language === "ru" ? data?.descriptionRu : data?.descriptionEn}
                                 </p>
 
                                 {data?.specification && (
+
                                     <div className="singleProduct-top-right-spacy">
-                                        <h2 className="singleProduct-top-right-spacy-title">Спецификации:</h2>
+
+                                        <h2 className="singleProduct-top-right-spacy-title">{t("Спецификации")}</h2>
+
                                         <div className="singleProduct-top-right-spacy-info">
                                             {data?.specification?.map((el, index) => (
                                                 <p key={index} className="singleProduct-top-right-spacy-info-text">{el}</p>
                                             ))}
                                         </div>
+
                                     </div>
+
                                 )}
+
                             </div>
+
                         </div>
                     )}
 
                     {renderTable()}
 
                     <div className="single-bottom">
-                        <h3 className="single-bottom-title">Recommendations</h3>
+                        <h3 className="single-bottom-title">{t("Recommendations")}</h3>
+
                         {selectData.length > 0 && (
                             <div className="single-cards">
+
                                 {selectData?.map((el) => (
                                     <div
                                         key={el.id}
                                         className="single-card"
-                                        onClick={() => handleProductClick(el.id)}
-                                    >
+                                        onClick={() => handleProductClick(el.id)}>
+
                                         <div className="single-card-img">
                                             <img
                                                 src={el.images[1] || el.images[0]}
@@ -894,10 +906,13 @@ const SingleProduct = () => {
                                         <div className="single-card-info">
                                             <h2 className="single-card-info-title">{el.nameRu}</h2>
                                         </div>
+
                                     </div>
                                 ))}
+
                             </div>
                         )}
+
                     </div>
                 </div>
             </div>

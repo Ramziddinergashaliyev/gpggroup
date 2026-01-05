@@ -740,6 +740,12 @@
     }
   }
 
+  &__text:hover {
+    box-shadow: 1px 1px 10px white;
+    transition: .4s;
+    cursor: pointer;
+  }
+
   &__buttons {
     display: flex;
     gap: 20px;

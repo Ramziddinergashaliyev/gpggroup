@@ -43,8 +43,8 @@ const Company = () => {
           </div>
 
           <div className="company-info-right">
-            <h3 className='company-info-right-about'>About Us</h3>
-            <p className="company-info-right-text">GPG Lubricants, one of the leading lubricant manufacturers in our country, is the pioneer of innovations in the sector by combining its 25 years of experience with developing technologies in the world and R&D studies. Thanks to the experience it has gained, it offers quality, trust and easy accessibility to the solution partners in the sector for the needs of the day.</p>
+            <h3 className='company-info-right-about'>{t("About Us")}</h3>
+            <p className="company-info-right-text">{t("leading")}</p>
           </div>
         </div>
       </div>
@@ -77,15 +77,6 @@ const Company = () => {
           <p className="company-bottom-info-text">{t("2023 году")}</p>
           <p className="company-bottom-info-text">{t("Высокотехнологичные")}</p>
         </div>
-
-        {/* <div className="company-photos container">
-          <img className='company-photos-img' src={photo1} alt="company-photo one" />
-          <img className='company-photos-img' src={photo2} alt="company-photo two" />
-          <img className='company-photos-img' src={photo3} alt="company-photo three" />
-          <img className='company-photos-img' src={photo4} alt="company-photo four" />
-          <img className='company-photos-img' src={photo5} alt="company-photo fife" />
-          <img className='company-photos-img' src={photo6} alt="company-photo six" />
-        </div> */}
 
         <div className="container">
           <Swiper
