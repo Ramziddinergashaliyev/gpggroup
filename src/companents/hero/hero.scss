@@ -565,13 +565,13 @@
 .hero-ultra {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 700px;
   overflow: hidden;
   background: #0a0e27;
   margin-top: 85px;
 
   @media (max-width:1590px) {
-    height: 650px;
+    height: 550px;
   }
 
   &__bg-wrapper {
