@@ -9,17 +9,21 @@ import Card from "../../companents/card/Card";
 import Made from "../../companents/made/Made";
 import Lube from "../../companents/lube/Lube";
 import Leazy from "../../companents/leazy/Leazy";
+import Animate from "../../companents/animate/Animate";
+import Part from "../../companents/part/Part";
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <Animate/>
       <Made />
       <Catalog />
       <Lube />
       <Service />
       <Information />
       <Card />
+      <Part/>
     </div>
   );
 };

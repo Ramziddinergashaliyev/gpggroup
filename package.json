@@ -24,6 +24,7 @@
     "react-phone-number-input": "^3.4.14",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2",
+    "react-toastify": "^11.0.5",
     "sass": "^1.89.2",
     "simplex-noise": "^4.0.3",
     "swiper": "^11.2.10"

@@ -740,6 +740,14 @@
     padding: 80px 20px;
   }
 
+  .header-nav-logos-lenguage {
+    display: none;
+  }
+
+  .header-nav-logos-lenguage-two {
+    display: block;
+  }
+
   .header-nav-item-hide {
     left: 0;
   }
@@ -783,22 +791,14 @@
   .category-dropdown {
     display: none;
   }
-}
-
-@media (max-width:500px) {
-  .header-nav-logos-lenguage {
-    display: none;
-  }
-
-  .header-nav-logos-lenguage-two {
-    display: block;
-  }
-
   .header-nav-logos-lenguage .language-dropdown {
     right: -50%;
   }
-
+  
   .header-nav-logos-lenguage svg {
     display: none !important;
   }
 }
+
+// @media (max-width:500px) {
+// }

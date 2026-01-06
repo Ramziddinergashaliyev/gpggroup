@@ -2,13 +2,45 @@ import React, { useEffect } from 'react'
 import img from "../../assets/img/contact.webp"
 import "./contact.scss"
 import { useTranslation } from 'react-i18next'
+import { useCreateContactMutation } from '../../context/api/contactApi'
+import { useGetValue } from '../../hooks/useGetValue'
+import { toast } from 'react-toastify'
+
+const initialState = {
+  fullName: "",
+  phone: "",
+  email: "",
+  company: "",
+  message: ""
+}
 
 const Contact = () => {
   const { t, i18n } = useTranslation()
-
+  const { formData, setFormData, handleChange } = useGetValue(initialState)
+  const [ createContact, {data, isSuccess, isError} ] = useCreateContactMutation()
+  console.log(data);
+  
   useEffect(() => {
     scrollTo(0, 0)
   }, [])
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    createContact(formData)
+    setFormData(initialState)
+  }
+
+  useEffect(() => {
+    if(isSuccess) {
+      toast.success("Сообщение успешно отправлено!")
+    }
+  },[isSuccess])
+
+  useEffect(() => {
+    if(isError) {
+      toast.error("Ошибка отправки сообщения!")
+    }
+  },[isError])
 
   return (
     <div className='contact'>
@@ -27,6 +59,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-form container">
+
         <div className="contact-form-right">
           <div className="contact-form-right-item">
             <h2>{t("Email")}</h2>
@@ -44,19 +77,25 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-left">
+          
           <h2 className="contact-form-left-title">{t("Contact Us")}</h2>
-          <form className='contact-form-left-item' action="">
+
+          <form onSubmit={handleSubmit} className='contact-form-left-item' action="">
+
             <div className="contact-form-left-item-top">
-              <input placeholder='Full Name' type="text" name="" id="" />
-              <input placeholder='Email' type="text" name="" id="" />
-              <input placeholder='Phone Number' type="number" name="" id="" />
-              <input placeholder='Company' type="text" name="" id="" />
+              <input required name="fullName" value={formData.fullName} onChange={handleChange} placeholder='Full Name' type="text" id="" />
+              <input required name="email" value={formData.email} onChange={handleChange} placeholder='Email' type="text" id="" />
+              <input required name="phone" value={formData.phone} onChange={handleChange} placeholder='Phone Number' type="number" id="" />
+              <input required name="company" value={formData.company} onChange={handleChange} placeholder='Company' type="text" id="" />
             </div>
+
             <div className='contact-form-left-item-bottom'>
-              <textarea placeholder='Message' name="" id=""></textarea>
+              <textarea placeholder='Message' name="message" value={formData.message} onChange={handleChange} id=""></textarea>
               <button className='contact-form-left-item-bottom-btn'>{t("Let's Talk")}</button>
             </div>
+
           </form>
+
         </div>
 
       </div>
