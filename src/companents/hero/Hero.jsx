@@ -114,15 +114,10 @@
 
 // export default Hero;
 
-
 import React, { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-// import img from "../../assets/bg/hero-bg2.webp"
-// import img2 from "../../assets/bg/hero-bg3.webp"
-// import img3 from "../../assets/bg/hero-bg1.webp"
-import img from "../../assets/bg/finally1.webp"
+import img from "../../assets/bg/finally3.webp"
 import img2 from "../../assets/bg/finally2.webp"
-// import img3 from "../../assets/bg/hero-bg1.webp"
 import { useTranslation } from "react-i18next";
 import './hero.scss';
 
@@ -202,7 +197,7 @@ const Hero = () => {
 
   const getSlideClass = (index) => {
     if (index === activeIndex) return 'active';
-    
+
     if (direction === 'next') {
       if (index === (activeIndex - 1 + SLIDES.length) % SLIDES.length) return 'prev-slide';
       if (index === (activeIndex + 1) % SLIDES.length) return 'next-slide';
@@ -235,30 +230,6 @@ const Hero = () => {
         <div className="hero-ultra__shape hero-ultra__shape--3" />
         <div className="hero-ultra__shape hero-ultra__shape--4" />
       </div>
-
-      {/* <div className="hero-ultra__container container">
-        <div className="hero-ultra__content">
-          <div className="hero-ultra__tag-wrapper" key={`tag-${activeIndex}`}>
-            <div className="hero-ultra__tag">
-              <span>{heroData[activeIndex].tag}</span>
-              <div className="hero-ultra__tag-shine"></div>
-            </div>
-            <div className="hero-ultra__tag-line" />
-          </div>
-
-          <h1 className="hero-ultra__title" key={`title-${activeIndex}`}>
-            {heroData[activeIndex].title.split(' ').map((word, i) => (
-              <span 
-                key={i} 
-                className="hero-ultra__title-word"
-                style={{ animationDelay: `${i * 0.05}s` }}
-              >
-                {word}{' '}
-              </span>
-            ))}
-          </h1>
-        </div>
-      </div> */}
 
       <div className="hero-ultra__bottom">
         <div className="hero-ultra__indicators">
