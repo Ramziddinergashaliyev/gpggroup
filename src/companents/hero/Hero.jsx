@@ -116,34 +116,40 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import img from "../../assets/bg/finally3.webp"
-import img2 from "../../assets/bg/finally2.webp"
 import { useTranslation } from "react-i18next";
+
+import imgEn1 from "../../assets/bg/bg1.webp"
+import imgEn2 from "../../assets/bg/bg2.webp"
+import imgEn3 from "../../assets/bg/bg3.webp"
+
+import imgRu1 from "../../assets/bg/bg-ru1.webp"
+import imgRu2 from "../../assets/bg/bg-ru2.webp"
+import imgRu3 from "../../assets/bg/bg-ru3.webp"
+
+
 import './hero.scss';
 
 const SLIDES = [
   {
-    img: img,
-    title: "Motor Oils API- and ACEA-compliant engine oils for optimal protection and efficiency.",
-    tag: "НОВАЦИЯ"
+    img: imgRu1,
   },
   {
-    img: img2,
-    title: "Antifreeze / Coolant G11/G12/G12+ coolant with corrosion protection and thermal stability.",
-    tag: "СОТРУДНИЧЕСТВО"
+    img: imgRu2,
+  },
+  {
+    img: imgRu3,
   }
 ];
 
 const SLIDESEN = [
   {
-    img: img,
-    title: "Leading company in the production of motor oils, coolants and auto chemicals that meet world standards",
-    tag: "INNOVATION"
+    img: imgEn1,
   },
   {
-    img: img2,
-    title: "Leading company in the production of motor oils, coolants and auto chemicals that meet world standards",
-    tag: "PARTNERSHIP"
+    img: imgEn2,
+  },
+  {
+    img: imgEn3,
   }
 ];
 
@@ -199,11 +205,11 @@ const Hero = () => {
     if (index === activeIndex) return 'active';
 
     if (direction === 'next') {
-      if (index === (activeIndex - 1 + SLIDES.length) % SLIDES.length) return 'prev-slide';
-      if (index === (activeIndex + 1) % SLIDES.length) return 'next-slide';
+      if (index === (activeIndex - 1 + heroData.length) % heroData.length) return 'prev-slide';
+      if (index === (activeIndex + 1) % heroData.length) return 'next-slide';
     } else {
-      if (index === (activeIndex + 1) % SLIDES.length) return 'next-slide';
-      if (index === (activeIndex - 1 + SLIDES.length) % SLIDES.length) return 'prev-slide';
+      if (index === (activeIndex + 1) % heroData.length) return 'next-slide';
+      if (index === (activeIndex - 1 + heroData.length) % heroData.length) return 'prev-slide';
     }
     return 'hidden-slide';
   };
@@ -211,7 +217,7 @@ const Hero = () => {
   return (
     <div className="hero-ultra">
       <div className="hero-ultra__bg-wrapper">
-        {SLIDES.map((slide, index) => (
+        {heroData.map((slide, index) => (
           <div
             key={index}
             className={`hero-ultra__bg ${getSlideClass(index)}`}
@@ -233,7 +239,7 @@ const Hero = () => {
 
       <div className="hero-ultra__bottom">
         <div className="hero-ultra__indicators">
-          {SLIDES.map((_, index) => (
+          {heroData.map((_, index) => (
             <button
               key={index}
               className={`hero-ultra__indicator ${index === activeIndex ? 'active' : ''}`}
