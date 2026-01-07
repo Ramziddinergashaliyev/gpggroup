@@ -294,7 +294,7 @@
 
 .animate-section {
     position: relative;
-    min-height: 700px;
+    min-height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,21 +306,21 @@
     margin-bottom: 40px;
 
     @media (max-width:1590px) {
-        min-height: 550px;
+        min-height: 620px;
     }
 
     &-overlay {
         width: 100%;
-        height: 700px;
+        height: 800px;
         position: absolute;
         top: 0;
         left: 0;
 
-        background-color: rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(8px);
+        background-color: rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(2px);
 
         @media (max-width:1590px) {
-            min-height: 550px;
+            min-height: 620px;
         }
 
     }
