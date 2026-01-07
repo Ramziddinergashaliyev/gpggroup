@@ -36,12 +36,12 @@
 
     &.prev-slide {
       opacity: 0;
-      transform: scale(0.8) rotate(-10deg) translateX(-100%);
+      transform: scale(1.05) rotate(-5deg) translateX(-100%);
     }
 
     &.next-slide {
       opacity: 0;
-      transform: scale(1.5) rotate(10deg) translateX(100%);
+      transform: scale(1.09) rotate(5deg) translateX(100%);
     }
 
     &.hidden-slide {
@@ -181,6 +181,7 @@
 }
 
 @keyframes zoomPulse {
+  
   0%,
   100% {
     transform: scale(1) rotate(0deg);
