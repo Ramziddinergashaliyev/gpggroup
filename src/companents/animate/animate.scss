@@ -103,7 +103,7 @@
 //         position: absolute;
 //         border-radius: 50%;
 //         filter: blur(60px);
-        
+
 //         &.orb-1 {
 //             top: 25%;
 //             left: 25%;
@@ -112,7 +112,7 @@
 //             background: rgba(219, 234, 254, 0.4);
 //             animation: float-slow 15s ease-in-out infinite;
 //         }
-        
+
 //         &.orb-2 {
 //             bottom: 33%;
 //             right: 25%;
@@ -121,7 +121,7 @@
 //             background: rgba(237, 233, 254, 0.3);
 //             animation: float-slower 20s ease-in-out infinite;
 //         }
-        
+
 //         &.orb-3 {
 //             top: 50%;
 //             right: 33%;
@@ -148,7 +148,7 @@
 //         width: 100%;
 //         height: 100%;
 //         opacity: 0.1;
-        
+
 //         .pulse-ring {
 //             animation: pulse-ring 3s ease-out infinite;
 //         }
@@ -163,7 +163,7 @@
 //         display: flex;
 //         align-items: center;
 //         justify-content: center;
-        
+
 //         svg {
 //             width: 100%;
 //             height: 100%;
@@ -230,7 +230,7 @@
 //             transform: translateX(0) translateY(0) scale(1);
 //             opacity: 1;
 //         }
-        
+
 //         .center-img {
 //             transform: translateX(0) translateY(0) scale(1);
 //         }
@@ -294,7 +294,7 @@
 
 .animate-section {
     position: relative;
-    min-height: 90vh;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,6 +303,27 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    margin-bottom: 40px;
+
+    @media (max-width:1590px) {
+        min-height: 550px;
+    }
+
+    &-overlay {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(8px);
+
+        @media (max-width:1590px) {
+            min-height: 550px;
+        }
+
+    }
 
     &-img {
         display: flex;

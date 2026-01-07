@@ -166,6 +166,7 @@ const Animate = () => {
         <div
             ref={sectionRef}
             className={`animate-section ${active ? "active" : ""}`}>
+                <div className="animate-section-overlay"></div>
             <img className="animate-section-img left-img-two left" src={img1} />
             <img className="animate-section-img left-img-one left" src={img4} />
 
