@@ -1,14 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react'
-import img from "../../../assets/img/icons.png"
-import img1 from "../../../assets/img/logo-white.png"
+
 import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { FiMenu, FiSearch } from 'react-icons/fi'
 import { GrLanguage } from 'react-icons/gr'
+import { IoMdClose } from 'react-icons/io'
+
+import { useGetCategorysQuery } from '../../../context/api/categoryApi'
+import img from "../../../assets/img/icons.png"
+import img1 from "../../../assets/img/logo-white.png"
 
 import "./header.scss"
-import { useGetCategorysQuery } from '../../../context/api/categoryApi'
-import { IoMdClose } from 'react-icons/io'
-import { useTranslation } from 'react-i18next'
 
 const Header = () => {
   const [showCategories, setShowCategories] = useState(false)
@@ -18,8 +20,9 @@ const Header = () => {
   const [searchValue, setSearchValue] = useState('')
   const searchInputRef = useRef(null)
   const [isScrolled, setIsScrolled] = useState(false);
-  const { data: category } = useGetCategorysQuery()
   const [hide, setHide] = useState(false)
+  const { data: category } = useGetCategorysQuery()
+
   const { t, i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState(i18n.language || "en");
 
@@ -78,7 +81,7 @@ const Header = () => {
   return (
     <div className={`header ${isScrolled ? "scrolled" : ""}`}>
       <nav className="header-nav container">
-        
+
         <div className="header-nav-icons">
 
           <NavLink to={"/"}>
@@ -96,8 +99,12 @@ const Header = () => {
             <IoMdClose />
           </div>
 
-          <li className="header-nav-list">
+          {/* <li className="header-nav-list">
             <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/">{t('Главная')}</NavLink>
+          </li> */}
+
+          <li className="header-nav-list">
+            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/company">{t("About")}</NavLink>
           </li>
 
           <li
@@ -135,11 +142,9 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-          </li>
 
-          <li className="header-nav-list">
-            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/company">{t("About")}</NavLink>
+            </div>
+
           </li>
 
           <li className="header-nav-list">
@@ -161,7 +166,7 @@ const Header = () => {
             </div>
 
             {showLanguages && (
-              <div className="language-dropdown">
+              <div onClick={() => setHide(false)} className="language-dropdown">
                 {languages.map((lang) => (
                   <div
                     key={lang.code}
@@ -173,13 +178,10 @@ const Header = () => {
                 ))}
               </div>
             )}
-
           </div>
-
         </ul>
 
         <div className="header-nav-logos">
-
           <div className="search-wrapper">
             <FiSearch
               onClick={() => setShowSearch(!showSearch)}
@@ -188,6 +190,7 @@ const Header = () => {
           </div>
 
           <div className="header-nav-logos-lenguage">
+
             <GrLanguage onClick={() => setShowLanguages(!showLanguages)} />
 
             <div

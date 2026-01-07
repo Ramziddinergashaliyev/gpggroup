@@ -4,10 +4,28 @@ import "./footer.scss"
 import { useGetCategorysQuery } from '../../../context/api/categoryApi'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useGetValue } from '../../../hooks/useGetValue'
+import { useCreateContactMutation } from '../../../context/api/contactApi'
+
+const initialState = {
+  fullName: "",
+  phone: "",
+  email: "",
+  message: ""
+}
 
 const Footer = () => {
   const { data } = useGetCategorysQuery();
   const { t, i18n } = useTranslation()
+
+  const { formData, setFormData, handleChange } = useGetValue(initialState)
+  const [ contactForm, {data:cardForm} ] = useCreateContactMutation()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    contactForm(formData)
+    setFormData(initialState)
+  }
 
   return (
     <div className='footer'>
@@ -64,7 +82,7 @@ const Footer = () => {
 
           <div className="footer-info-item">
             <h2 className='footer-info-item-title'>{t("MESSAGE")}</h2>
-            <form className="footer-info-item-form" action="">
+            <form onSubmit={handleSubmit} className="footer-info-item-form" action="">
               <input placeholder={t('name')} type="text" />
               <input placeholder={t('phone')} type="text" />
               <input placeholder={t('email')} type="text" />

@@ -4,6 +4,7 @@ import img2 from "../../assets/img/lube2.png"
 import img3 from "../../assets/img/lube3.png"
 import './lube.scss';
 import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
 const Lube = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -34,9 +35,15 @@ const Lube = () => {
                 </div>
 
                 <div className="lube-imgs">
-                    <img src={img1} alt="img-green" className="lube-imgs-img" />
-                    <img src={img2} alt="img-blue" className="lube-imgs-img lube-imgs-blue" />
-                    <img src={img3} alt="img-red" className="lube-imgs-img lube-imgs-red" />
+                    <NavLink to={"/singleProduct/5"}>
+                        <img src={img1} alt="img-green" className="lube-imgs-img" />
+                    </NavLink>
+                    <NavLink to={"/singleProduct/13"}>
+                        <img src={img2} alt="img-blue" className="lube-imgs-img lube-imgs-blue" />
+                    </NavLink>
+                    <NavLink to={"/singleProduct/11"}>
+                        <img src={img3} alt="img-red" className="lube-imgs-img lube-imgs-red" />
+                    </NavLink>
                 </div>
 
                 <div className="lube-benefits">

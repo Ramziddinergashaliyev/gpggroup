@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./catalog.scss"
 import { useGetCategorysQuery } from "../../context/api/categoryApi";
-import img from "../../assets/bg/catalog.webp"
+// import img from "../../assets/bg/catalog.webp"
 import CatalogLoading from "../catalogLoading/CatalogLoading";
 import { useTranslation } from "react-i18next";
 
