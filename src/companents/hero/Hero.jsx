@@ -77,7 +77,7 @@ const Hero = () => {
     setProgress(0);
     setTimeout(() => setIsAnimating(false), 1500);
   }, [isAnimating]);
-  
+
   const nextSlide = useCallback(() => {
     const next = (activeIndex + 1) % SLIDES.length;
     goToSlide(next, 'next');

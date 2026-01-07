@@ -80,7 +80,7 @@ const Partner = () => {
         </div>
       </div>
 
-      <div className="partner-bg">
+      {/* <div className="partner-bg">
 
         <div className="partner-bg-container container">
           
@@ -91,6 +91,20 @@ const Partner = () => {
           </div>
 
           <div className="partner-bg-right"></div>
+        </div>
+
+      </div> */}
+
+       <div className="partner-bg">
+
+        <div className="partner-bg-container container">
+          
+          <div className="partner-bg-fix">
+            <span className="partner-bg-fix-desc">Our Strategy</span>
+            <p className="partner-bg-fix-text">Create value by actively managing our existing assets whilst growing our business through additional high-margin opportunities</p>
+            {/* <h2 className="partner-bg-left-title">{t("Recognized")}</h2> */}
+          </div>
+
         </div>
 
       </div>
