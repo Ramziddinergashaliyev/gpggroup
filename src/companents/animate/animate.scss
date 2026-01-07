@@ -296,9 +296,10 @@
     position: relative;
     min-height: 800px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     overflow: hidden;
+    padding-bottom: 40px;
     background: url(../../assets/bg/animebg.webp);
     background-repeat: no-repeat;
     background-position: center;

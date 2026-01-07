@@ -84,15 +84,15 @@
 //         <div
 //             ref={sectionRef}
 //             className={`animate-section ${active ? "active" : ""}`}>
-            
+
 //             {/* Animated Background */}
 //             <div className="animate-bg">
 //                 <div className="floating-orb orb-1"></div>
 //                 <div className="floating-orb orb-2"></div>
 //                 <div className="floating-orb orb-3"></div>
-                
+
 //                 <div className="grid-pattern"></div>
-                
+
 //                 <svg className="animated-lines">
 //                     <defs>
 //                         <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -104,7 +104,7 @@
 //                     <line x1="100%" y1="0" x2="0" y2="100%" stroke="url(#lineGradient)" strokeWidth="2" />
 //                     <circle cx="50%" cy="50%" r="200" fill="none" stroke="url(#lineGradient)" strokeWidth="1" className="pulse-ring" />
 //                 </svg>
-                
+
 //                 {[...Array(30)].map((_, i) => (
 //                     <div
 //                         key={i}
@@ -166,12 +166,14 @@ const Animate = () => {
         <div
             ref={sectionRef}
             className={`animate-section ${active ? "active" : ""}`}>
-                <div className="animate-section-overlay"></div>
+            <div className="animate-section-overlay"></div>
             <img className="animate-section-img left-img-two left" src={img1} />
+            <img className="animate-section-img left-img-one left" src={img4} />
             <img className="animate-section-img left-img-one left" src={img4} />
 
             <img className="animate-section-img center-img center" src={img5} />
 
+            <img className="animate-section-img right-img-three right" src={img} />
             <img className="animate-section-img right-img-three right" src={img} />
             <img className="animate-section-img right-img-two right" src={img6} />
         </div>
