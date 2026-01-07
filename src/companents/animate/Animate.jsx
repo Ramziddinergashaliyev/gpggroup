@@ -137,7 +137,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import img from "../../assets/animate/atlant.webp"
 import img1 from "../../assets/animate/oil2.webp"
 import img2 from "../../assets/animate/cool.webp"
-import img3 from "../../assets/animate/kitami.webp"
+import img3 from "../../assets/animate/oil3.webp"
 import img4 from "../../assets/animate/oil.webp"
 import img5 from "../../assets/animate/winner.webp"
 import img6 from "../../assets/animate/yumiko.webp"
@@ -168,7 +168,7 @@ const Animate = () => {
             className={`animate-section ${active ? "active" : ""}`}>
             <div className="animate-section-overlay"></div>
             <img className="animate-section-img left-img-two left" src={img1} />
-            <img className="animate-section-img left-img-one left" src={img4} />
+            <img className="animate-section-img left-img-one left" src={img3} />
             <img className="animate-section-img left-img-zero left" src={img4} />
 
             <img className="animate-section-img center-img center" src={img5} />
