@@ -16,6 +16,7 @@ const Lube = () => {
 
     return (
         <div className='lube'>
+            <div className="lube-overlay"></div>
 
             <div className="lube-bg-lines">
                 <div className="line line-1"></div>
