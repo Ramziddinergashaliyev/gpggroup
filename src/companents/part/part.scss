@@ -72,8 +72,8 @@
   }
 }
 
-.swiper-pagination {
-  display: none;
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: var(--swiper-pagination-bottom, -40px) !important;
 }
 
 @media (max-width: 575px) {
