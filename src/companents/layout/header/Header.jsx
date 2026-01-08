@@ -30,14 +30,12 @@ const Header = () => {
   const {data:searchData} = useSearchProductsQuery({value:searchValue})
   console.log(searchData);
   
-
   const languages = [
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
     { code: 'en', name: 'English', flag: '🇬🇧' }
   ];
 
   const lenguage = i18n?.languages[0]
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -98,6 +96,7 @@ const Header = () => {
         </div>
 
         <ul className={`header-nav-item ${hide ? "header-nav-item-hide" : ""}`}>
+
           <div onClick={() => setHide(false)} className="header-nav-item-close">
             <IoMdClose />
           </div>
@@ -130,6 +129,7 @@ const Header = () => {
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
                     <NavLink onClick={() => setHide(false)} to={`/singleCatalog/${category?.id}`} className="category-link">
+                      
                       {
                         i18n?.language === "ru"
                           ?
@@ -141,6 +141,7 @@ const Header = () => {
                             {category?.nameEn}
                           </>
                       }
+
                     </NavLink>
                   </li>
                 ))}
@@ -181,10 +182,13 @@ const Header = () => {
                 ))}
               </div>
             )}
+
           </div>
+
         </ul>
 
         <div className="header-nav-logos">
+
           <div className="search-wrapper">
             <FiSearch
               onClick={() => setShowSearch(!showSearch)}
