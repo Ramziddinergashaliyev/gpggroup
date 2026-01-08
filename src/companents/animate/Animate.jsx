@@ -132,7 +132,6 @@
 
 // export default Animate
 
-
 import React, { useEffect, useRef, useState } from 'react'
 import img from "../../assets/animate/atlant.webp"
 import img1 from "../../assets/animate/oil2.webp"

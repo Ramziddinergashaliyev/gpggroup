@@ -9,8 +9,8 @@ import { useCreateContactMutation } from '../../../context/api/contactApi'
 
 const initialState = {
   fullName: "",
-  phone: "",
   email: "",
+  phone: "",
   message: ""
 }
 
@@ -19,11 +19,13 @@ const Footer = () => {
   const { t, i18n } = useTranslation()
 
   const { formData, setFormData, handleChange } = useGetValue(initialState)
-  const [ contactForm, {data:cardForm} ] = useCreateContactMutation()
+  const [footerForm, { data: cardForm }] = useCreateContactMutation()
+
+  console.log(cardForm);
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    contactForm(formData)
+    footerForm(formData)
     setFormData(initialState)
   }
 
@@ -81,20 +83,23 @@ const Footer = () => {
           </div>
 
           <div className="footer-info-item">
+
             <h2 className='footer-info-item-title'>{t("MESSAGE")}</h2>
+
             <form onSubmit={handleSubmit} className="footer-info-item-form" action="">
-              <input placeholder={t('name')} type="text" />
-              <input placeholder={t('phone')} type="text" />
-              <input placeholder={t('email')} type="text" />
-              <input placeholder={t('message')} type="text" />
+              <input name='fullName' onChange={handleChange} value={formData.fullName} placeholder={t('name')} type="text" />
+              <input name='phone' onChange={handleChange} value={formData.phone} placeholder={t('phone')} type="text" />
+              <input name='email' onChange={handleChange} value={formData.email} placeholder={t('email')} type="text" />
+              <input name='message' onChange={handleChange} value={formData.message} placeholder={t('message')} type="text" />
               <button className="footer-info-item-form-btn">{t("Send Now")}</button>
             </form>
+
           </div>
 
         </div>
 
       </div>
-      
+
     </div>
   )
 }

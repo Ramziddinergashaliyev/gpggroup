@@ -258,6 +258,22 @@
         padding-top: 10px;
         width: 80%;
       }
+
+      @media (max-width:850px) {
+        &-text {
+           font-size: 18px;
+           line-height: 24px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        &-text {
+           font-size: 16px;
+           line-height: 22px;
+           width: 100%;
+        }
+      }
+
     }
   }
 
@@ -504,6 +520,7 @@
 
     &-info-right-title {
       font-size: 20px;
+      line-height: 26px;
     }
 
     &-drive {
@@ -536,7 +553,8 @@
     }
 
     &-top-left-title {
-      font-size: 28px;
+      font-size: 20px !important;
+      line-height: 26px;
     }
 
     &-top-left-text {
