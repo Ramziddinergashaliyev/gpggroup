@@ -294,7 +294,7 @@
 
 .animate-section {
     position: relative;
-    min-height: 800px;
+    min-height: 600px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -303,11 +303,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     margin-bottom: 40px;
 
     @media (max-width:1590px) {
-        min-height: 620px;
+        min-height: 420px;
     }
 
     // &-overlay {
