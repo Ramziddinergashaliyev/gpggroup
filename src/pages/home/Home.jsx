@@ -16,8 +16,10 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Made />
-      <Animate />
+      <div className="home-bg">
+        <Made />
+        <Animate />
+      </div>
       <Catalog />
       <Lube />
       <Service />
