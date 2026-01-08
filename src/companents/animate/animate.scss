@@ -299,7 +299,7 @@
     align-items: flex-end;
     justify-content: center;
     overflow: hidden;
-    background: url(../../assets/bg/animebg1.webp);
+    background: url(../../assets/bg/animebg2.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -307,7 +307,7 @@
     margin-bottom: 40px;
 
     @media (max-width:1590px) {
-        min-height: 420px;
+        min-height: 620px;
     }
 
     // &-overlay {
@@ -317,7 +317,7 @@
     //     top: 0;
     //     left: 0;
 
-    //     background-color: rgba(0, 0, 0, 0.05);
+    //     background-color: rgba(0, 0, 0, 0.35);
     //     backdrop-filter: blur(2px);
 
     //     @media (max-width:1590px) {
