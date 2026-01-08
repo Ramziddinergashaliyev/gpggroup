@@ -12,7 +12,6 @@ const Made = () => {
     return (
         <div className='made container'>
                 <div className="made-left">
-
                     <div className="made-left-info">
                         <h2 className="made-left-info-title">{t("ГПГ")} <br /> {t("Lubricants")}</h2>
                         <p className='made-left-info-text'>{t("Made")}</p>
@@ -24,7 +23,6 @@ const Made = () => {
                             <span className="btn-arrow">→</span>
                         </button>
                     </NavLink>
-
                 </div>
 
                 <div className="made-right">
@@ -43,5 +41,4 @@ const Made = () => {
         </div>
     )
 }
-
 export default Made

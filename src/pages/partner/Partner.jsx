@@ -100,8 +100,8 @@ const Partner = () => {
         <div className="partner-bg-container container">
           
           <div className="partner-bg-fix">
-            <span className="partner-bg-fix-desc">Our Strategy</span>
-            <p className="partner-bg-fix-text">Create value by actively managing our existing assets whilst growing our business through additional high-margin opportunities</p>
+            <span className="partner-bg-fix-desc">{t("OUR")}</span>
+            <p className="partner-bg-fix-text">{t("opportunities")}</p>
             {/* <h2 className="partner-bg-left-title">{t("Recognized")}</h2> */}
           </div>
 
