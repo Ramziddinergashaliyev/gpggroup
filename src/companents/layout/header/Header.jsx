@@ -50,7 +50,6 @@ const Header = () => {
       searchInputRef.current.focus()
     }
   }, [showSearch])
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (showLanguages && !event.target.closest('.header-nav-logos-lenguage')) {
@@ -122,12 +121,14 @@ const Header = () => {
             <div className={`category-dropdown ${showCategories ? 'show' : ''}`}>
 
               <ul className="category-list">
+
                 {category?.map((category, index) => (
                   <li
                     key={category?.id}
                     className="category-item"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
+
                     <NavLink onClick={() => setHide(false)} to={`/singleCatalog/${category?.id}`} className="category-link">
                       
                       {
@@ -143,8 +144,10 @@ const Header = () => {
                       }
 
                     </NavLink>
+
                   </li>
                 ))}
+
               </ul>
 
             </div>
@@ -209,6 +212,7 @@ const Header = () => {
 
             {showLanguages && (
               <div className="language-dropdown">
+
                 {languages.map((lang) => (
                   <div
                     key={lang.code}
@@ -218,6 +222,7 @@ const Header = () => {
                     {lang.name}
                   </div>
                 ))}
+
               </div>
             )}
 
@@ -233,7 +238,9 @@ const Header = () => {
 
       <div className={`search-fullwidth-dropdown ${showSearch ? 'show' : ''}`}>
         <div className="container">
+          
           <form onSubmit={handleSearchSubmit} className="search-form">
+
             <input
               ref={searchInputRef}
               type="text"
@@ -242,10 +249,13 @@ const Header = () => {
               placeholder="Что вы ищете?"
               className="search-fullwidth-input"
             />
+
             <button type="submit" className="search-submit-btn">
               <FiSearch />
             </button>
+
           </form>
+
         </div>
       </div>
 
