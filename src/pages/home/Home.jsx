@@ -11,19 +11,22 @@ import Lube from "../../companents/lube/Lube";
 import Leazy from "../../companents/leazy/Leazy";
 import Animate from "../../companents/animate/Animate";
 import Part from "../../companents/part/Part";
+import "./home.scss"
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Made />
-      <Animate/>
-      <Catalog />
+      <div className="home-bg">
+        <Made />
+        <Animate />
+        <Catalog />
+      </div>
       <Lube />
       <Service />
       <Information />
       <Card />
-      <Part/>
+      <Part />
     </div>
   );
 };

@@ -28,18 +28,18 @@ const Footer = () => {
     footerForm(formData)
     setFormData(initialState)
   }
-  
+
   useEffect(() => {
-      if(isSuccess) {
-        toast.success("Сообщение успешно отправлено!")
-      }
-    },[isSuccess])
-  
-    useEffect(() => {
-      if(isError) {
-        toast.error("Ошибка отправки сообщения!")
-      }
-    },[isError])
+    if (isSuccess) {
+      toast.success("Сообщение успешно отправлено!")
+    }
+  }, [isSuccess])
+
+  useEffect(() => {
+    if (isError) {
+      toast.error("Ошибка отправки сообщения!")
+    }
+  }, [isError])
 
   return (
     <div className='footer'>
