@@ -369,7 +369,6 @@
       top: 15px;
       right: 15px;
       font-size: 32px;
-      // color: #001;
       color: #001;
       cursor: pointer;
       display: none;
@@ -483,7 +482,7 @@
     backdrop-filter: blur(2px);
     z-index: 998;
   }
-  
+
 }
 
 .header-nav-logos-lenguage-two {
@@ -791,10 +790,11 @@
   .category-dropdown {
     display: none;
   }
+
   .header-nav-logos-lenguage .language-dropdown {
     right: -50%;
   }
-  
+
   .header-nav-logos-lenguage svg {
     display: none !important;
   }
