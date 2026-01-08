@@ -10,8 +10,8 @@ import { toast } from 'react-toastify'
 
 const initialState = {
   fullName: "",
-  email: "",
   phone: "",
+  email: "",
   message: ""
 }
 

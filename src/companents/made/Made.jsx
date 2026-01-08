@@ -10,8 +10,8 @@ const Made = () => {
     const { t, i18n } = useTranslation()
 
     return (
-        <div className='made container'>
-
+        <div className='made'>
+            <div className="made-container container">
             <div className="made-left">
 
                 <div className="made-left-info">
@@ -40,6 +40,7 @@ const Made = () => {
 
             <div className="made-img-bottom">
                 <img className='made-img-bottom-one' src={img1} alt="Rubaat Premium Oil" />
+            </div>
             </div>
 
         </div>

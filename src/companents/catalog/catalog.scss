@@ -694,10 +694,10 @@
 
 .photo-catalog {
   position: relative;
-  // background: url(../../assets/bg/catalogBg.webp);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
+  background: url(../../assets/bg/catalogBg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   z-index: 1;
 
   &-top {

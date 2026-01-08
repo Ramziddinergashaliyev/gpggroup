@@ -16,11 +16,9 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <div className="home-bg">
-        <Made />
-        <Animate />
-        <Catalog />
-      </div>
+      <Made />
+      <Animate />
+      <Catalog />
       <Lube />
       <Service />
       <Information />

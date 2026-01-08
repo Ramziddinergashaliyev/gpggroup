@@ -1,9 +1,16 @@
 .made {
-    position: relative;
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-gap: 20px;
-    padding: 130px 0px 130px;
+    background: url(../../assets/bg/catalogBg2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    &-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-gap: 20px;
+        padding: 130px 0px 130px;
+    }
 
     &-left {
         background: url(../../assets/img/made1.webp);
