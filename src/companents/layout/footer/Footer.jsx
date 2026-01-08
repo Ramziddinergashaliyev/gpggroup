@@ -21,7 +21,6 @@ const Footer = () => {
 
   const { formData, setFormData, handleChange } = useGetValue(initialState)
   const [footerForm, { data: cardForm, isSuccess, isError }] = useCreateContactMutation()
-  console.log(cardForm);
 
   const handleSubmit = (e) => {
     e.preventDefault()
