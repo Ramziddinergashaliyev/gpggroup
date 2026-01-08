@@ -12,7 +12,6 @@ import Leazy from "../../companents/leazy/Leazy";
 import Animate from "../../companents/animate/Animate";
 import Part from "../../companents/part/Part";
 import "./home.scss"
-
 const Home = () => {
   return (
     <div>
