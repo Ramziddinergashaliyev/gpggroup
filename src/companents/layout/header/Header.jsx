@@ -11,6 +11,7 @@ import img from "../../../assets/img/icons.png"
 import img1 from "../../../assets/img/logo-white.png"
 
 import "./header.scss"
+import { useSearchProductsQuery } from '../../../context/api/productApi'
 
 const Header = () => {
   const [showCategories, setShowCategories] = useState(false)
@@ -22,11 +23,13 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hide, setHide] = useState(false)
   const { data: category } = useGetCategorysQuery()
+  const [ value, setValue ] = useState("")
 
   const { t, i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState(i18n.language || "en");
-
-  console.log(i18n?.language);
+  const {data:searchData} = useSearchProductsQuery({value:searchValue})
+  console.log(searchData);
+  
 
   const languages = [
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
@@ -221,6 +224,7 @@ const Header = () => {
           </button>
 
         </div>
+
       </nav>
 
       <div className={`search-fullwidth-dropdown ${showSearch ? 'show' : ''}`}>

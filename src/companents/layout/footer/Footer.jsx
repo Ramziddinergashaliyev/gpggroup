@@ -23,17 +23,23 @@ const Footer = () => {
   const [footerForm, { data: cardForm, isSuccess, isError }] = useCreateContactMutation()
   console.log(cardForm);
 
-  useEffect(() => {
-    if (isSuccess) {
-      toast.success
-    }
-  },[isSuccess])
-
   const handleSubmit = (e) => {
     e.preventDefault()
     footerForm(formData)
     setFormData(initialState)
   }
+  
+  useEffect(() => {
+      if(isSuccess) {
+        toast.success("Сообщение успешно отправлено!")
+      }
+    },[isSuccess])
+  
+    useEffect(() => {
+      if(isError) {
+        toast.error("Ошибка отправки сообщения!")
+      }
+    },[isError])
 
   return (
     <div className='footer'>
@@ -80,7 +86,7 @@ const Footer = () => {
               <span className="footer-info-item-text-span">{t("Номер")}</span>
               <span><a href="tel:+998 71 281 49 30">+998 71 281 49 30</a></span>
               <span><a href="tel:+998 71 203 20 31">+998 71 203 20 31</a></span>
-              
+
             </p>
 
             <p className="footer-info-item-text-address">

@@ -19,7 +19,7 @@ export const productApi = api.injectEndpoints({
 
     SearchProducts: build.query({
       query: (params) => ({
-        url: "/product",
+        url: "/products/search/",
         method: "GET",
         params,
       }),
