@@ -68,7 +68,7 @@ const Footer = () => {
               ))
             }
           </div>
-
+          
           <div className="footer-info-item">
             <h2 className='footer-info-item-title'>{t("ADDRESS")}</h2>
             <p className="footer-info-item-text-number">
