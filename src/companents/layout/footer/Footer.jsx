@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from "../../../assets/img/footerbg.png"
 import "./footer.scss"
 import { useGetCategorysQuery } from '../../../context/api/categoryApi'
@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useGetValue } from '../../../hooks/useGetValue'
 import { useCreateContactMutation } from '../../../context/api/contactApi'
+import { toast } from 'react-toastify'
 
 const initialState = {
   fullName: "",
@@ -19,9 +20,14 @@ const Footer = () => {
   const { t, i18n } = useTranslation()
 
   const { formData, setFormData, handleChange } = useGetValue(initialState)
-  const [footerForm, { data: cardForm }] = useCreateContactMutation()
-
+  const [footerForm, { data: cardForm, isSuccess, isError }] = useCreateContactMutation()
   console.log(cardForm);
+
+  useEffect(() => {
+    if (isSuccess) {
+      toast.success
+    }
+  },[isSuccess])
 
   const handleSubmit = (e) => {
     e.preventDefault()
