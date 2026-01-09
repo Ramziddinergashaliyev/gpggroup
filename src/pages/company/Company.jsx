@@ -119,7 +119,7 @@ const Company = () => {
       </div>
 
       <div className="company-vision">
-        
+
         <div className="container company-vision-container">
 
           <div className="company-vision-top">
