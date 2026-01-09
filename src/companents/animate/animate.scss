@@ -302,6 +302,10 @@
     padding-bottom: 160px;
     padding-top: 140px;
     border-bottom: 6px solid white;
+    background-image: url(../../assets/bg/catalogBg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     // margin-bottom: 40px;
 
     @media (max-width:1590px) {
