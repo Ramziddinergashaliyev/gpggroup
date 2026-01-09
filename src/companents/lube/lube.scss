@@ -5,12 +5,16 @@
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    min-height: calc(100vh - 80px);
+    min-height: calc(90vh - 80px);
     background-color: rgb(71, 156, 210);
     backdrop-filter: blur(40px);
     overflow: hidden;
     color: #fff;
     font-family: 'Arial', sans-serif;
+
+    @media (max-width:1590px) {
+        min-height: calc(100vh - 80px);
+    }
 
     &-overlay {
         width: 100%;
