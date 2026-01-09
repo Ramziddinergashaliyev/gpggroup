@@ -36,8 +36,11 @@ const Company = () => {
 
   return (
     <div className='company'>
+
       <div className="company-bg">
+
         <div className="company-info container">
+
           <div className="company-info-left">
             <img src={img} alt="company-img" className="company-info-left-img" />
           </div>
@@ -46,11 +49,15 @@ const Company = () => {
             <h3 className='company-info-right-about'>{t("About Us")}</h3>
             <p className="company-info-right-text">{t("leading")}</p>
           </div>
+
         </div>
+
       </div>
 
       <div className="company-bottom">
+
         <div className="company-item container">
+
           <div className="company-item-left">
             <p className="company-item-left-text">{t("Компания ООО")}</p>
             <p className="company-item-left-text">{t('Все этапы')}</p>
@@ -60,9 +67,11 @@ const Company = () => {
             <p className="company-item-right-text">{t("Продукция")}</p>
             <p className="company-item-right-text">{t("успешно")}</p>
           </div>
+
         </div>
 
         <div className="company-imgs container">
+
           <div className="company-imgs-left">
             <img className='company-imgs-left-img' src={company3} alt="" />
           </div>
@@ -71,6 +80,7 @@ const Company = () => {
             <img src={company1} alt="company settificate one" />
             <img src={company2} alt="company sertificate two" />
           </div>
+
         </div>
 
         <div className="company-bottom-info container">
@@ -109,6 +119,7 @@ const Company = () => {
       </div>
 
       <div className="company-vision">
+        
         <div className="container company-vision-container">
 
           <div className="company-vision-top">

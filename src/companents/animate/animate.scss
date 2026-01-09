@@ -299,13 +299,14 @@
     align-items: flex-end;
     justify-content: center;
     overflow: hidden;
-    padding-bottom: 160px;
+    padding-bottom: 260px;
+    padding-top: 140px;
     border-bottom: 1px solid white;
     // margin-bottom: 40px;
 
     @media (max-width:1590px) {
         min-height: 420px;
-        padding-bottom: 80px;
+        padding-bottom: 120px;
     }
 
     // &-overlay {
