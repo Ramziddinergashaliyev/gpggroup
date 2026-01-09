@@ -23,13 +23,13 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hide, setHide] = useState(false)
   const { data: category } = useGetCategorysQuery()
-  const [ value, setValue ] = useState("")
+  const [value, setValue] = useState("")
 
   const { t, i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState(i18n.language || "en");
-  const {data:searchData} = useSearchProductsQuery({value:searchValue})
-  console.log(searchData);
-  
+  const { data: searchData } = useSearchProductsQuery({ query: searchValue }, { skip: !searchValue.trim() })
+
+
   const languages = [
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
     { code: 'en', name: 'English', flag: '🇬🇧' }
@@ -130,7 +130,7 @@ const Header = () => {
                   >
 
                     <NavLink onClick={() => setHide(false)} to={`/singleCatalog/${category?.id}`} className="category-link">
-                      
+
                       {
                         i18n?.language === "ru"
                           ?
@@ -237,13 +237,13 @@ const Header = () => {
       </nav>
 
       <div className={`search-fullwidth-dropdown ${showSearch ? 'show' : ''}`}>
-        <div className="container">
-          
+        <div className="container search-forms">
+
           <form onSubmit={handleSearchSubmit} className="search-form">
 
             <input
               ref={searchInputRef}
-              type="text"
+              type="search"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Что вы ищете?"
@@ -255,6 +255,19 @@ const Header = () => {
             </button>
 
           </form>
+
+          <div className="search-resuls">
+            {
+              searchData?.map(el => (
+                <div className='search-res' key={el?.id}>
+                  <NavLink to={`/singleProduct/${el?.id}`}>
+                    <img src={el?.images[0]} alt="" />
+                  </NavLink>
+                  <p className='search-res-title'>{el?.nameRu}</p>
+                </div>
+              ))
+            }
+          </div>
 
         </div>
       </div>

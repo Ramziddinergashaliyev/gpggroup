@@ -80,29 +80,13 @@ const Partner = () => {
         </div>
       </div>
 
-      {/* <div className="partner-bg">
+      <div className="partner-bg">
 
         <div className="partner-bg-container container">
-          
-          <div className="partner-bg-left">
-            <span className="partner-bg-left-desc">{t("AWARDS & ACCREDITATIONS")}</span>
-            <h2 className="partner-bg-left-title">{t("Recognized")}</h2>
-            <p className="partner-bg-left-text">{t("trusted")}</p>
-          </div>
 
-          <div className="partner-bg-right"></div>
-        </div>
-
-      </div> */}
-
-       <div className="partner-bg">
-
-        <div className="partner-bg-container container">
-          
           <div className="partner-bg-fix">
             <span className="partner-bg-fix-desc">{t("OUR")}</span>
             <p className="partner-bg-fix-text">{t("opportunities")}</p>
-            {/* <h2 className="partner-bg-left-title">{t("Recognized")}</h2> */}
           </div>
 
         </div>
