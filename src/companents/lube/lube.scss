@@ -11,9 +11,11 @@
     overflow: hidden;
     color: #fff;
     font-family: 'Arial', sans-serif;
-
+    padding-top: 20px;
+    
     @media (max-width:1590px) {
         min-height: calc(100vh - 80px);
+        padding-top: 0px;
     }
 
     &-overlay {
