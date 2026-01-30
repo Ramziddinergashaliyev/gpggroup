@@ -427,13 +427,16 @@
             }
 
             &-small {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                // display: grid;
+                // grid-template-columns: repeat(4, 1fr);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 gap: 20px;
 
                 img {
                     padding: 10px;
-                    width: 100%;
+                    width: 100px;
                     height: 100px;
                     object-fit: contain;
                     border: 1px solid #aaa8;
