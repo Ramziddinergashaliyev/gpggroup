@@ -626,7 +626,7 @@
         gap: 20px;
         padding: 20px 0px;
         overflow: hidden;
-        overflow-x: scroll;
+        overflow-x: auto;
         scrollbar-width: none;
 
 
@@ -675,9 +675,9 @@
         }
     }
 
-    // .single-cards::-webkit-scrollbar {
-    //     display: none;
-    // }
+    .single-cards::-webkit-scrollbar {
+        display: none;
+    }
 
     .single-bottom {
         &-title {
