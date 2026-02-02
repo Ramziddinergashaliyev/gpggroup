@@ -627,6 +627,7 @@
         padding: 20px 0px;
         overflow: hidden;
         overflow-x: scroll;
+        scrollbar-width: none;
 
 
         .single-card {
@@ -672,6 +673,10 @@
                 }
             }
         }
+    }
+
+    .single-cards::-webkit-scrollbar {
+        display: none;
     }
 
     .single-bottom {
