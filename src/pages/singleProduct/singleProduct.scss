@@ -631,7 +631,8 @@
 
 
         .single-card {
-            width: 23.5%;
+            // width: 23.5%;
+            min-width: 280px;
             flex-shrink: 0;
             background-color: white;
             border-radius: 12px;
