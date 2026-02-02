@@ -625,10 +625,9 @@
         display: flex;
         gap: 20px;
         padding: 20px 0px;
+        overflow: hidden;
+        overflow-x: scroll;
 
-        @media (max-width:1400px) {
-            overflow-x: scroll;
-        }
 
         .single-card {
             width: 23.5%;
