@@ -163,9 +163,9 @@ const Footer = () => {
 
           <div className="footer-info-item">
             <h2 className="footer-info-item-title">{t("COMPANY")}</h2>
-            <p className="footer-info-item-text">{t("Главная")}</p>
-            <p className="footer-info-item-text">{t("About")}</p>
-            <p className="footer-info-item-text">{t("Партнеры")}</p>
+            <NavLink to={"/"} className="footer-info-item-text">{t("Главная")}</NavLink>
+            <NavLink to={"/company"} className="footer-info-item-text">{t("About")}</NavLink>
+            <NavLink to={"/partner"} className="footer-info-item-text">{t("Партнеры")}</NavLink>
             <p className="footer-info-item-text">{t("Distributors")}</p>
           </div>
 

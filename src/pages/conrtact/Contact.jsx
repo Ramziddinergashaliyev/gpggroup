@@ -20,7 +20,7 @@
 //   const { formData, setFormData, handleChange } = useGetValue(initialState)
 //   const [ createContact, {data, isSuccess, isError} ] = useCreateContactMutation()
 //   console.log(data);
-  
+
 //   useEffect(() => {
 //     scrollTo(0, 0)
 //   }, [])
@@ -82,7 +82,7 @@
 //         </div>
 
 //         <div className="contact-form-left">
-          
+
 //           <h2 className="contact-form-left-title">{t("Contact Us")}</h2>
 
 //           <form onSubmit={handleSubmit} className='contact-form-left-item' action="">
@@ -138,10 +138,10 @@ const initialState = {
 const Contact = () => {
   const { t, i18n } = useTranslation()
   const { formData, setFormData, handleChange } = useGetValue(initialState)
-  const [ createContact, {data, isSuccess, isError} ] = useCreateContactMutation()
-  
+  const [createContact, { data, isSuccess, isError }] = useCreateContactMutation()
+
   console.log(data);
-  
+
   useEffect(() => {
     scrollTo(0, 0)
   }, [])
@@ -153,16 +153,16 @@ const Contact = () => {
   }
 
   useEffect(() => {
-    if(isSuccess) {
+    if (isSuccess) {
       toast.success("Сообщение успешно отправлено!")
     }
-  },[isSuccess])
+  }, [isSuccess])
 
   useEffect(() => {
-    if(isError) {
+    if (isError) {
       toast.error("Ошибка отправки сообщения!")
     }
-  },[isError])
+  }, [isError])
 
   return (
     <div className='contact'>
@@ -185,12 +185,16 @@ const Contact = () => {
         <div className="contact-form-right">
           <div className="contact-form-right-item">
             <h2>{t("Email")}</h2>
-            <p>info@gpggroup.uz</p>
+            <a href='mailTo:info@gpggroup.uz'>info@gpggroup.uz</a>
           </div>
           <div className="contact-form-right-item">
             <h2>{t("Phone Number")}</h2>
-            <p>+998 71 281 49 30</p>
-            <p>+998 71 281 49 30</p> 
+            <p>
+              <a href='tel:+998 71 281 49 30'>+998 71 281 49 30</a>
+            </p>
+            <p>
+              <a href='tel:+998 71 203 20 31'>+998 71 203 20 31</a>
+            </p>
           </div>
           <div className="contact-form-right-item">
             <h2>{t("Address")}</h2>
@@ -199,34 +203,34 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-left">
-          
+
           <h2 className="contact-form-left-title">{t("Contact Us")}</h2>
 
           <form onSubmit={handleSubmit} className='contact-form-left-item' action="">
 
             <div className="contact-form-left-item-top">
-              <input 
-                required 
-                name="fullName" 
-                value={formData.fullName} 
-                onChange={handleChange} 
-                placeholder='Full Name' 
-                type="text" 
+              <input
+                required
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                placeholder='Full Name'
+                type="text"
               />
-              <input 
-                required 
-                name="email" 
-                value={formData.email} 
-                onChange={handleChange} 
-                placeholder='Email' 
-                type="email" 
+              <input
+                required
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder='Email'
+                type="email"
               />
-              
+
               {/* Phone Input with all countries */}
               <PhoneInput
                 country={'uz'}
                 value={formData.phone}
-                onChange={phone => setFormData({...formData, phone: '+' + phone})}
+                onChange={phone => setFormData({ ...formData, phone: '+' + phone })}
                 enableSearch={true}
                 searchPlaceholder="Search country..."
                 inputProps={{
@@ -239,22 +243,22 @@ const Contact = () => {
                 buttonClass="phone-input-button"
                 dropdownClass="phone-input-dropdown"
               />
-              
-              <input 
-                required 
-                name="company" 
-                value={formData.company} 
-                onChange={handleChange} 
-                placeholder='Company' 
-                type="text" 
+
+              <input
+                required
+                name="company"
+                value={formData.company}
+                onChange={handleChange}
+                placeholder='Company'
+                type="text"
               />
             </div>
 
             <div className='contact-form-left-item-bottom'>
-              <textarea 
-                placeholder='Message' 
-                name="message" 
-                value={formData.message} 
+              <textarea
+                placeholder='Message'
+                name="message"
+                value={formData.message}
                 onChange={handleChange}
               ></textarea>
               <button className='contact-form-left-item-bottom-btn'>{t("Let's Talk")}</button>
