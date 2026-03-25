@@ -561,7 +561,6 @@ const SingleProduct = () => {
             </div>
 
             <div className="sp__info">
-              <div className="sp__info-badge">{data?.brand?.name}</div>
               <h1 className="sp__info-title">{data?.nameRu}</h1>
               <div className="sp__info-divider" />
               <p className="sp__info-desc">
