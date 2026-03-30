@@ -80,7 +80,6 @@
 
             .card-box-icon img {
                 transform: translateY(-12px) scale(1.099);
-                // filter: drop-shadow(0 20px 30px rgb(71, 156, 210));
             }
 
             .card-box-info-title {
@@ -173,7 +172,6 @@
 }
 
 @keyframes iconPulse {
-
     0%,
     100% {
         transform: translateY(-12px) scale(1.3);

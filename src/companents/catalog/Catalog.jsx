@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./catalog.scss"
 import { useGetCategorysQuery } from "../../context/api/categoryApi";
-// import img from "../../assets/bg/catalog.webp"
 import CatalogLoading from "../catalogLoading/CatalogLoading";
 import { useTranslation } from "react-i18next";
 
@@ -13,7 +12,7 @@ const Catalog = ({ hide }) => {
   const { t, i18n } = useTranslation()
 
   console.log(i18n?.language);
-  
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,14 +26,14 @@ const Catalog = ({ hide }) => {
         <h3 className="photo-catalog-top-title"><span>{t("Высококачественные")}</span>, {t("охлаждающие")}</h3>
       </div>
       <div className="photo-catalog__container container">
-        
+
         {
           isLoading
             ?
-            <CatalogLoading/>
+            <CatalogLoading />
             :
             <div className="photo-catalog__grid">
-              {data?.slice(0,8)?.map((el, index) => (
+              {data?.slice(0, 8)?.map((el, index) => (
                 <NavLink key={el.id} to={`/singleCatalog/${el.id}`} className="photo-catalog__link">
 
                   <div
@@ -52,7 +51,7 @@ const Catalog = ({ hide }) => {
                       />
                       <div className="photo-catalog__card-gradient"></div>
                     </div>
-                          
+
                     <div className="photo-catalog__card-label">
                       <span className="photo-catalog__card-title">{i18n?.language === "ru" ? el?.nameRu : el?.nameEn}</span>
                     </div>
@@ -68,6 +67,5 @@ const Catalog = ({ hide }) => {
     </div>
   );
 };
-
 
 export default Catalog;

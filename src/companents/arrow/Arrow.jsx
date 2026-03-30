@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../../assets/img/partner.svg";
 
-import "./arrow.scss"   
+import "./arrow.scss"
 import { NavLink } from "react-router-dom";
 
 const Arrow = () => {
@@ -12,11 +12,11 @@ const Arrow = () => {
           <img src={img} alt="Arrow-img" />
         </div>
         <div className="arrow__right">
-            <h2 className="arrow__right__title">Партнерство и сотрудничество</h2>
-            <p className="arrow__right__desc">Мы ценим доверие наших клиентов и партнеров, предлагая продукцию и услуги, которые соответствуют самым высоким мировым стандартам.</p>
-            <button className="arrow__right__btn">
-              <NavLink to={"/contact"}>Связаться с нами</NavLink>
-            </button>
+          <h2 className="arrow__right__title">Партнерство и сотрудничество</h2>
+          <p className="arrow__right__desc">Мы ценим доверие наших клиентов и партнеров, предлагая продукцию и услуги, которые соответствуют самым высоким мировым стандартам.</p>
+          <button className="arrow__right__btn">
+            <NavLink to={"/contact"}>Связаться с нами</NavLink>
+          </button>
         </div>
       </div>
     </div>

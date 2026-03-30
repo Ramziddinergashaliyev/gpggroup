@@ -48,7 +48,6 @@ $ease : cubic-bezier(.4, 0, .2, 1);
   min-height: calc(100vh - 90px);
   font-family: 'Inter', sans-serif;
   overflow: hidden;
-  background-color: black;
 
   &__map {
     position: absolute;
@@ -59,7 +58,6 @@ $ease : cubic-bezier(.4, 0, .2, 1);
     video {
       width: 100%;
       height: 100%;
-      padding-right: 400px;
       object-fit: cover;
       object-position: center;
     }

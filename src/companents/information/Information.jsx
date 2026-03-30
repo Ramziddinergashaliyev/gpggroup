@@ -20,7 +20,7 @@ const Information = () => {
               {t("GPG")}
             </h2>
           </div>
-
+          
           <div className="information-middle-boxs">
             <div className="information-middle-boxs-top">
             </div>

@@ -35,6 +35,7 @@ const SingleCatalog = () => {
         if (!products?.length) return
         const newLoaded = {}
         let count = 0
+
         products.forEach(p => {
             const src = p?.images?.[1] || p?.images?.[0]
             if (!src) { newLoaded[p.id] = true; count++; return }
