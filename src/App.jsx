@@ -10,6 +10,7 @@ import CatalogItem from "./pages/catalogItem/CatalogItem";
 import SingleCatalog from "./pages/singleCatalog/SingleCatalog";
 import SingleProduct from "./pages/singleProduct/SingleProduct";
 import { ToastContainer } from "react-toastify";
+import Distrbuter from "./pages/distrbuter/Distrbuter";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="singleCatalog/:id" element={<SingleCatalog />} />
           <Route path="singleProduct/:id" element={<SingleProduct />} />
           <Route path="catalog-item" element={<CatalogItem />} />
+          <Route path="distrbut" element={<Distrbuter />} />
         </Route>
       </Routes>
       <ToastContainer />

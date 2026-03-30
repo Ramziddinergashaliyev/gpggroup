@@ -175,9 +175,6 @@
 
 // export default Hero;
 
-
-
-
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -220,7 +217,7 @@ const SLIDESEN = [
 ];
 
 const INTERVAL = 6000;
-const FADE_DURATION = 1200; 
+const FADE_DURATION = 1200;
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -288,6 +285,7 @@ const Hero = () => {
     return () => clearInterval(progressRef.current);
   }, [activeIndex]);
 
+
   useEffect(() => {
     return () => {
       clearTimeout(timerRef.current);
@@ -306,11 +304,10 @@ const Hero = () => {
           return (
             <div
               key={index}
-              className={`hero__layer ${
-                isActive ? "hero__layer--active" :
-                isPrev   ? "hero__layer--prev"   :
-                           "hero__layer--idle"
-              }`}
+              className={`hero__layer ${isActive ? "hero__layer--active" :
+                  isPrev ? "hero__layer--prev" :
+                    "hero__layer--idle"
+                }`}
               style={{
                 backgroundImage: `url(${isMobile ? slide.mobileImg : slide.img})`,
               }}
@@ -325,6 +322,7 @@ const Hero = () => {
       <div className="hero__fog" />
 
       <div className="hero__controls">
+
         <button className="hero__arrow hero__arrow--prev" onClick={prevSlide} aria-label="Previous">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <polyline points="15 18 9 12 15 6" />
@@ -366,20 +364,22 @@ const Hero = () => {
       </div>
 
       <div className="hero__counter">
+        
         <span className="hero__counter-current">
           {String(activeIndex + 1).padStart(2, "0")}
         </span>
+
         <span className="hero__counter-sep" />
         <span className="hero__counter-total">
           {String(heroData.length).padStart(2, "0")}
         </span>
+
       </div>
     </section>
   );
 };
 
 export default Hero;
-
 
 
 // import React, { useState, useEffect, useCallback, useRef } from "react";

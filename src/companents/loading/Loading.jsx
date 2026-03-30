@@ -2,7 +2,7 @@ import React from "react";
 import "./loading.scss";
 
 const Loading = () => {
-    
+
   const lodingCard = (
     <div className="loading__item">
       <div className="loading__img bg__animation"></div>

@@ -384,3 +384,107 @@ export const BRAND = [
     ]
   }
 ]
+
+export const DATA_RU = [
+  {
+    id: 1,
+    country: "АЗЕРБАЙДЖАН",
+    distributor: "Aysan-S",
+    title: "Республика Азербайджан, город Сумгаит, 5-й квартал, дом 18/39A, кв. 9",
+    number: ["+994503214472"],
+  },
+  {
+    id: 2,
+    country: "ТУРКМЕНИСТАН",
+    distributor: "Rowanaawtohyzmatlar",
+    title: "Ахалский велаят, город Анау, ул. О. Ильясова 43",
+    number: ["+99362364425"],
+  },
+  {
+    id: 3,
+    country: "ТУРКМЕНИСТАН",
+    distributor: "Demirdag Auto Parts",
+    title: "Марыйский велаят, Векильбазарский этрап, Акгонур",
+    number: ["+99361070725"],
+  },
+  {
+    id: 4,
+    country: "ТУРКМЕНИСТАН",
+    distributor: "Nuryyew Kakajan",
+    title: "Ахалский велаят, Анау, улица Ахал 4",
+    number: ["+99364330033"],
+  },
+  {
+    id: 5,
+    country: "ТУРКМЕНИСТАН",
+    distributor: "AUTOLUX AWTOŞAÝLAR MERKEZI",
+    title: "Туркменабад, ул. Зелили",
+    number: ["+99364226000"],
+  },
+  {
+    id: 6,
+    country: "ТАДЖИКИСТАН",
+    distributor: "АБРИ ГУЗАР",
+    title: "Истаравшан, ул. Фабрика 6",
+    number: ["+992918188182"],
+  },
+  {
+    id: 7,
+    country: "КЫРГЫЗСТАН",
+    distributor: "ОйлПрофи",
+    title: "720000, Республика Кыргызстан, г. Бишкек, ул. Садыгалиева, д. 1",
+    number: ["+996777111100"],
+  },
+]
+
+export const DATA_EN = [
+  {
+    id: 1,
+    country: "AZERBAIJAN",
+    distributor: "Aysan-S",
+    title: "Sumgait city, 5th quarter, building 18/39A",
+    number: ["+994503214472"],
+  },
+  {
+    id: 2,
+    country: "TURKMENISTAN",
+    distributor: "Rowanaawtohyzmatlar",
+    title: "Anau city, O. Ilyasova st. 43",
+    number: ["+99362364425"],
+  },
+  {
+    id: 3,
+    country: "TURKMENISTAN",
+    distributor: "Demirdag Auto Parts",
+    title: "Mary velayat, Akgonur",
+    number: ["+99361070725"],
+  },
+  {
+    id: 4,
+    country: "TURKMENISTAN",
+    distributor: "Nuryyew Kakajan",
+    title: "Anau city, Ahal 4",
+    number: ["+99364330033"],
+  },
+  {
+    id: 5,
+    country: "TURKMENISTAN",
+    distributor: "AUTOLUX AWTOŞAÝLAR MERKEZI",
+    title: "Turkmenabat, Zelili st.",
+    number: ["+99364226000"],
+  },
+  {
+    id: 6,
+    country: "TAJIKISTAN",
+    distributor: "ABRI GUZAR",
+    title: "Istaravshan, Fabrika st. 6",
+    number: ["+992918188182"],
+  },
+  {
+    id: 7,
+    country: "KYRGYZSTAN",
+    distributor: "OilProfi",
+    title: "720000, Kyrgyz Republic, Bishkek, Sadygalieva st. 1",
+    number: ["+996777111100"],
+  },
+]

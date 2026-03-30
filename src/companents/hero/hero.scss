@@ -405,9 +405,6 @@
 //   }
 // }
 
-
-
-
 $fade: 1.2s ease-in-out;
 
 .hero {
@@ -434,21 +431,18 @@ $fade: 1.2s ease-in-out;
     background-position: center;
     will-change: opacity;
 
-    // IDLE — ko'rinmas, hech qanday animatsiya yo'q
     &--idle {
       opacity: 0;
       z-index: 1;
       transition: none;
     }
 
-    // PREV — sekin yo'qoladi
     &--prev {
       opacity: 0;
       z-index: 2;
       transition: opacity $fade;
     }
 
-    // ACTIVE — sekin paydo bo'ladi, ustida turadi
     &--active {
       opacity: 1;
       z-index: 3;
@@ -660,9 +654,6 @@ $fade: 1.2s ease-in-out;
     transform: translateY(0);
   }
 }
-
-
-
 
 // $transition-slide: 0.85s cubic-bezier(0.76, 0, 0.24, 1);
 // $transition-fade: 0.6s ease;

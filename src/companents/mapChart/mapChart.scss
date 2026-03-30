@@ -1,0 +1,34 @@
+.map-chart {
+    position: relative;
+    border: none;
+    outline: none;
+
+    #chartdiv {
+        width: 100%;
+        height: 600px;
+        border: none !important;
+        outline: none !important;
+    }
+
+    canvas {
+        border-radius: 12px;
+        border: none !important;
+    }
+}
+
+.chartDiv {
+    border: none !important;
+    outline: none !important;
+
+    canvas {
+        border: none !important;
+        outline: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .chartDiv {
+        height: 300px !important;
+        width: 100% !important;
+    }
+}
