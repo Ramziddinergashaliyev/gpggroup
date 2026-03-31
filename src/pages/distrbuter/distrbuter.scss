@@ -297,7 +297,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap');
 
-
 $c : rgb(71, 156, 210);
 $c1 : rgba(71, 156, 210, .70);
 $c2 : rgba(71, 156, 210, .30);
@@ -583,12 +582,16 @@ $pop : cubic-bezier(.34, 1.4, .64, 1);
   &__panel {
     position: relative;
     z-index: 2;
-    width: 520px;
+    width: 620px;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 24px 56px 24px 0;
     overflow: hidden;
+
+    @media (max-width: 1560px) {
+      width: 520px
+    }
 
     @media (max-width: 1400px) {
       width: 460px
