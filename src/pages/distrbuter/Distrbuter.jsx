@@ -87,7 +87,7 @@
 //     )
 // }
 
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import './distrbuter.scss'
 import video from '../../assets/video/vd.webm'
 import { useTranslation } from 'react-i18next'
