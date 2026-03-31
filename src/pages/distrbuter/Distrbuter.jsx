@@ -1,87 +1,204 @@
-import React, { useState, useEffect } from 'react'
-import './distrbuter.scss'
-// import video from "../../assets/video/vd.mp4"
-import video from "../../assets/video/vd.webm"
+// import React, { useState, useEffect, use } from 'react'
+// import './distrbuter.scss'
+// import video from "../../assets/video/vd.webm"
+// import { useTranslation } from 'react-i18next'
+// import { DATA_EN, DATA_RU } from '../../static'
 
-const distributors = [
-    { country: "Ukraine", flag: "🇺🇦", company: 'LLC "PETOLAVTO"', address: "Pirohovskyi put, 34; Kyiv, 03083", phone: "+380 (50) 314 66 33" },
-    { country: "Tajikistan", flag: "🇹🇯", company: 'LLC "TAJIK AUTO"', address: "Rudaki Ave, 12; Dushanbe, 734025", phone: "+992 (37) 221 00 00" },
-    { country: "Kazakhstan", flag: "🇰🇿", company: 'LLC "KAZAVTO"', address: "Abay Ave, 56; Almaty, 050000", phone: "+7 (727) 300 11 22" },
-    { country: "Turkmenistan", flag: "🇹🇲", company: 'LLC "TURKMENAUTO"', address: "Bitarap Turkmenistan, 10; Ashgabat", phone: "+993 (12) 394 455" },
-    { country: "UAE", flag: "🇦🇪", company: 'LLC "GULF AUTO TRADING"', address: "Sheikh Zayed Road, 101; Dubai", phone: "+971 (4) 321 00 99" },
-    { country: "Uzbekistan", flag: "🇺🇿", company: 'LLC "UZBEKAVTO"', address: "Amir Temur Ave, 22; Tashkent, 100000", phone: "+998 (71) 123 45 67" },
-]
+// export default function Distributor() {
+//     const [active, setActive] = useState(null)
+//     const [mounted, setMounted] = useState(false)
+//     const { t, i18n } = useTranslation()
+//     console.log(i18n?.language === "ru");
+
+//     const Data = i18n?.language === "ru" ? DATA_RU : DATA_EN
+
+//     useEffect(() => {
+//         window.scrollTo(0, 0)
+//     }, [])
+
+
+
+//     useEffect(() => { setTimeout(() => setMounted(true), 60) }, [])
+
+//     return (
+//         <section className="dr">
+
+//             <div className="dr__map">
+//                 <video
+//                     src={video}
+//                     autoPlay
+//                     muted
+//                     loop
+//                     playsInline
+//                     preload="auto"
+//                 />
+//                 <div className="dr__map-fade" />
+//             </div>
+
+//             <div className={`dr__left ${mounted ? 'dr__left--in' : ''}`}>
+//                 <span className="dr__eyebrow">Global Network</span>
+//                 <h2 className="dr__title">
+//                     Our<br />
+//                     <em>Distributors</em>
+//                 </h2>
+//                 <div className="dr__line" />
+//             </div>
+
+//             <div className="dr__right">
+//                 {Data.map((item, i) => {
+//                     const isOpen = active === i
+//                     return (
+//                         <div
+//                             key={i}
+//                             className={`dr__row ${isOpen ? 'dr__row--open' : ''} ${mounted ? 'dr__row--in' : ''}`}
+//                             style={{ '--i': i }}
+//                         >
+//                             <button className="dr__row-head" onClick={() => setActive(isOpen ? null : i)}>
+//                                 <span className="dr__row-name">{item.country}</span>
+//                                 <span className="dr__row-plus">{isOpen ? '−' : '+'}</span>
+//                             </button>
+
+//                             <div className="dr__row-body">
+//                                 <div className="dr__row-inner">
+//                                     <p className="dr__row-co">{item.distributor}</p>
+//                                     <div className="dr__row-meta">
+//                                         <span className="dr__row-meta-item">
+//                                             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
+//                                                 <path d="M10 11a3 3 0 100-6 3 3 0 000 6z" />
+//                                                 <path d="M10 18s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z" />
+//                                             </svg>
+//                                             {item.title}
+//                                         </span>
+//                                         <a className="dr__row-meta-item dr__row-tel" href={`tel:${item.number}`}>
+//                                             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
+//                                                 <path d="M2 3.5A1.5 1.5 0 013.5 2h.879a1.5 1.5 0 011.414 1l.894 2.236A1.5 1.5 0 016.3 7.13l-.9.6a9.042 9.042 0 004.87 4.87l.6-.9a1.5 1.5 0 011.893-.387L15 12.207a1.5 1.5 0 011 1.414V14.5A1.5 1.5 0 0114.5 16H14C7.373 16 2 10.627 2 4v-.5z" />
+//                                             </svg>
+//                                             {item.number}
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     )
+//                 })}
+//             </div>
+
+//         </section>
+//     )
+// }
+
+import React, { useState, useEffect, useRef } from 'react'
+import './distrbuter.scss'
+import video from '../../assets/video/vd.webm'
+import { useTranslation } from 'react-i18next'
+import { DATA_EN, DATA_RU } from '../../static'
+
+const PinIcon = () => (
+    <svg width="13" height="13" viewBox="0 0 20 20" fill="none"
+        stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="10" cy="8" r="3" />
+        <path d="M10 18C10 18 3.5 12.5 3.5 8a6.5 6.5 0 0113 0C16.5 12.5 10 18 10 18z" />
+    </svg>
+)
+
+const PhoneIcon = () => (
+    <svg width="13" height="13" viewBox="0 0 20 20" fill="none"
+        stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 3.5A1.5 1.5 0 013.5 2h.879a1.5 1.5 0 011.414 1l.894 2.236A1.5 1.5 0 016.3 7.13l-.9.6a9.042 9.042 0 004.87 4.87l.6-.9a1.5 1.5 0 011.893-.387L15 12.207a1.5 1.5 0 011 1.414V14.5A1.5 1.5 0 0114.5 16H14C7.373 16 2 10.627 2 4v-.5z" />
+    </svg>
+)
 
 export default function Distributor() {
     const [active, setActive] = useState(null)
     const [mounted, setMounted] = useState(false)
+    const { i18n } = useTranslation()
+    const isRu = i18n?.language === 'ru'
+    const Data = isRu ? DATA_RU : DATA_EN
 
-    useEffect(() => { setTimeout(() => setMounted(true), 60) }, [])
+    useEffect(() => { window.scrollTo(0, 0) }, [])
+    useEffect(() => {
+        const t = setTimeout(() => setMounted(true), 60)
+        return () => clearTimeout(t)
+    }, [])
+
+    const toggle = (i) => setActive(p => (p === i ? null : i))
 
     return (
         <section className="dr">
+            <span className="dr__orb dr__orb--1" aria-hidden="true" />
+            <span className="dr__orb dr__orb--2" aria-hidden="true" />
+            <span className="dr__orb dr__orb--3" aria-hidden="true" />
 
-            <div className="dr__map">
-                <video
-                    src={video}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                />
-                <div className="dr__map-fade" />
+            <div className="dr__video" aria-hidden="true">
+                <video src={video} autoPlay muted loop playsInline preload="auto" />
+                <div className="dr__video-shade" />
             </div>
 
-            <div className={`dr__left ${mounted ? 'dr__left--in' : ''}`}>
-                <span className="dr__eyebrow">Global Network</span>
-                <h2 className="dr__title">
-                    Our<br />
-                    <em>Distributors</em>
-                </h2>
-                <div className="dr__line" />
+            <div className={`dr__left${mounted ? ' dr__left--in' : ''}`}>
+
+                <span className="dr__tag">
+                    <span className="dr__tag-dot" />
+                    {isRu ? 'Глобальная сеть' : 'Global Network'}
+                </span>
+
+                <h1 className="dr__title">
+                    {isRu ? 'Наши' : 'Our'}
+                    <br />
+                    <em>{isRu ? 'дистрибьюторы' : 'Distributors'}</em>
+                </h1>
+
+                <div className="dr__divider" />
             </div>
 
-            <div className="dr__right">
-                {distributors.map((item, i) => {
-                    const isOpen = active === i
-                    return (
-                        <div
-                            key={i}
-                            className={`dr__row ${isOpen ? 'dr__row--open' : ''} ${mounted ? 'dr__row--in' : ''}`}
-                            style={{ '--i': i }}
-                        >
-                            <button className="dr__row-head" onClick={() => setActive(isOpen ? null : i)}>
-                                <span className="dr__row-flag">{item.flag}</span>
-                                <span className="dr__row-name">{item.country}</span>
-                                <span className="dr__row-plus">{isOpen ? '−' : '+'}</span>
-                            </button>
+            <div className="dr__panel">
+                <div className="dr__panel-inner">
+                    {Data.map((item, i) => {
+                        const open = active === i
+                        return (
+                            <div
+                                key={i}
+                                className={`dr__row${open ? ' dr__row--open' : ''}${mounted ? ' dr__row--in' : ''}`}
+                                style={{ '--i': i }}
+                            >
+                                <button
+                                    className="dr__head"
+                                    onClick={() => toggle(i)}
+                                    aria-expanded={open}
+                                >
+                                    <span className="dr__head-idx">{String(i + 1).padStart(2, '0')}</span>
+                                    <span className="dr__head-name">{item.country}</span>
+                                    <span className="dr__head-icon" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                                            <path d="M2.5 4.5L7 9l4.5-4.5" />
+                                        </svg>
+                                    </span>
+                                </button>
 
-                            <div className="dr__row-body">
-                                <div className="dr__row-inner">
-                                    <p className="dr__row-co">{item.company}</p>
-                                    <div className="dr__row-meta">
-                                        <span className="dr__row-meta-item">
-                                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                                <path d="M10 11a3 3 0 100-6 3 3 0 000 6z" />
-                                                <path d="M10 18s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z" />
-                                            </svg>
-                                            {item.address}
-                                        </span>
-                                        <a className="dr__row-meta-item dr__row-tel" href={`tel:${item.phone}`}>
-                                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                                <path d="M2 3.5A1.5 1.5 0 013.5 2h.879a1.5 1.5 0 011.414 1l.894 2.236A1.5 1.5 0 016.3 7.13l-.9.6a9.042 9.042 0 004.87 4.87l.6-.9a1.5 1.5 0 011.893-.387L15 12.207a1.5 1.5 0 011 1.414V14.5A1.5 1.5 0 0114.5 16H14C7.373 16 2 10.627 2 4v-.5z" />
-                                            </svg>
-                                            {item.phone}
-                                        </a>
+                                <div className="dr__body">
+                                    <div className="dr__body-inner">
+                                        <p className="dr__company">{item.distributor}</p>
+                                        <div className="dr__meta">
+                                            <span className="dr__meta-row">
+                                                <span className="dr__meta-ico dr__meta-ico--pin"><PinIcon /></span>
+                                                <span className="dr__meta-txt">{item.title}</span>
+                                            </span>
+                                            <a
+                                                className="dr__meta-row dr__meta-row--tel"
+                                                href={`tel:${item.number}`}
+                                            >
+                                                <span className="dr__meta-ico dr__meta-ico--tel"><PhoneIcon /></span>
+                                                <span className="dr__meta-txt">{item.number}</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    )
-                })}
-            </div>
 
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </section>
     )
 }
