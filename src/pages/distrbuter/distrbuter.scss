@@ -306,6 +306,19 @@ $pop : cubic-bezier(.34, 1.4, .64, 1);
     max-height: 100%;
     overflow-y: auto;
     padding-right: 4px;
+
+    &::-webkit-scrollbar {
+      width: 0px
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $c2;
+      border-radius: 2px
+    }
   }
 
   &__row {
