@@ -62,10 +62,12 @@ const Contact = () => {
       <div className="contact-form container">
 
         <div className="contact-form-right">
+
           <div className="contact-form-right-item">
             <h2>{t("Email")}</h2>
             <a href='mailTo:info@gpggroup.uz'>info@gpggroup.uz</a>
           </div>
+
           <div className="contact-form-right-item">
             <h2>{t("Phone Number")}</h2>
             <p>
@@ -75,10 +77,12 @@ const Contact = () => {
               <a href='tel:+998 71 203 20 31'>+998 71 203 20 31</a>
             </p>
           </div>
+
           <div className="contact-form-right-item">
             <h2>{t("Address")}</h2>
             <p>{t("add")}</p>
           </div>
+          
         </div>
 
         <div className="contact-form-left">

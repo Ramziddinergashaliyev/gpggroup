@@ -64,7 +64,6 @@
           background: linear-gradient(90deg, #fff, transparent);
           animation: expandWidth 1s ease-out 0.5s both;
         }
-
       }
 
       &-text {
@@ -156,7 +155,6 @@
           &::before {
             left: 100%;
           }
-
         }
 
         h2 {
@@ -176,7 +174,6 @@
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
           }
-
         }
 
         p {
@@ -207,11 +204,8 @@
             &::before {
               width: 10px;
             }
-
           }
-
         }
-
       }
     }
 
@@ -609,7 +603,6 @@
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     transform: scale(1);

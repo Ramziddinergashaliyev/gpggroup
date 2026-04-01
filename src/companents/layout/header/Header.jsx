@@ -29,7 +29,6 @@ const Header = () => {
   const [currentLang, setCurrentLang] = useState(i18n.language || "en");
   const { data: searchData } = useSearchProductsQuery({ query: searchValue }, { skip: !searchValue.trim() })
 
-
   const languages = [
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
     { code: 'en', name: 'English', flag: '🇬🇧' }
@@ -50,6 +49,7 @@ const Header = () => {
       searchInputRef.current.focus()
     }
   }, [showSearch])
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (showLanguages && !event.target.closest('.header-nav-logos-lenguage')) {
@@ -99,10 +99,6 @@ const Header = () => {
           <div onClick={() => setHide(false)} className="header-nav-item-close">
             <IoMdClose />
           </div>
-
-          {/* <li className="header-nav-list">
-            <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/">{t('Главная')}</NavLink>
-          </li> */}
 
           <li className="header-nav-list">
             <NavLink onClick={() => setHide(false)} className={"header-nav-item-link"} to="/company">{t("About")}</NavLink>

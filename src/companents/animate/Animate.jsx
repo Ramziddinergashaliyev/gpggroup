@@ -25,7 +25,7 @@ const Animate = () => {
 
         if (sectionRef.current) observer.observe(sectionRef.current)
 
-            return () => observer.disconnect()
+        return () => observer.disconnect()
     }, [])
 
     return (
@@ -57,11 +57,11 @@ const Animate = () => {
             <NavLink to={"/singleProduct/8"}>
                 <img className="animate-section-img right-img-three right" src={img2} />
             </NavLink>
-            
+
             <NavLink to={"/singleProduct/25"}>
                 <img className="animate-section-img right-img-two right" src={img6} />
             </NavLink>
-            
+
         </div>
     )
 }

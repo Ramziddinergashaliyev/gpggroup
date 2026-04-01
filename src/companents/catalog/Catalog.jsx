@@ -11,9 +11,6 @@ const Catalog = ({ hide }) => {
   const { data, isLoading } = useGetCategorysQuery()
   const { t, i18n } = useTranslation()
 
-  console.log(i18n?.language);
-
-
   useEffect(() => {
     window.scrollTo(0, 0);
     setTimeout(() => setIsVisible(true), 200);

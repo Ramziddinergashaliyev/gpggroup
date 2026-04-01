@@ -328,6 +328,7 @@
   }
 
   @keyframes pulse {
+
     0%,
     100% {
       transform: scale(1);
@@ -467,7 +468,6 @@
       &-badge {
         width: 60px;
         height: 60px;
-
 
         svg {
           width: 28px;
