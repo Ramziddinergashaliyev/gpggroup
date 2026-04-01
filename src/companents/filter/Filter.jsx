@@ -11,6 +11,7 @@ const Filter = () => {
                     <p className="filter-info-text">Simply select your vehicle’s make, model, year, and engine, and we’ll recommend the perfect Shell oil for peak performance.</p>
                     <p className='filter-info-text'>Please note: selecting a letter will display all available vehicle options beginning with that letter in the dropdown menus.</p>
                 </div>
+
                 <div className="filter-form">
                     <select name="Select Make" id="">
                         <option value="Select Make">Select Make</option>

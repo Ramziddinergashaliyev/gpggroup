@@ -18,10 +18,12 @@ const Catalog = ({ hide }) => {
 
   return (
     <div className="photo-catalog">
+
       <div className="photo-catalog-top container">
         <span className="photo-catalog-top-text">{t("КАТЕГОРИИ")}</span>
         <h3 className="photo-catalog-top-title"><span>{t("Высококачественные")}</span>, {t("охлаждающие")}</h3>
       </div>
+
       <div className="photo-catalog__container container">
 
         {
@@ -60,6 +62,7 @@ const Catalog = ({ hide }) => {
             </div>
         }
       </div>
+
       <p className="photo-catalog-text container">{t("All our")}</p>
     </div>
   );

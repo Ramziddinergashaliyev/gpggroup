@@ -113,7 +113,7 @@ $pop : cubic-bezier(.34, 1.4, .64, 1);
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background-image: radial-gradient(circle, rgb(164 164 164 / 96%) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgb(164 164 164 / 16%) 1px, transparent 1px);
     background-size: 40px 40px;
     animation: kGrid 22s linear infinite;
   }
@@ -139,7 +139,7 @@ $pop : cubic-bezier(.34, 1.4, .64, 1);
       height: 100%;
       object-fit: cover;
       object-position: center;
-      opacity: .40;
+      opacity: .75;
     }
 
     &-shade {

@@ -11,6 +11,7 @@ const Arrow = () => {
         <div className="arrow__left">
           <img src={img} alt="Arrow-img" />
         </div>
+
         <div className="arrow__right">
           <h2 className="arrow__right__title">Партнерство и сотрудничество</h2>
           <p className="arrow__right__desc">Мы ценим доверие наших клиентов и партнеров, предлагая продукцию и услуги, которые соответствуют самым высоким мировым стандартам.</p>
