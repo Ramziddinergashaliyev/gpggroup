@@ -306,8 +306,6 @@ $pop : cubic-bezier(.34, 1.4, .64, 1);
     max-height: 100%;
     overflow-y: auto;
     padding-right: 4px;
-    scrollbar-width: thin;
-    scrollbar-color: $c2 transparent;
 
     &::-webkit-scrollbar {
       width: 3px
