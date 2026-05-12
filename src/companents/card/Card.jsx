@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 const Card = () => {
 
   const { t, i18n } = useTranslation()
-  console.log(i18n);
 
   const BOXLANG = i18n?.language === "en" ? BOXEN : BOX
 

@@ -39,6 +39,7 @@ const Service = () => {
         <h2 className="service-top-title">{t("уровень")}</h2>
         <div className="service-top-line"></div>
       </div>
+
       <div className="service-bottom">
 
         <div className={`service-bottom-item ${isVisible ? 'fade-in-left' : ''}`} style={{ animationDelay: '0.2s' }}>

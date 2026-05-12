@@ -13,6 +13,7 @@ const SingleLoading = () => {
             <img className="bg__anim" src="" alt="" />
           </div>
         </div>
+
         <div className="singleLoading__info">
           <div className="singleLoading__title bg__anim"></div>
           <div className="singleLoading__title bg__anim"></div>

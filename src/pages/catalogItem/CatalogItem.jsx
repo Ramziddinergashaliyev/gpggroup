@@ -4,12 +4,12 @@ import Catalog from '../../companents/catalog/Catalog'
 const CatalogItem = () => {
 
   useEffect(() => {
-    scrollTo(0,0)
-  },[])
+    scrollTo(0, 0)
+  }, [])
 
   return (
-    <div style={{padding: "85px 0px"}}>
-        <Catalog hide={true}  />
+    <div style={{ padding: "85px 0px" }}>
+      <Catalog hide={true} />
     </div>
   )
 }

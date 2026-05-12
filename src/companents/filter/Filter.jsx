@@ -16,15 +16,19 @@ const Filter = () => {
                     <select name="Select Make" id="">
                         <option value="Select Make">Select Make</option>
                     </select>
+
                     <select name="" id="">
                         <option value="Select Make">Select Model</option>
                     </select>
+
                     <select name="" id="">
                         <option value="Select Make">Select Year</option>
                     </select>
+
                     <select name="" id="">
                         <option value="Select Make">Select Vehicle Mileage</option>
                     </select>
+
                     <button className='filter-form-clear-btn'>Clear Filters</button>
                     <button className='filter-form-show-btn'>Show Compatible Oils</button>
                 </div>

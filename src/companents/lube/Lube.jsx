@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import img1 from "../../assets/img/lube1.png"
-import img2 from "../../assets/img/lube2.png"
-import img3 from "../../assets/img/lube3.png"
+import img1 from "../../assets/img/lube1.webp"
+import img2 from "../../assets/img/lube2.webp"
+import img3 from "../../assets/img/lube3.webp"
 import './lube.scss';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
@@ -31,7 +31,7 @@ const Lube = () => {
             <div className="light-trail"></div>
 
             <div className={`container lube-container ${isVisible ? 'visible' : ''}`}>
-                
+
                 <div className="lube-header">
 
                     <h3 className='lube-subtitle'>{t("Advanced")}</h3>
@@ -63,7 +63,7 @@ const Lube = () => {
                     <div className="benefits-grid">
 
                         <div className="benefit-card benefit-1">
-                            
+
                             <div className="benefit-content">
                                 <p className="benefit-text">
                                     <span className="benefit-main">{t("Thermal")}</span>

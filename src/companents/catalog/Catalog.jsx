@@ -25,7 +25,7 @@ const Catalog = ({ hide }) => {
       </div>
 
       <div className="photo-catalog__container container">
-
+        
         {
           isLoading
             ?
@@ -41,7 +41,6 @@ const Catalog = ({ hide }) => {
                     onMouseEnter={() => setHoveredId(el.id)}
                     onMouseLeave={() => setHoveredId(null)}
                   >
-
                     <div className="photo-catalog__card-image-container">
                       <img
                         src={hoveredId === el.id && el.images[1] ? el.images[1] : el.images[0]}

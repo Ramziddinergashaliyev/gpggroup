@@ -11,11 +11,17 @@ import SingleCatalog from "./pages/singleCatalog/SingleCatalog";
 import SingleProduct from "./pages/singleProduct/SingleProduct";
 import { ToastContainer } from "react-toastify";
 import Distrbuter from "./pages/distrbuter/Distrbuter";
+import Abbos from "./pages/abbos/Abbos";
+import Sanjar from "./pages/sanjar/Sanjar";
+import Igor from "./pages/igor/Igor";
 
 const App = () => {
   return (
     <>
       <Routes>
+        <Route path="/abbos" element={<Abbos />} />
+        <Route path="/sanjar" element={<Sanjar />} />
+        <Route path="/igor" element={<Igor />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="company" element={<Company />} />

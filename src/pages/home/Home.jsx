@@ -17,7 +17,6 @@ const Home = () => {
     <div>
       <Hero />
       <div className="home-bg">
-        {/* <Made /> */}
         <Animate />
       </div>
       <Catalog />

@@ -20,10 +20,10 @@ const Information = () => {
               {t("GPG")}
             </h2>
           </div>
-          
+
           <div className="information-middle-boxs">
-            <div className="information-middle-boxs-top">
-            </div>
+            <div className="information-middle-boxs-top"></div>
+
             <div className="information-middle-boxs-bottom">
               <div className="information-middle-boxs-bottom-left"></div>
               <div className="information-middle-boxs-bottom-right"></div>
@@ -34,12 +34,15 @@ const Information = () => {
             <h3 className="information__left-bottom-title">
               {t("Технологическое")}
             </h3>
+
             <p className="information__left-bottom-desc">
               {t("ведущий")}
             </p>
+
             <p className="information__left-bottom-desc">
               {t("UzTR")}
             </p>
+
             <p className="information__left-bottom-desc">
               {t("reliable")}
             </p>

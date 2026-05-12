@@ -126,7 +126,7 @@ const SingleProduct = () => {
                         <tbody className='single-table-item-tbody'>
                             <tr className='single-table-item-tbody-tr'>
                                 <td className='single-table-item-tbody-td'>{t("sae")}</td>
-                                {data?.sae?.map((el, index) => (
+                                {data?.sae === null ? <></> : data?.sae?.map((el, index) => (
                                     <td key={index} className='single-table-item-tbody-td'>{el}</td>
                                 ))}
                             </tr>

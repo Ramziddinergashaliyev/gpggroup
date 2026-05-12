@@ -70,9 +70,11 @@ const Contact = () => {
 
           <div className="contact-form-right-item">
             <h2>{t("Phone Number")}</h2>
+
             <p>
               <a href='tel:+998 71 281 49 30'>+998 71 281 49 30</a>
             </p>
+
             <p>
               <a href='tel:+998 71 203 20 31'>+998 71 203 20 31</a>
             </p>
@@ -82,7 +84,7 @@ const Contact = () => {
             <h2>{t("Address")}</h2>
             <p>{t("add")}</p>
           </div>
-          
+
         </div>
 
         <div className="contact-form-left">

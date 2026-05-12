@@ -18,6 +18,7 @@ const AccordionItem = ({ title, children }) => {
                     </svg>
                 </span>
             </button>
+
             <div className="distr-accordion__body">
                 <div className="distr-accordion__inner">
                     {children}
@@ -76,7 +77,7 @@ const DATA_RU = [
         distributor: "ОйлПрофи",
         title: "720000, Республика Кыргызстан, г. Бишкек, ул. Садыгалиева, д. 1",
         number: ["+996777111100"],
-    },
+    }
 ]
 
 const DATA_EN = [
@@ -128,7 +129,7 @@ const DATA_EN = [
         distributor: "OilProfi",
         title: "720000, Kyrgyz Republic, Bishkek, Sadygalieva st. 1",
         number: ["+996777111100"],
-    },
+    }
 ]
 
 const Distr = () => {
@@ -221,6 +222,7 @@ const Distr = () => {
                                 <span className="distr-item__flag-dot" />
                                 {el.country}
                             </div>
+
                             <div className="distr-item__accordion-wrap">
                                 <AccordionItem title={el.distributor}>
                                     <div className="distr-item__detail">
@@ -234,6 +236,7 @@ const Distr = () => {
                                             </span>
                                             <p className="distr-item__value">{el.title}</p>
                                         </div>
+
                                         <div className="distr-item__detail-row">
                                             <span className="distr-item__label">
                                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

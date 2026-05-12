@@ -27,6 +27,7 @@ export default function Distributor() {
     const Data = isRu ? DATA_RU : DATA_EN
 
     useEffect(() => { window.scrollTo(0, 0) }, [])
+
     useEffect(() => {
         const t = setTimeout(() => setMounted(true), 60)
         return () => clearTimeout(t)
