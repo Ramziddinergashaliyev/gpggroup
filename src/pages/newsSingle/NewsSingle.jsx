@@ -1,13 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import './newsSingle.scss'
 import { newsData, newsDataEn } from '../../static'
 import { useTranslation } from 'react-i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+
+import './newsSingle.scss'
 
 const NewsSingle = () => {
     const { id } = useParams()
@@ -17,9 +19,6 @@ const NewsSingle = () => {
     const observerRef = useRef(null)
 
     const fullData = i18n?.language === "ru" ? newsData : newsDataEn
-
-    console.log(fullData);
-
 
     useEffect(() => {
         window.scrollTo(0, 0)
