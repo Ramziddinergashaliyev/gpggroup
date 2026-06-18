@@ -6,12 +6,15 @@ const SingleLoading = () => {
     <div className="">
       <div className="singleLoading">
         <div className="singleLoading__card">
+
           <div className="singleLoading__img bg__anim"></div>
+
           <div className="singleLoading__card-imgs">
             <img className="bg__anim" src="" alt="" />
             <img className="bg__anim" src="" alt="" />
             <img className="bg__anim" src="" alt="" />
           </div>
+
         </div>
 
         <div className="singleLoading__info">

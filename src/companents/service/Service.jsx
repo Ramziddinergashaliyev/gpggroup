@@ -10,7 +10,6 @@ const Service = () => {
   const { t, i18n } = useTranslation()
 
   useEffect(() => {
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

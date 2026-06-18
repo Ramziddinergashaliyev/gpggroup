@@ -71,19 +71,23 @@ const Footer = () => {
 
           <div className="footer-info-item">
             <h2 className='footer-info-item-title'>{t("ADDRESS")}</h2>
+
             <p className="footer-info-item-text-number">
               <span className="footer-info-item-text-span">{t("Номер")}</span>
               <span><a href="tel:+998 71 281 49 30">+998 71 281 49 30</a></span>
               <span><a href="tel:+998 71 203 20 31">+998 71 203 20 31</a></span>
             </p>
+
             <p className="footer-info-item-text-address">
               <span className="footer-info-item-text-span">{t("Address")}</span>
               <span> {t("add")} </span>
             </p>
+
             <p className="footer-info-item-text-email">
               <span className="footer-info-item-text-span">{t("e-mail")}</span>
               <span><a href="mailTo:info@gpggroup.uz">info@gpggroup.uz</a></span>
-            </p> </div>
+            </p>
+          </div>
 
           <div className="footer-info-item">
             <h2 className='footer-info-item-title'>{t("MESSAGE")}</h2>

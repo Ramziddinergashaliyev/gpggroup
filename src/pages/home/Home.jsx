@@ -12,6 +12,7 @@ import Leazy from "../../companents/leazy/Leazy";
 import Animate from "../../companents/animate/Animate";
 import Part from "../../companents/part/Part";
 import "./home.scss"
+import NewsCard from "../../companents/newsCard/NewsCard";
 const Home = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const Home = () => {
       </div>
       <Catalog />
       <Lube />
+      <NewsCard />
       <Service />
       <Information />
       <Card />

@@ -14,6 +14,8 @@ import Distrbuter from "./pages/distrbuter/Distrbuter";
 import Abbos from "./pages/abbos/Abbos";
 import Sanjar from "./pages/sanjar/Sanjar";
 import Igor from "./pages/igor/Igor";
+import NewsSingle from "./pages/newsSingle/NewsSingle";
+import News from "./pages/news/News";
 
 const App = () => {
   return (
@@ -28,8 +30,10 @@ const App = () => {
           <Route path="partner" element={<Partner />} />
           <Route path="contact" element={<Contact />} />
           <Route path="disturb" element={<Distrub />} />
+          <Route path="news" element={<News />} />
           <Route path="singleCatalog/:id" element={<SingleCatalog />} />
           <Route path="singleProduct/:id" element={<SingleProduct />} />
+          <Route path="news-single/:id" element={<NewsSingle />} />
           <Route path="catalog-item" element={<CatalogItem />} />
           <Route path="distrbut" element={<Distrbuter />} />
         </Route>

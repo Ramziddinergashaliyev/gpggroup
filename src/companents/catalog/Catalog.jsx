@@ -25,7 +25,7 @@ const Catalog = ({ hide }) => {
       </div>
 
       <div className="photo-catalog__container container">
-        
+
         {
           isLoading
             ?
