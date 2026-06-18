@@ -838,6 +838,60 @@ export const DATA_EN = [
 
 export const newsData = [
   {
+    id: 6,
+    category: "Новости",
+    world: ["Automechanika Astana"],
+    title: "Automechanika 2026",
+    description: ["Valesco продолжает свой глобальный путь, принимая участие в ведущих международных автомобильных выставках 2026 года. Эти мероприятия предоставляют платформу для демонстрации наших высококачественных смазочных материалов, налаживания связей с профессионалами индустрии и изучения новых бизнес-возможностей по всему миру.", "Благодаря активному участию в глобальных выставках, Valesco укрепляет свое присутствие на рынке послепродажного обслуживания автомобилей и подтверждает свою приверженность инновациям, качеству и надежной работе.", "Эти выставки отражают стремление Valesco к созданию прочных партнерских отношений и предоставлению надежных решений в области смазочных материалов для мировых рынков."],
+    date: "2026",
+    img: news3,
+    image: [main26],
+    locationData: [
+      {
+        id: 'astana',
+        title: 'Automechanika Astana',
+        location: 'Астана, Казахстан',
+        description: 'Automechanika Astana — один из ключевых автосалонов в Центральной Азии, объединяющий профессионалов, дистрибьюторов и лидеров автомобильной индустрии со всего региона. В ходе мероприятия компания Valesco продемонстрировала свой ассортимент высокоэффективных моторных масел и автомобильных смазочных материалов, укрепив партнерские отношения и расширив свое присутствие на рынке Центральной Азии',
+        images: [one26, two26, three26, four26],
+        position: 'left'
+      }
+    ]
+  },
+  {
+    id: 5,
+    category: "Новости",
+    world: [""],
+    title: "Valesco провела технический семинар для автомобильных специалистов",
+    description: ["Компания Valesco успешно организовала технический семинар и тур по заводу для мастеров автосервисов, дистрибьюторов смазочных материалов, операторов автопарков, владельцев автомастерских и профессионалов рынка послепродажного обслуживания со всего Узбекистана."],
+    date: "5 мая 2026 г",
+    img: mainTopp,
+    image: [news1, news2],
+    sections: [
+      {
+        texts: [
+          { type: "heading", text: "Обзор & Экскурсия по заводу" },
+          { type: "paragraph", text: "Компания Valesco недавно провела специализированный технический семинар для профессионалов автомобильной сферы со всего Узбекистана, объединив мастеров автосервисов, продавцов запасных частей, дистрибьюторов, операторов автопарков и специалистов послепродажного обслуживания." },
+          { type: "paragraph", text: "Семинар был организован с целью укрепления отраслевых знаний, обмена техническим опытом и предоставления участникам более глубокого понимания приверженности Valesco качеству, инновациям и передовым технологиям в области смазочных материалов. Участники ознакомились с полным ассортиментом автомобильных смазочных материалов Valesco, включая моторные и трансмиссионные масла, охлаждающие и тормозные жидкости, а также другие эффективные решения, разработанные для современных автомобилей и коммерческих автопарков." },
+          { type: "paragraph", text: "Мероприятие также послужило ценной платформой для нетворкинга, обмена опытом и укрепления партнерских отношений в индустрии автомобильного послепродажного обслуживания." },
+          { type: "paragraph", text: "В рамках семинара гостям было предложено принять участие в эксклюзивной экскурсии по заводу, где они смогли воочию увидеть производственные мощности и технологические процессы Valesco." },
+          { type: "paragraph", text: "Участники изучили полный цикл производства смазочных материалов: от отбора сырья и лабораторных испытаний до смешивания, розлива, упаковки и финальных процедур контроля качества. Техническая команда Valesco подробно рассказала о технологиях, стандартах производства и системах обеспечения качества, используемых для гарантирования стабильной эффективности и надежности продукции." },
+          { type: "paragraph", text: "Посетители получили возможность понаблюдать за тем, как разрабатываются и производятся смазочные материалы Valesco в соответствии с международными стандартами, обеспечивая превосходную защиту, эффективность и долговечность для легковых автомобилей, коммерческого транспорта и промышленного применения." },
+        ],
+        images: [top1, top3, top2, bottom4, bottom1, bottom3, bottom2],
+      },
+      {
+        texts: [
+          { type: "heading", text: "Сессия вопросов и ответов (Q&A)" },
+          { type: "paragraph", text: "После экскурсии по заводу участники присоединились к интерактивной сессии вопросов и ответов с инженерами, техническими специалистами и экспертами по продукции Valesco." },
+          { type: "paragraph", text: "В ходе сессии присутствующие поделились своим опытом использования продукции Valesco и предоставили ценные отзывы касательно эффективности продуктов, защиты двигателя, надежности и удовлетворенности клиентов. Автомобильные профессионалы имели возможность задать вопросы о технологиях смазочных материалов, спецификациях масел, применении продукции, рекомендациях по техническому обслуживанию и будущих разработках в портфеле продуктов Valesco." },
+          { type: "paragraph", text: "Открытая дискуссия способствовала продуктивному обмену идеями между Valesco и ее партнерами, укрепив приверженность компании к непрерывному совершенствованию, технической поддержке и клиентоориентированным инновациям." },
+          { type: "paragraph", text: "Мы искренне благодарим всех мастеров автосервисов, продавцов автозапчастей, дистрибьюторов и профессионалов сферы послепродажного обслуживания, принявших участие в семинаре. Их ценные отзывы и отраслевой опыт продолжают помогать Valesco предоставлять высококачественные смазочные решения, которым доверяют профессионалы по всему региону." },
+        ],
+        images: [bottomTop1, bottomTop2, bottomTop3, bottomTwo, bottomOne, bottomThree, bottomFour],
+      },
+    ],
+  },
+  {
     id: 1,
     category: "Новости",
     world: [""],
@@ -874,7 +928,7 @@ export const newsData = [
     id: 4,
     category: "Новости",
     world: ["Automechanika Dubai", "Automechanika Astana", "MIMS Automobility Moscow", "Automechanika Istanbul", "Automechanika Tashkent", "Automechanika Shanghai"],
-    title: "Автомеханика 2025",
+    title: "Automechanika 2025",
     description: ["В 2025 году Valesco с гордостью принимает участие в самых важных мировых автомобильных торговых выставках под брендом Automechanika. Эти глобальные мероприятия предоставляют возможность для взаимодействия с профессионалами отрасли, партнерами и клиентами, демонстрируя наши новейшие продуктовые решения и технологии.", "В течение всего года Valesco будет демонстрировать расширяющийся портфель автомобильных жидкостей и смазочных материалов, разработанных в соответствии с международными стандартами и требованиями современных транспортных средств."],
     date: "2025",
     img: news3,
@@ -930,12 +984,15 @@ export const newsData = [
       }
     ]
   },
+]
+
+export const newsDataEn = [
   {
     id: 6,
-    category: "Новости",
+    category: "News",
     world: ["Automechanika Astana"],
-    title: "Автомеханика 2026",
-    description: ["Valesco продолжает свой глобальный путь, принимая участие в ведущих международных автомобильных выставках 2026 года. Эти мероприятия предоставляют платформу для демонстрации наших высококачественных смазочных материалов, налаживания связей с профессионалами индустрии и изучения новых бизнес-возможностей по всему миру.", "Благодаря активному участию в глобальных выставках, Valesco укрепляет свое присутствие на рынке послепродажного обслуживания автомобилей и подтверждает свою приверженность инновациям, качеству и надежной работе.", "Эти выставки отражают стремление Valesco к созданию прочных партнерских отношений и предоставлению надежных решений в области смазочных материалов для мировых рынков."],
+    title: "Automechanika 2026",
+    description: ["Valesco continues its global journey by participating in leading international automotive exhibitions in 2026. These events provide a platform to showcase our high-quality lubricants, connect with industry professionals, and explore new business opportunities worldwide.", "Through active participation in global exhibitions, Valesco strengthens its presence in the automotive aftermarket and reinforces its commitment to innovation, quality, and reliable performance.", "These exhibitions reflect Valesco’s vision of building strong partnerships and delivering trusted lubrication solutions to global markets."],
     date: "2026",
     img: news3,
     image: [main26],
@@ -943,8 +1000,8 @@ export const newsData = [
       {
         id: 'astana',
         title: 'Automechanika Astana',
-        location: 'Астана, Казахстан',
-        description: 'Automechanika Astana — один из ключевых автосалонов в Центральной Азии, объединяющий профессионалов, дистрибьюторов и лидеров автомобильной индустрии со всего региона. В ходе мероприятия компания Valesco продемонстрировала свой ассортимент высокоэффективных моторных масел и автомобильных смазочных материалов, укрепив партнерские отношения и расширив свое присутствие на рынке Центральной Азии',
+        location: 'Astana, Kazakhstan',
+        description: 'Automechanika Astana is one of Central Asia’s key automotive industry exhibitions, bringing together professionals, distributors, and industry leaders from across the region. During the event, Valesco showcased its high-performance range of engine oils and automotive lubricants while strengthening partnerships and expanding its presence in the Central Asian market.',
         images: [one26, two26, three26, four26],
         position: 'left'
       }
@@ -952,41 +1009,38 @@ export const newsData = [
   },
   {
     id: 5,
-    category: "Новости",
+    category: "News",
     world: [""],
-    title: "Valesco провела технический семинар для автомобильных специалистов",
-    description: ["Компания Valesco успешно организовала технический семинар и тур по заводу для мастеров автосервисов, дистрибьюторов смазочных материалов, операторов автопарков, владельцев автомастерских и профессионалов рынка послепродажного обслуживания со всего Узбекистана."],
-    date: "5 мая 2026 г",
+    title: "Valesco Hosts Technical Seminar for Automotive Professionals",
+    description: ["Valesco successfully organized a Technical Seminar and Factory Tour for automotive service masters, lubricant distributors, fleet operators, workshop owners, and aftermarket professionals from across Uzbekistan."],
+    date: "5 May, 2026",
     img: mainTopp,
     image: [news1, news2],
     sections: [
       {
         texts: [
-          { type: "heading", text: "Обзор & Экскурсия по заводу" },
-          { type: "paragraph", text: "Компания Valesco недавно провела специализированный технический семинар для профессионалов автомобильной сферы со всего Узбекистана, объединив мастеров автосервисов, продавцов запасных частей, дистрибьюторов, операторов автопарков и специалистов послепродажного обслуживания." },
-          { type: "paragraph", text: "Семинар был организован с целью укрепления отраслевых знаний, обмена техническим опытом и предоставления участникам более глубокого понимания приверженности Valesco качеству, инновациям и передовым технологиям в области смазочных материалов. Участники ознакомились с полным ассортиментом автомобильных смазочных материалов Valesco, включая моторные и трансмиссионные масла, охлаждающие и тормозные жидкости, а также другие эффективные решения, разработанные для современных автомобилей и коммерческих автопарков." },
-          { type: "paragraph", text: "Мероприятие также послужило ценной платформой для нетворкинга, обмена опытом и укрепления партнерских отношений в индустрии автомобильного послепродажного обслуживания." },
-          { type: "paragraph", text: "В рамках семинара гостям было предложено принять участие в эксклюзивной экскурсии по заводу, где они смогли воочию увидеть производственные мощности и технологические процессы Valesco." },
-          { type: "paragraph", text: "Участники изучили полный цикл производства смазочных материалов: от отбора сырья и лабораторных испытаний до смешивания, розлива, упаковки и финальных процедур контроля качества. Техническая команда Valesco подробно рассказала о технологиях, стандартах производства и системах обеспечения качества, используемых для гарантирования стабильной эффективности и надежности продукции." },
-          { type: "paragraph", text: "Посетители получили возможность понаблюдать за тем, как разрабатываются и производятся смазочные материалы Valesco в соответствии с международными стандартами, обеспечивая превосходную защиту, эффективность и долговечность для легковых автомобилей, коммерческого транспорта и промышленного применения." },
+          { type: "heading", text: "Overview & Factory Tour" },
+          { type: "paragraph", text: "Valesco recently hosted a specialized technical seminar for automotive professionals from across Uzbekistan, bringing together car service masters, spare parts dealers, distributors, fleet operators, and aftermarket specialists." },
+          { type: "paragraph", text: "The seminar was organized to strengthen industry knowledge, share technical expertise, and provide participants with a deeper understanding of Valesco's commitment to quality, innovation, and advanced lubricant technology. Attendees learned about Valesco's complete range of automotive lubricants, including engine oils, transmission oils, coolants, brake fluids, and other performance solutions designed for modern vehicles and commercial fleets." },
+          { type: "paragraph", text: "The event also served as a valuable platform for networking, experience sharing, and building stronger partnerships within the automotive aftermarket industry." },
+          { type: "paragraph", text: "As part of the seminar, guests were invited to take part in an exclusive factory tour, where they were given a firsthand look at Valesco's production facilities and manufacturing processes." },
+          { type: "paragraph", text: "Participants explored the complete lubricant production cycle, from raw material selection and laboratory testing to blending, filling, packaging, and final quality control procedures. The Valesco technical team provided detailed explanations of the technologies, production standards, and quality assurance systems used to ensure consistent product performance and reliability." },
+          { type: "paragraph", text: "Visitors had the opportunity to observe how Valesco lubricants are developed and manufactured to meet international standards, delivering superior protection, efficiency, and durability for passenger cars, commercial vehicles, and industrial applications." },
         ],
         images: [top1, top3, top2, bottom4, bottom1, bottom3, bottom2],
       },
       {
         texts: [
-          { type: "heading", text: "Сессия вопросов и ответов (Q&A)" },
-          { type: "paragraph", text: "После экскурсии по заводу участники присоединились к интерактивной сессии вопросов и ответов с инженерами, техническими специалистами и экспертами по продукции Valesco." },
-          { type: "paragraph", text: "В ходе сессии присутствующие поделились своим опытом использования продукции Valesco и предоставили ценные отзывы касательно эффективности продуктов, защиты двигателя, надежности и удовлетворенности клиентов. Автомобильные профессионалы имели возможность задать вопросы о технологиях смазочных материалов, спецификациях масел, применении продукции, рекомендациях по техническому обслуживанию и будущих разработках в портфеле продуктов Valesco." },
-          { type: "paragraph", text: "Открытая дискуссия способствовала продуктивному обмену идеями между Valesco и ее партнерами, укрепив приверженность компании к непрерывному совершенствованию, технической поддержке и клиентоориентированным инновациям." },
-          { type: "paragraph", text: "Мы искренне благодарим всех мастеров автосервисов, продавцов автозапчастей, дистрибьюторов и профессионалов сферы послепродажного обслуживания, принявших участие в семинаре. Их ценные отзывы и отраслевой опыт продолжают помогать Valesco предоставлять высококачественные смазочные решения, которым доверяют профессионалы по всему региону." },
+          { type: "heading", text: "Question & Answer Session" },
+          { type: "paragraph", text: "Following the factory tour, participants joined an interactive Question & Answer session with Valesco engineers, technical specialists, and product experts." },
+          { type: "paragraph", text: "During the session, attendees shared their experiences using Valesco products and provided valuable feedback regarding product performance, engine protection, reliability, and customer satisfaction. Automotive professionals had the opportunity to ask questions about lubricant technology, oil specifications, product applications, maintenance recommendations, and future developments within the Valesco product portfolio." },
+          { type: "paragraph", text: "The open discussion created a productive exchange of ideas between Valesco and its partners, reinforcing the company's commitment to continuous improvement, technical support, and customer-focused innovation." },
+          { type: "paragraph", text: "We sincerely thank all car service masters, spare parts dealers, distributors, and aftermarket professionals who participated in the seminar. Their valuable feedback and industry expertise continue to help Valesco deliver high-quality lubrication solutions trusted by professionals across the region." },
         ],
         images: [bottomTop1, bottomTop2, bottomTop3, bottomTwo, bottomOne, bottomThree, bottomFour],
       },
     ],
   },
-]
-
-export const newsDataEn = [
   {
     id: 1,
     category: "News",
@@ -1079,59 +1133,5 @@ export const newsDataEn = [
         position: 'left'
       }
     ]
-  },
-  {
-    id: 6,
-    category: "News",
-    world: ["Automechanika Astana"],
-    title: "Automechanika 2026",
-    description: ["Valesco continues its global journey by participating in leading international automotive exhibitions in 2026. These events provide a platform to showcase our high-quality lubricants, connect with industry professionals, and explore new business opportunities worldwide.", "Through active participation in global exhibitions, Valesco strengthens its presence in the automotive aftermarket and reinforces its commitment to innovation, quality, and reliable performance.", "These exhibitions reflect Valesco’s vision of building strong partnerships and delivering trusted lubrication solutions to global markets."],
-    date: "2026",
-    img: news3,
-    image: [main26],
-    locationData: [
-      {
-        id: 'astana',
-        title: 'Automechanika Astana',
-        location: 'Astana, Kazakhstan',
-        description: 'Automechanika Astana is one of Central Asia’s key automotive industry exhibitions, bringing together professionals, distributors, and industry leaders from across the region. During the event, Valesco showcased its high-performance range of engine oils and automotive lubricants while strengthening partnerships and expanding its presence in the Central Asian market.',
-        images: [one26, two26, three26, four26],
-        position: 'left'
-      }
-    ]
-  },
-  {
-    id: 5,
-    category: "News",
-    world: [""],
-    title: "Valesco Hosts Technical Seminar for Automotive Professionals",
-    description: ["Valesco successfully organized a Technical Seminar and Factory Tour for automotive service masters, lubricant distributors, fleet operators, workshop owners, and aftermarket professionals from across Uzbekistan."],
-    date: "5 May, 2026",
-    img: mainTopp,
-    image: [news1, news2],
-    sections: [
-      {
-        texts: [
-          { type: "heading", text: "Overview & Factory Tour" },
-          { type: "paragraph", text: "Valesco recently hosted a specialized technical seminar for automotive professionals from across Uzbekistan, bringing together car service masters, spare parts dealers, distributors, fleet operators, and aftermarket specialists." },
-          { type: "paragraph", text: "The seminar was organized to strengthen industry knowledge, share technical expertise, and provide participants with a deeper understanding of Valesco's commitment to quality, innovation, and advanced lubricant technology. Attendees learned about Valesco's complete range of automotive lubricants, including engine oils, transmission oils, coolants, brake fluids, and other performance solutions designed for modern vehicles and commercial fleets." },
-          { type: "paragraph", text: "The event also served as a valuable platform for networking, experience sharing, and building stronger partnerships within the automotive aftermarket industry." },
-          { type: "paragraph", text: "As part of the seminar, guests were invited to take part in an exclusive factory tour, where they were given a firsthand look at Valesco's production facilities and manufacturing processes." },
-          { type: "paragraph", text: "Participants explored the complete lubricant production cycle, from raw material selection and laboratory testing to blending, filling, packaging, and final quality control procedures. The Valesco technical team provided detailed explanations of the technologies, production standards, and quality assurance systems used to ensure consistent product performance and reliability." },
-          { type: "paragraph", text: "Visitors had the opportunity to observe how Valesco lubricants are developed and manufactured to meet international standards, delivering superior protection, efficiency, and durability for passenger cars, commercial vehicles, and industrial applications." },
-        ],
-        images: [top1, top3, top2, bottom4, bottom1, bottom3, bottom2],
-      },
-      {
-        texts: [
-          { type: "heading", text: "Question & Answer Session" },
-          { type: "paragraph", text: "Following the factory tour, participants joined an interactive Question & Answer session with Valesco engineers, technical specialists, and product experts." },
-          { type: "paragraph", text: "During the session, attendees shared their experiences using Valesco products and provided valuable feedback regarding product performance, engine protection, reliability, and customer satisfaction. Automotive professionals had the opportunity to ask questions about lubricant technology, oil specifications, product applications, maintenance recommendations, and future developments within the Valesco product portfolio." },
-          { type: "paragraph", text: "The open discussion created a productive exchange of ideas between Valesco and its partners, reinforcing the company's commitment to continuous improvement, technical support, and customer-focused innovation." },
-          { type: "paragraph", text: "We sincerely thank all car service masters, spare parts dealers, distributors, and aftermarket professionals who participated in the seminar. Their valuable feedback and industry expertise continue to help Valesco deliver high-quality lubrication solutions trusted by professionals across the region." },
-        ],
-        images: [bottomTop1, bottomTop2, bottomTop3, bottomTwo, bottomOne, bottomThree, bottomFour],
-      },
-    ],
-  },
+  }
 ]
