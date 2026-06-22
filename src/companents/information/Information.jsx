@@ -16,6 +16,7 @@ const Information = () => {
             <p className="information__left-top__text">
               {t("ПРОИЗВОДИТЕЛЬ")}
             </p>
+
             <h2 className="information__left-top__title">
               {t("GPG")}
             </h2>

@@ -24,7 +24,6 @@ const Animate = () => {
         )
 
         if (sectionRef.current) observer.observe(sectionRef.current)
-
         return () => observer.disconnect()
     }, [])
 

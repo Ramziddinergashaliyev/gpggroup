@@ -48,6 +48,7 @@ const Part = () => {
               <div className="part-swipper-card-img">
                 <img src={el.icon} alt={el.title} />
               </div>
+
               <div className="part-swipper-card-info">
                 <p className="part-swipper-card-info-title">
                   {el.title}
