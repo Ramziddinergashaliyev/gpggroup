@@ -182,7 +182,6 @@ const SingleProduct = () => {
                                 </tr>
                             )}
                         </tbody>
-
                     </table>
                 </div>
             </div>
