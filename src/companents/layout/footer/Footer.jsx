@@ -74,7 +74,6 @@ const Footer = () => {
 
             <p className="footer-info-item-text-number">
               <span className="footer-info-item-text-span">{t("Номер")}</span>
-              <span><a href="tel:+998 71 281 49 30">+998 71 281 49 30</a></span>
               <span><a href="tel:+998 71 203 20 31">+998 71 203 20 31</a></span>
             </p>
 
