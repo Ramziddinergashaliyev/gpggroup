@@ -81,13 +81,10 @@ const Contact = () => {
           </div>
 
         </div>
-
         <div className="contact-form-left">
 
           <h2 className="contact-form-left-title">{t("Contact Us")}</h2>
-
           <form onSubmit={handleSubmit} className='contact-form-left-item' action="">
-
             <div className="contact-form-left-item-top">
               <input
                 required
