@@ -52,6 +52,7 @@ const Footer = () => {
             <NavLink to={"/company"} className="footer-info-item-text">{t("About")}</NavLink>
             <NavLink to={"/partner"} className="footer-info-item-text">{t("Партнеры")}</NavLink>
             <NavLink to={"/distrbut"} className="footer-info-item-text">{t("Distributors")}</NavLink>
+            <NavLink to={"/news"} className="footer-info-item-text">{t("News")}</NavLink>
           </div>
 
           <div className="footer-info-item">
