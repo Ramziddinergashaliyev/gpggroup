@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import "./singleProduct.scss"
+
 import { useNavigate, useParams } from 'react-router-dom'
 import { useGetProductByIdQuery, useGetProductsQuery } from '../../context/api/productApi'
 import SingleLoading from '../../companents/singleLoading/SingleLoading'

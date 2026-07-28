@@ -124,7 +124,6 @@ const Header = () => {
                     className="category-item"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
-
                     <NavLink onClick={() => setHide(false)} to={`/singleCatalog/${category?.id}`} className="category-link">
 
                       {

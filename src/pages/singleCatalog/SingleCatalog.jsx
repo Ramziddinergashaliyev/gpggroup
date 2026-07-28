@@ -167,6 +167,7 @@ const SingleCatalog = () => {
                                                         />
                                                     </div>
                                                 </NavLink>
+
                                                 <div className="z-card-body">
                                                     <span className="z-card-cat">{brandName}</span>
                                                     <h3 className="z-card-name">{el?.nameEn}</h3>
