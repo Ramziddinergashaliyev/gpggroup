@@ -60,7 +60,6 @@ const Animate = () => {
             <NavLink to={"/singleProduct/25"}>
                 <img className="animate-section-img right-img-two right" src={img6} />
             </NavLink>
-
         </div>
     )
 }

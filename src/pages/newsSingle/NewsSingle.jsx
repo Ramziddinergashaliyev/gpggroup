@@ -144,6 +144,7 @@ const NewsSingle = () => {
         if (isSpecialNews) {
             return <TiltImage key={alt} src={src} alt={alt} className={wrapperClass} style={style} />
         }
+
         return (
             <div key={alt} className={wrapperClass} style={style}>
                 <img src={src} alt={alt} />
@@ -231,6 +232,7 @@ const NewsSingle = () => {
                             )
                         ))}
                     </div>
+
                     <div className="images-bottom">
                         {section.images.slice(3, 7).map((img, i) => (
                             renderImage(

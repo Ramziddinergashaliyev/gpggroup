@@ -244,6 +244,7 @@ const Distr = () => {
                                                 </svg>
                                                 {t("телефона")}
                                             </span>
+
                                             <div className="distr-item__phones">
                                                 {el.number.map((phone, pi) => (
                                                     <a key={pi} href={`tel:${phone}`} className="distr-item__phone">

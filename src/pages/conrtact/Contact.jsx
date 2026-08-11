@@ -81,6 +81,7 @@ const Contact = () => {
           </div>
 
         </div>
+
         <div className="contact-form-left">
 
           <h2 className="contact-form-left-title">{t("Contact Us")}</h2>

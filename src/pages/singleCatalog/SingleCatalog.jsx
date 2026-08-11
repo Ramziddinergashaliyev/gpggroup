@@ -100,6 +100,7 @@ const SingleCatalog = () => {
                             <FaArrowLeft size={11} />
                             {t("Категории")}
                         </NavLink>
+
                         <h1 className="z-banner-title">
                             {brandName
                                 ? <><span>{brandName}</span></>

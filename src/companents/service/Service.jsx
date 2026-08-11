@@ -74,7 +74,6 @@ const Service = () => {
             <div className="image-overlay"></div>
           </div>
         </div>
-
       </div>
     </div>
   );
