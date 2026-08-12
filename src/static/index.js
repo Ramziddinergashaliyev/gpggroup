@@ -105,6 +105,14 @@ import turk26eight from "../assets/turk26/v8.webp"
 import turk26nine from "../assets/turk26/v9.webp"
 import turk26ten from "../assets/turk26/v10.webp"
 
+// 2026 Avg'oniston
+import avgmain from "../assets/avg26/main.webp"
+import avgOne from "../assets/avg26/one.webp"
+import avgTwo from "../assets/avg26/two.webp"
+import avgThree from "../assets/avg26/three.webp"
+import avgFour from "../assets/avg26/four.webp"
+import avgFife from "../assets/avg26/fife.webp"
+
 export const CATALOG = [
   {
     id: 1,
@@ -317,7 +325,6 @@ export const BRAND = [
       }
     ]
   },
-
   {
     id: 2,
     title: "COOLCLIMATENEW",
@@ -452,7 +459,6 @@ export const BRAND = [
       }
     ]
   },
-
   {
     id: 5,
     title: "NORDIC-MAH",
@@ -586,6 +592,33 @@ export const DATA_EN = [
 ]
 
 export const newsData = [
+  {
+    id: 8,
+    category: "Новости",
+    world: [""],
+    title: "Делегация Афганистана посетила производственный объект компании GPG в рамках программы Правительства Узбекистана",
+    description: ["Компания GPG недавно имела честь принять официальную делегацию из Афганистана на своём производственном объекте в Узбекистане в рамках промышленного визита, организованного в рамках программы делового и инвестиционного сотрудничества Правительства Узбекистана."],
+    date: "30 июля, 2026",
+    img: avgmain,
+    image: [],
+    sections: [
+      {
+        texts: [
+          { type: "paragraph", text: "В ходе визита делегация была ознакомлена с полным портфелем премиальных смазочных материалов и автомобильных жидкостей компании GPG, включая моторные масла, трансмиссионные жидкости, охлаждающие жидкости, тормозные жидкости, гидравлические масла и другие высокоэффективные автомобильные решения. Гости осмотрели современные производственные мощности компании и получили возможность лично ознакомиться с передовыми технологиями, производственными процессами и строгими стандартами качества, лежащими в основе каждого продукта GPG." },
+          { type: "paragraph", text: "В рамках программы делегация приняла участие в комплексной экскурсии по заводу, охватывающей все этапы производства — от контроля сырья и лабораторного анализа до автоматизированного смешивания, розлива, упаковки и итогового контроля качества. Визит продемонстрировал приверженность компании GPG международным стандартам производства, постоянным инновациям и стабильному качеству продукции." },
+        ],
+        images: [avgOne, avgTwo, avgThree, avgFour, avgFife],
+      },
+      {
+        texts: [
+          { type: "paragraph", text: "В рамках программы также прошли технические презентации и интерактивные обсуждения с участием инженерной и управленческой команд компании GPG. Делегаты обменялись ценным отраслевым опытом, обсудили возможности для будущего сотрудничества и узнали о производственных мощностях компании, инициативах в области исследований и разработок, а также экспортном потенциале. Визит стал важной площадкой для укрепления экономического и промышленного сотрудничества между Узбекистаном и Афганистаном, способствуя формированию новых деловых связей и развитию долгосрочного партнёрства в секторе автомобильных смазочных материалов." },
+          { type: "paragraph", text: "Компания GPG выражает искреннюю благодарность Правительству Узбекистана за организацию этого важного промышленного визита и предоставленную возможность продемонстрировать афганской делегации передовые производственные возможности страны." },
+          { type: "paragraph", text: "GPG – Надёжные смазочные решения для каждого пути." },
+        ],
+        images: [],
+      },
+    ],
+  },
   {
     id: 6,
     category: "Новости",
@@ -765,6 +798,35 @@ export const newsData = [
 ]
 
 export const newsDataEn = [
+  {
+    id: 8,
+    category: "News",
+    world: [""],
+    title: "Afghanistan Delegation Visits GPG Manufacturing Facility Under Government of Uzbekistan Program",
+    description: ["GPG recently had the honor of welcoming an official delegation from Afghanistan to its manufacturing facility in Uzbekistan as part of an industrial visit organized under the Government of Uzbekistan's business and investment cooperation program."],
+    date: "30 July, 2026",
+    img: avgmain,
+    image: [],
+    sections: [
+      {
+        texts: [
+          { type: "paragraph", text: "During the visit, the delegation was introduced to GPG's complete portfolio of premium lubricants and automotive fluids, including engine oils, transmission fluids, coolants, brake fluids, hydraulic oils, and other high-performance automotive solutions. Guests explored the company's state-of-the-art production facilities and gained first-hand insight into the advanced technologies, manufacturing processes, and stringent quality standards behind every GPG product." },
+          { type: "paragraph", text: "As part of the program, the delegation participated in a comprehensive factory tour covering every stage of production—from raw material inspection and laboratory analysis to automated blending, filling, packaging, and final quality control. The visit demonstrated GPG's commitment to international manufacturing standards, continuous innovation, and consistent product quality." },
+        ],
+        images: [avgOne, avgTwo, avgThree, avgFour, avgFife],
+      },
+      {
+        texts: [
+          {
+            type: "paragraph", text: "The program also featured technical presentations and interactive discussions with GPG's engineering and management teams. Delegates exchanged valuable industry knowledge, discussed opportunities for future cooperation, and learned about the company's production capabilities, research and development initiatives, and export potential. The visit served as an important platform for strengthening economic and industrial cooperation between Uzbekistan and Afghanistan while fostering new business relationships and promoting long- term partnerships in the automotive lubricant sector."
+          },
+          { type: "paragraph", text: "GPG extends its sincere appreciation to the Government of Uzbekistan for organizing this valuable industrial visit and providing an opportunity to showcase the country's advanced manufacturing capabilities to the Afghan delegation." },
+          { type: "paragraph", text: "GPG – Trusted Lubrication Solutions for Every Journey." },
+        ],
+        images: [],
+      },
+    ],
+  },
   {
     id: 6,
     category: "News",
