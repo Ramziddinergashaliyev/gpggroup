@@ -351,7 +351,6 @@ export const BRAND = [
       }
     ]
   },
-
   {
     id: 1,
     title: "ATLANT",
@@ -378,7 +377,6 @@ export const BRAND = [
       }
     ]
   },
-
   {
     id: 7,
     title: "YUMIKO",
@@ -405,7 +403,6 @@ export const BRAND = [
       }
     ]
   },
-
   {
     id: 3,
     title: "CRYSTAL ANTIFIREEZES",
@@ -432,7 +429,6 @@ export const BRAND = [
       }
     ]
   },
-
   {
     id: 4,
     title: "JET",
