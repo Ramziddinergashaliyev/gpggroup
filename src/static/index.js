@@ -66,7 +66,6 @@ import Dtwo from "../assets/news/dubai/two.webp"
 import Dthree from "../assets/news/dubai/three.webp"
 import Dfour from "../assets/news/dubai/four.webp"
 
-
 import bottom1 from "../assets/com/top/one.webp"
 import bottom2 from "../assets/com/top/two.webp"
 import bottom3 from "../assets/com/top/three.webp"
@@ -112,6 +111,14 @@ import avgTwo from "../assets/avg26/two.webp"
 import avgThree from "../assets/avg26/three.webp"
 import avgFour from "../assets/avg26/four.webp"
 import avgFife from "../assets/avg26/fife.webp"
+
+// 2026 fullGPG
+
+import oneFull from "../assets/fullValesco/one.webp"
+import twoFull from "../assets/fullValesco/two.webp"
+import threeFull from "../assets/fullValesco/three.webp"
+import fourFull from "../assets/fullValesco/four.webp"
+import fifeFull from "../assets/fullValesco/fife.webp"
 
 export const CATALOG = [
   {
@@ -588,6 +595,54 @@ export const DATA_EN = [
 ]
 
 export const newsData = [
+  {
+    id: 9,
+    category: "Новости",
+    world: [""],
+    title: "GPG Провела День Клиента, Приветствуя Партнёров со всего Узбекистана",
+    description: ["GPG недавно открыла свои двери для особого Дня Клиента, объединив партнёров, дистрибьюторов и клиентов со всего Узбекистана для целого дня экскурсий по заводу, знакомства с продукцией и прямого общения с командой, стоящей за брендом."],
+    date: "28 августа, 2026",
+    img: oneFull,
+    image: [],
+    sections: [
+      {
+        texts: [
+          {
+            type: "paragraph", text: "Общенациональная встреча Мероприятие собрало гостей из городов и регионов по всей стране, приехавших на предприятие GPG, чтобы лично увидеть, как разрабатываются и производятся автомобильные жидкости бренда. Для многих участников это была первая возможность побывать внутри предприятия и увидеть масштаб и точность, стоящие за продукцией, с которой они работают каждый день. Явка отразила прочность отношений, которые GPG выстраивала со своими дистрибьюторами и клиентами на протяжении времени, и задала тон дню, посвящённому открытости, обучению и общению."
+          },
+          {
+            type: "paragraph", text: "За кулисами: экскурсия по заводу День начался с экскурсии с гидом по производственному предприятию GPG, которая провела гостей через каждый этап производственного процесса. Посетители прошли через зону формулирования, где формируется базовая технология масел и жидкостей GPG, а затем продолжили путь к станциям контроля качества, где каждая партия проверяется на стабильность и производительность. Оттуда экскурсия продолжилась на производственные и разливочные линии, где клиенты наблюдали, как бутылки проходят путь от сырья до готового, запечатанного продукта, готового к отправке."
+          },
+          {
+            type: "paragraph", text: "На протяжении всей экскурсии сотрудники команды GPG находились рядом, чтобы подробно объяснить каждый этап — начиная от поставок сырья и заканчивая строгими стандартами тестирования, которые должен пройти каждый продукт, прежде чем получить право носить имя GPG. Для клиентов экскурсия предоставила редкую, прозрачную возможность увидеть, что именно стоит за этикеткой каждой бутылки."
+          },
+        ],
+        images: [oneFull, twoFull, threeFull, fourFull, fifeFull],
+      },
+      {
+        texts: [
+          {
+            type: "paragraph", text: "Знакомство с полным ассортиментом продукции После экскурсии по заводу внимание переключилось на полную демонстрацию ассортимента продукции GPG. Клиенты получили возможность подробно ознакомиться с полной линейкой продукции, включая:"
+          },
+          { type: "paragraph", text: "Моторные масла — включая серии SP-TEC и MOLYGREEN, разработанные для современных бензиновых двигателей" },
+          { type: "paragraph", text: "Дизельные моторные масла — созданные для тяжёлых условий эксплуатации и коммерческого применения" },
+          { type: "paragraph", text: "Трансмиссионные жидкости — разработанные для плавного и надёжного переключения передач" },
+          { type: "paragraph", text: "Антифризы и охлаждающие жидкости — включая линейку G12+, предназначенную для долгосрочной защиты радиатора" },
+          { type: "paragraph", text: "Тормозные жидкости и гидравлические масла — дополняющие полный портфель решений GPG для технического обслуживания" },
+          { type: "paragraph", text: "На каждой станции представители знакомили гостей с техническими подробностями, областями применения и преимуществами продукции, давая клиентам более глубокое понимание того, как построена каждая формула для достижения результата — и как лучше донести эту ценность до собственных клиентов." },
+          {
+            type: "paragraph", text: "Открытые беседы и прямая обратная связь Помимо экскурсии и демонстрации продукции, День Клиента создал пространство для искреннего, двустороннего диалога. Участников поощряли задавать вопросы, поднимать вопросы и делиться отзывами напрямую с командой GPG — эти мнения играют реальную роль в том, как бренд продолжает развивать и совершенствовать свою продукцию в дальнейшем. Эти беседы подтвердили нечто центральное для того, как работает GPG: что прочные партнёрские отношения строятся не только на качестве продукции, но и на внимательном отношении к людям, представляющим бренд на рынке каждый день."
+          },
+          {
+            type: "paragraph", text: "Взгляд в будущее День Клиента — часть более широких, постоянных усилий GPG по укреплению связей со своими партнёрами по всему Узбекистану — через посещения завода, технические семинары и постоянное взаимодействие на всех уровнях дистрибьюторской сети. Подобные мероприятия отражают простую идею, лежащую в основе бренда: доверие строится через прозрачность, а самые прочные партнёрские отношения возникают у партнёров, которые понимают продукт так же хорошо, как и люди, его создающие."
+          },
+          { type: "paragraph", text: "GPG выражает искреннюю благодарность каждому клиенту, дистрибьютору и партнёру, принявшему участие в Дне Клиента этого года. Энергия, вопросы и отзывы, которыми поделились участники на протяжении всего мероприятия, напрямую повлияют на дальнейший путь развития, поскольку GPG продолжает расширять своё присутствие и укреплять отношения в автомобильной отрасли." },
+          { type: "paragraph", text: "GPG — Надёжная защита. Мощная производительность." },
+        ],
+        images: [],
+      },
+    ],
+  },
   // {
   //   id: 8,
   //   category: "Новости",
@@ -794,6 +849,54 @@ export const newsData = [
 ]
 
 export const newsDataEn = [
+  {
+    id: 9,
+    category: "News",
+    world: [""],
+    title: "GPG Hosts Client Day, Welcoming Partners From Across Uzbekistan",
+    description: ["GPG recently opened its doors for a special Client Day, bringing together partners, distributors, and customers from across Uzbekistan for a full day of factory tours, product exploration, and direct engagement with the team behind the brand."],
+    date: "28 August, 2026",
+    img: oneFull,
+    image: [],
+    sections: [
+      {
+        texts: [
+          {
+            type: "paragraph", text: "A Nationwide Gathering The event drew guests from cities and regions across the country, all traveling to GPG's facility for a firsthand look at how the brand's automotive fluids are developed and produced.For many attendees, it was their first opportunity to step inside the facility and see the scale and precision behind the products they work with every day.The turnout reflected the strength of the relationships GPG has built with its distributors and clients over time, and set the tone for a day centered on openness, learning, and connection."
+          },
+          {
+            type: "paragraph", text: "Behind the Scenes: The Factory Tour The day began with a guided tour of the GPG manufacturing facility, taking guests through each stage of the production process.Visitors moved through the formulation area, where the base technology behind GPG's oils and fluids takes shape, before continuing on to the quality control stations where every batch is tested for consistency and performance. From there, the tour continued to the production and filling lines, where clients watched bottles move from raw material to finished, sealed product ready for distribution."
+          },
+          {
+            type: "paragraph", text: "Throughout the tour, GPG team members were on hand to explain each step in detail — covering everything from the sourcing of raw materials to the rigorous testing standards every product must pass before it earns the GPG name. For clients, the tour offered a rare, transparent look into exactly what stands behind the label on every bottle."
+          },
+        ],
+        images: [oneFull, twoFull, threeFull, fourFull, fifeFull],
+      },
+      {
+        texts: [
+          {
+            type: "paragraph", text: "Exploring the Full Product Range Following the factory tour, attention turned to a full showcase of GPG's product range. Clients had the chance to explore the complete line-up in detail, including:"
+          },
+          { type: "paragraph", text: "Engine Oils — including the SP-TEC and MOLYGREEN series, formulated for modern gasoline engines" },
+          { type: "paragraph", text: "Diesel Engine Oils — built for heavy-duty and commercial applications" },
+          { type: "paragraph", text: "Transmission Fluids — engineered for smooth, reliable shifting performance" },
+          { type: "paragraph", text: "Antifreeze and Coolants — including the G12+ range, designed for long-term radiator protection" },
+          { type: "paragraph", text: "Brake Fluids and Hydraulic Oils — rounding out GPG's complete portfolio of maintenance solutions" },
+          { type: "paragraph", text: "At each station, representatives walked guests through the technical details, use cases, and performance benefits of the products, giving clients a deeper understanding of how each formula is built to perform — and how to best communicate that value to their own customers." },
+          {
+            type: "paragraph", text: "Open Conversations and Direct Feedback Beyond the tour and product displays, Client Day created space for genuine, two- way conversation.Attendees were encouraged to ask questions, raise concerns, and share feedback directly with the GPG team — insight that plays a real role in shaping how the brand continues to develop and refine its products going forward.These conversations reinforced something central to how GPG operates: that strong partnerships are built not just on product quality, but on listening closely to the people who represent the brand in the market every day."
+          },
+          {
+            type: "paragraph", text: "Building Toward the FutureClient Day is part of a broader, ongoing effort by GPG to strengthen ties with its partners across Uzbekistan — through factory visits, technical seminars, and continued engagement at every level of the distribution network.Events like this reflect a simple belief at the core of the brand: that trust is built through transparency, and that the strongest partnerships come from partners who understand the product as well as the people making it."
+          },
+          { type: "paragraph", text: "GPG extends its sincere thanks to every client, distributor, and partner who took part in this year's Client Day. The energy, questions, and feedback shared throughout the event will directly inform the road ahead, as GPG continues expanding its presence and deepening its relationships across the automotive industry." },
+          { type: "paragraph", text: "GPG — Trusted Protection. Powerful Performance." },
+        ],
+        images: [],
+      },
+    ],
+  },
   // {
   //   id: 8,
   //   category: "News",
