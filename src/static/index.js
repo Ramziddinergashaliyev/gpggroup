@@ -112,8 +112,13 @@ import avgThree from "../assets/avg26/three.webp"
 import avgFour from "../assets/avg26/four.webp"
 import avgFife from "../assets/avg26/fife.webp"
 
-// 2026 fullGPG
+import mimsOne from "../assets/news26/mims/one.webp"
+import mimsTwo from "../assets/news26/mims/two.webp"
+import mimsThree from "../assets/news26/mims/three.webp"
+import mimsFour from "../assets/news26/mims/four.webp"
+import mimsFife from "../assets/news26/mims/fife.webp"
 
+// 2026 fullGPG
 import oneFull from "../assets/fullValesco/one.webp"
 import twoFull from "../assets/fullValesco/two.webp"
 import threeFull from "../assets/fullValesco/three.webp"
@@ -673,13 +678,21 @@ export const newsData = [
   {
     id: 6,
     category: "Новости",
-    world: ["Automechanika Astana"],
+    world: ["MIMS Automobility Petersburg", "Automechanika Astana"],
     title: "Automechanika 2026",
     description: ["GPG продолжает свой глобальный путь, принимая участие в ведущих международных автомобильных выставках 2026 года. Эти мероприятия предоставляют платформу для демонстрации наших высококачественных смазочных материалов, налаживания связей с профессионалами индустрии и изучения новых бизнес-возможностей по всему миру.", "Благодаря активному участию в глобальных выставках, GPG укрепляет свое присутствие на рынке послепродажного обслуживания автомобилей и подтверждает свою приверженность инновациям, качеству и надежной работе.", "Эти выставки отражают стремление GPG к созданию прочных партнерских отношений и предоставлению надежных решений в области смазочных материалов для мировых рынков."],
     date: "2026",
     img: news3,
-    image: [main26],
+    image: [mimsOne, main26],
     locationData: [
+      {
+        id: 'peter',
+        title: 'GPG на MIMS Automobility Санкт-Петербург 2026',
+        location: 'Выставочный центр Экспофорум, Санкт-Петербург',
+        description: 'Компания GPG приняла участие в выставке MIMS Санкт-Петербург, которая прошла в выставочном центре Экспофорум, представив на своём стенде G035 в павильоне G полный ассортимент автомобильных смазочных материалов и технических жидкостей. Выставка предоставила возможность наладить контакты с партнёрами и дистрибьюторами, представить новейшие разработки бренда и укрепить присутствие GPG на автомобильном рынке Санкт-Петербурга. Команда с нетерпением ждёт дальнейшего участия в предстоящих отраслевых мероприятиях по мере расширения присутствия GPG на новых рынках. GPG — надёжная защита. Мощная производительность.',
+        images: [mimsTwo, mimsThree, mimsFour, mimsFife],
+        position: 'right'
+      },
       {
         id: 'astana',
         title: 'Automechanika Astana',
@@ -929,13 +942,21 @@ export const newsDataEn = [
   {
     id: 6,
     category: "News",
-    world: ["Automechanika Astana"],
+    world: ["MIMS Automobility Petersburg", "Automechanika Astana"],
     title: "Automechanika 2026",
     description: ["GPG continues its global journey by participating in leading international automotive exhibitions in 2026. These events provide a platform to showcase our high-quality lubricants, connect with industry professionals, and explore new business opportunities worldwide.", "Through active participation in global exhibitions, GPG strengthens its presence in the automotive aftermarket and reinforces its commitment to innovation, quality, and reliable performance.", "These exhibitions reflect GPG’s vision of building strong partnerships and delivering trusted lubrication solutions to global markets."],
     date: "2026",
     img: news3,
-    image: [main26],
+    image: [mimsOne, main26],
     locationData: [
+      {
+        id: 'peter',
+        title: 'GPG at MIMS Automobility Saint Petersburg 2026',
+        location: 'Expoforum Exhibition Centre Saint Petersburg',
+        description: 'GPG took part in MIMS Saint Petersburg, held at Expoforum Exhibition Centre, showcasing its full range of automotive lubricants and fluids at Pavilion G, Stand G035. The exhibition offered an opportunity to connect with partners and distributors, present the brand\'s latest product developments, and strengthen GPG\'s presence in the Saint Petersburg automotive market. The team looks forward to continued participation in upcoming industry events as GPG expands its reach across new markets. GPG — Trusted Protection.Powerful Performance.',
+        images: [mimsTwo, mimsThree, mimsFour, mimsFife],
+        position: 'right'
+      },
       {
         id: 'astana',
         title: 'Automechanika Astana',
