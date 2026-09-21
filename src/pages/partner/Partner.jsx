@@ -66,6 +66,7 @@ const Partner = () => {
       }
 
       <div className="partner__bottom container">
+
         <p className="partner__bottom-desc">
           {t("Компания Global")}
         </p>

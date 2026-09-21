@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 
 const Made = () => {
-
     const { t, i18n } = useTranslation()
 
     return (

@@ -37,6 +37,7 @@ const Contact = () => {
     }
   }, [isSuccess])
 
+
   useEffect(() => {
     if (isError) {
       toast.error("Ошибка отправки сообщения!")

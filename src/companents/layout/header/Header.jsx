@@ -228,7 +228,6 @@ const Header = () => {
           </button>
 
         </div>
-
       </nav>
 
       <div className={`search-fullwidth-dropdown ${showSearch ? 'show' : ''}`}>

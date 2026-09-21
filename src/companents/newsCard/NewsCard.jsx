@@ -66,7 +66,6 @@ const NewsCard = () => {
                         );
                     })}
                 </div>
-
             </div>
         </section>
     );

@@ -102,7 +102,6 @@ const Footer = () => {
                 type="text"
                 required
               />
-
               <PhoneInput
                 country={'uz'}
                 value={formData.phone}
@@ -137,6 +136,7 @@ const Footer = () => {
                 type="text"
                 required
               />
+
 
               <button className="footer-info-item-form-btn">
                 {t("Send Now")}
