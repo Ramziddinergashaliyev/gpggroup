@@ -125,6 +125,13 @@ import threeFull from "../assets/fullValesco/three.webp"
 import fourFull from "../assets/fullValesco/four.webp"
 import fifeFull from "../assets/fullValesco/fife.webp"
 
+// 11-sentyabr
+import one11 from "../assets/news26/trt11/one.webp"
+import two11 from "../assets/news26/trt11/two.webp"
+import three11 from "../assets/news26/trt11/three.webp"
+import four11 from "../assets/news26/trt11/four.webp"
+import fife11 from "../assets/news26/trt11/fife.webp"
+
 export const CATALOG = [
   {
     id: 1,
@@ -601,6 +608,59 @@ export const DATA_EN = [
 
 export const newsData = [
   {
+    id: 10,
+    category: "Новости",
+    world: [""],
+    title: "День клиента объединил партнёров для знакомства с производством изнутри",
+    description: ["Valesco приняла дистрибьюторов, деловых партнёров и клиентов со всего Узбекистана на своём производственном предприятии в рамках специального Дня клиента, посвящённого производству, знаниям о продукции, технической экспертизе и укреплению сотрудничества."],
+    date: "11 сентября 2026",
+    img: one11,
+    image: [],
+    sections: [
+      {
+        texts: [
+          {
+            type: "paragraph", text: "Мероприятие дало гостям возможность ближе познакомиться с Valesco как производственным предприятием, построенным на технологиях, контроле качества и долгосрочном партнёрстве."
+          },
+          {
+            type: "paragraph", text: "Связь с партнёрами со всего Узбекистана. Представители разных регионов присоединились к мероприятию, чтобы познакомиться с командой Valesco, обменяться опытом и узнать больше о производственных возможностях компании."
+          },
+          {
+            type: "paragraph", text: "Для многих гостей это была первая возможность лично увидеть производственный процесс и понять, какие люди, оборудование, технологии и процедуры контроля качества стоят за продукцией Valesco."
+          },
+        ],
+        images: [one11, two11, three11, four11, fife11],
+      },
+      {
+        texts: [
+          { type: "paragraph", text: "Мероприятие также подчеркнуло важность общенациональной дистрибьюторской сети Valesco и роль партнёров в развитии бренда. Внутри производственного предприятия Valesco. Подробная экскурсия по заводу познакомила гостей с ключевыми этапами производства, включая подготовку, смешивание, хранение, розлив, упаковку и контроль качества." },
+          {
+            type: "paragraph", text: "Специалисты Valesco рассказали о том, как контролируется производство, и продемонстрировали оборудование, используемое на предприятии. Гости также наблюдали за работой автоматизированных линий розлива. Особое внимание было уделено контролю качества и процедурам, обеспечивающим стабильность продукции и соответствие техническим требованиям. Экскурсия дала партнёрам более чёткое понимание производственных стандартов, лежащих в основе продукции Valesco."
+          },
+          {
+            type: "paragraph", text: "Знакомство с линейкой продукции Valesco. Участники также были ознакомлены с растущим ассортиментом автомобильных смазочных материалов и технических жидкостей Valesco."
+          },
+          {
+            type: "paragraph", text: "Ключевые категории включали: моторные масла — в том числе SP-TEC и MOLYGREEN дизельные моторные масла; трансмиссионные жидкости; антифризы и охлаждающие жидкости — в том числе Valesco G12+; тормозные жидкости; гидравлические масла; другие автомобильные технические жидкости"
+          },
+          {
+            type: "paragraph", text: "Представители Valesco рассказали о сферах применения продукции, спецификациях, рекомендациях по использованию и ключевых технических характеристиках. Прямой диалог с клиентами. День клиента также стал открытой площадкой для общения."
+          },
+          { type: "paragraph", text: "Партнёры напрямую общались с представителями Valesco, задавали технические и коммерческие вопросы, обсуждали потребности рынка и делились отзывами клиентов." },
+          { type: "paragraph", text: "Такой обмен мнениями помогает Valesco лучше понимать потребности дистрибьюторов, автосервисов, розничных продавцов и конечных потребителей по всему Узбекистану." },
+          { type: "paragraph", text: "Укрепление партнёрства ради будущего. Valesco считает долгосрочное сотрудничество важной частью устойчивого роста." },
+          {
+            type: "paragraph", text: "Посещения завода, Дни клиента и технические встречи помогают укреплять отношения и дают партнёрам более глубокое понимание бренда. Valesco благодарит всех дистрибьюторов, клиентов и партнёров, принявших участие и внёсших вклад своими вопросами, обсуждениями и отзывами."
+          },
+          {
+            type: "paragraph", text: "Компания рассчитывает на расширение сотрудничества по мере роста сети Valesco по всему Узбекистану и за его пределами. Valesco — Надёжная защита. Мощная производительность."
+          },
+        ],
+        images: [],
+      },
+    ],
+  },
+  {
     id: 9,
     category: "Новости",
     world: [""],
@@ -862,6 +922,59 @@ export const newsData = [
 ]
 
 export const newsDataEn = [
+  {
+    id: 10,
+    category: "News",
+    world: [""],
+    title: "Client Day Brings Partners Together for an Inside Look at Production",
+    description: ["Valesco welcomed distributors, business partners, and customers from across Uzbekistan to its manufacturing facility for a dedicated Client Day focused on production, product knowledge, technical expertise, and stronger cooperation."],
+    date: "11 September, 2026",
+    img: one11,
+    image: [],
+    sections: [
+      {
+        texts: [
+          {
+            type: "paragraph", text: "The event gave guests a closer look at Valesco as a manufacturing operation built around technology, quality control, and long-term partnerships."
+          },
+          {
+            type: "paragraph", text: "Connecting With Partners Across Uzbekistan Representatives from different regions joined the event to meet the Valesco team, exchange experience, and learn more about the company’s production capabilities."
+          },
+          {
+            type: "paragraph", text: "For many visitors, it was their first opportunity to see the manufacturing process firsthand and understand the people, equipment, technology, and quality procedures behind Valesco products."
+          },
+        ],
+        images: [one11, two11, three11, four11, fife11],
+      },
+      {
+        texts: [
+          { type: "paragraph", text: "The event also highlighted the importance of Valesco’s nationwide distribution network and its partners in developing the brand. Inside the Valesco Production Facility A detailed factory tour introduced guests to key production stages, including preparation, blending, storage, filling, packaging, and quality inspection." },
+          {
+            type: "paragraph", text: "Valesco specialists explained how production is monitored and demonstrated the equipment used throughout the facility. Visitors also observed automated filling lines in operation. Special attention was given to quality control and the procedures used to maintain product consistency and meet technical requirements. The tour gave partners a clearer understanding of the manufacturing standards behind Valesco products."
+          },
+          {
+            type: "paragraph", text: "Discovering the Valesco Product Portfolio Participants were also introduced to Valesco’s growing range of automotive lubricants and technical fluids."
+          },
+          {
+            type: "paragraph", text: "Key categories included: Engine Oils — including SP- TEC and MOLYGREEN Diesel Engine Oils Transmission Fluids Antifreeze & Coolants — including Valesco G12 + Brake Fluids Hydraulic Oils Other automotive maintenance fluids"
+          },
+          {
+            type: "paragraph", text: "Valesco representatives explained product applications, specifications, recommended usage, and key technical characteristics. Direct Dialogue With Clients Client Day also provided an open platform for communication."
+          },
+          { type: "paragraph", text: "Partners spoke directly with Valesco representatives, asked technical and commercial questions, discussed market needs, and shared customer feedback." },
+          { type: "paragraph", text: "This exchange helps Valesco better understand the needs of distributors, workshops, retailers, and end users across Uzbekistan." },
+          { type: "paragraph", text: "Strengthening Partnerships for the Future Valesco considers long- term cooperation an important part of sustainable growth." },
+          {
+            type: "paragraph", text: "Factory visits, Client Days, and technical meetings help strengthen relationships and give partners a deeper understanding of the brand. Valesco thanks all distributors, customers, and partners who participated and contributed through their questions, discussions, and feedback."
+          },
+          {
+            type: "paragraph", text: "The company looks forward to expanding cooperation as the Valesco network continues to grow throughout Uzbekistan and beyond. Valesco — Trusted Protection.Powerful Performance."
+          },
+        ],
+        images: [],
+      },
+    ],
+  },
   {
     id: 9,
     category: "News",
