@@ -20,9 +20,9 @@ const initialState = {
 
 const Footer = () => {
   const { data } = useGetCategorysQuery()
+  const { formData, setFormData, handleChange } = useGetValue()
   const { t, i18n } = useTranslation()
 
-  const { formData, setFormData, handleChange } = useGetValue(initialState)
   const [footerForm, { isSuccess, isError }] = useCreateContactMutation()
 
   const handleSubmit = (e) => {
@@ -96,7 +96,7 @@ const Footer = () => {
 
               <input
                 name="fullName"
-                value={formData.fullName}
+                value={formData?.fullName}
                 onChange={handleChange}
                 placeholder={t("name")}
                 type="text"
@@ -104,7 +104,7 @@ const Footer = () => {
               />
               <PhoneInput
                 country={'uz'}
-                value={formData.phone}
+                value={formData?.phone}
                 onChange={(phone) =>
                   setFormData(prev => ({ ...prev, phone }))
                 }
@@ -121,7 +121,7 @@ const Footer = () => {
 
               <input
                 name="email"
-                value={formData.email}
+                value={formData?.email}
                 onChange={handleChange}
                 placeholder={t("email")}
                 type="email"
@@ -130,23 +130,20 @@ const Footer = () => {
 
               <input
                 name="message"
-                value={formData.message}
+                value={formData?.message}
                 onChange={handleChange}
                 placeholder={t("message")}
                 type="text"
                 required
               />
 
-
               <button className="footer-info-item-form-btn">
                 {t("Send Now")}
               </button>
-
             </form>
           </div>
         </div>
       </div>
-
     </div>
   )
 }

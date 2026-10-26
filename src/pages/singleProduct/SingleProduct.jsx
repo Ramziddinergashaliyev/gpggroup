@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
 import "./singleProduct.scss"
 
 import { useNavigate, useParams } from 'react-router-dom'
@@ -356,6 +355,7 @@ const SingleProduct = () => {
             {lightboxOpen && (
                 <div className="lightbox-overlay" onClick={handleCloseLightbox}>
                     <button className="lightbox-close" onClick={handleCloseLightbox}>✕</button>
+
                     <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
                         <img
                             src={data?.images[selectedImage]}

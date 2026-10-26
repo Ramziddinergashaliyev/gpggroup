@@ -76,6 +76,7 @@ const Hero = () => {
       animTimerRef.current = setTimeout(() => {
         setIsAnimating(false);
         setPrevIndex(null);
+
       }, FADE_DURATION);
     },
     [isAnimating, activeIndex]

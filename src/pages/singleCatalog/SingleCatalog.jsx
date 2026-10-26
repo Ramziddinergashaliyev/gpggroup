@@ -3,6 +3,7 @@ import { FaArrowLeft, FaChevronLeft, FaChevronRight, FaFilter } from 'react-icon
 import { NavLink, useParams } from 'react-router-dom'
 import { useGetCategoryByIdQuery } from '../../context/api/categoryApi'
 import { useTranslation } from 'react-i18next'
+
 import "./singleCatalog.scss"
 
 const SingleCatalog = () => {
@@ -127,7 +128,6 @@ const SingleCatalog = () => {
                                 <span className="z-brand-arrow">›</span>
                             </div>
                         ))}
-
                     </aside>
 
                     <main className={`z-main ${mounted ? 'vis' : ''}`}>

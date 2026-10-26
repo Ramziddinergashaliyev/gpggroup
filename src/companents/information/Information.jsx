@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Information = () => {
-
   const { t, i18n } = useTranslation()
 
   return (
@@ -23,12 +22,14 @@ const Information = () => {
           </div>
 
           <div className="information-middle-boxs">
+
             <div className="information-middle-boxs-top"></div>
 
             <div className="information-middle-boxs-bottom">
               <div className="information-middle-boxs-bottom-left"></div>
               <div className="information-middle-boxs-bottom-right"></div>
             </div>
+
           </div>
 
           <div className="information__left-bottom">
@@ -92,7 +93,6 @@ const Information = () => {
               <span>Реализация продукции по Узбекистану</span>
             </div>
           </div>
-
         </div>
       </div>
     </div>

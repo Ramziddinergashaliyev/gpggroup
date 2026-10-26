@@ -35,6 +35,7 @@ const Header = () => {
   ];
 
   const lenguage = i18n?.languages[0]
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);

@@ -42,9 +42,9 @@ export const brandApi = api.injectEndpoints({
 });
 
 export const {
-    useGetBrandsQuery,
-    useCreateBrandsMutation,
-    useDeleteBrandsMutation,
-    useGetBrandsByIdQuery,
-    useUpdateBrandsMutation
+  useGetBrandsQuery,
+  useCreateBrandsMutation,
+  useDeleteBrandsMutation,
+  useGetBrandsByIdQuery,
+  useUpdateBrandsMutation
 } = brandApi;

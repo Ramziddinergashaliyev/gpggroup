@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../../assets/img/partner.svg";
 
 import "./arrow.scss"

@@ -328,6 +328,7 @@ const NewsSingle = () => {
     return (
         <div className={`news-single-page ${isSpecialNews ? 'news-id-5' : ''}`}>
             <div className="news-single-container container">
+
                 <div className="breadcrumb">
                     <span onClick={() => navigate('/')} className="breadcrumb-item">{t("Домашняя")}</span>
                     <span className="breadcrumb-divider">/</span>
@@ -337,6 +338,7 @@ const NewsSingle = () => {
                 </div>
 
                 <article className="news-article">
+
                     <div className="article-header" ref={isSpecialNews ? heroRef : null}>
                         <h1 className="article-title">{news.title}</h1>
                     </div>
@@ -387,6 +389,7 @@ const NewsSingle = () => {
                             {renderLocationSections()}
                         </div>
                     </div>
+
                 </article>
             </div>
         </div>

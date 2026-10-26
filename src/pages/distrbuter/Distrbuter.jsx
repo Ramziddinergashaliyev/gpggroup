@@ -25,7 +25,6 @@ export default function Distributor() {
     const { i18n } = useTranslation()
     const isRu = i18n?.language === 'ru'
     const Data = isRu ? DATA_RU : DATA_EN
-
     useEffect(() => { window.scrollTo(0, 0) }, [])
 
     useEffect(() => {
@@ -105,7 +104,6 @@ export default function Distributor() {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         )
                     })}

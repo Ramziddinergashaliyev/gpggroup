@@ -110,6 +110,14 @@
         }
       }
 
+      &-block-images {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        object-fit: contain;
+      }
+
       svg {
         font-size: 14px;
         color: white;
