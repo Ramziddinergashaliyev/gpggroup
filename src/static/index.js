@@ -622,7 +622,7 @@ export const newsData = [
     description: ["GPG продолжает свой глобальный путь, принимая участие в ведущих международных автомобильных выставках 2026 года. Эти мероприятия предоставляют платформу для демонстрации наших высококачественных смазочных материалов, налаживания связей с профессионалами индустрии и изучения новых бизнес-возможностей по всему миру.", "Благодаря активному участию в глобальных выставках, GPG укрепляет свое присутствие на рынке послепродажного обслуживания автомобилей и подтверждает свою приверженность инновациям, качеству и надежной работе.", "Эти выставки отражают стремление GPG к созданию прочных партнерских отношений и предоставлению надежных решений в области смазочных материалов для мировых рынков."],
     date: "2026",
     img: news3,
-    image: [main26, frankOne, tashOne],
+    image: [tashOne, main26, frankOne],
     locationData: [
       {
         id: 'tashkent',
@@ -945,7 +945,7 @@ export const newsDataEn = [
     description: ["GPG continues its global journey by participating in leading international automotive exhibitions in 2026. These events provide a platform to showcase our high-quality lubricants, connect with industry professionals, and explore new business opportunities worldwide.", "Through active participation in global exhibitions, GPG strengthens its presence in the automotive aftermarket and reinforces its commitment to innovation, quality, and reliable performance.", "These exhibitions reflect GPG’s vision of building strong partnerships and delivering trusted lubrication solutions to global markets."],
     date: "2026",
     img: news3,
-    image: [main26, frankOne, tashTwo],
+    image: [tashOne, main26, frankOne],
     locationData: [
       {
         id: 'tashkent',
