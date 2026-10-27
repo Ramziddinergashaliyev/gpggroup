@@ -617,18 +617,18 @@ export const newsData = [
   {
     id: 6,
     category: "Новости",
-    world: ["Автомеханика Ташкент", "Automechanika Astana", "Автомеханика Франкфурт"],
+    world: ["Автомеханика Ташкент", "Автомеханика Франкфурт", "Automechanika Astana"],
     title: "Automechanika 2026",
     description: ["GPG продолжает свой глобальный путь, принимая участие в ведущих международных автомобильных выставках 2026 года. Эти мероприятия предоставляют платформу для демонстрации наших высококачественных смазочных материалов, налаживания связей с профессионалами индустрии и изучения новых бизнес-возможностей по всему миру.", "Благодаря активному участию в глобальных выставках, GPG укрепляет свое присутствие на рынке послепродажного обслуживания автомобилей и подтверждает свою приверженность инновациям, качеству и надежной работе.", "Эти выставки отражают стремление GPG к созданию прочных партнерских отношений и предоставлению надежных решений в области смазочных материалов для мировых рынков."],
     date: "2026",
     img: news3,
-    image: [tashOne, main26, frankOne],
+    image: [tashOne, frankOne, main26],
     locationData: [
       {
         id: 'tashkent',
         title: 'Автомеханика Ташкент',
         location: 'Central Asian Expo (CAEx), Ташкент, Узбекистан.',
-        description: 'Во время выставки Автомеханика Ташкент команда Valesco приветствовала посетителей, партнёров и профессионалов автомобильной отрасли на стенде AM-262, где были представлены наши автомобильные масла и технические жидкости. Мероприятие стало отличной возможностью познакомить гостей с нашей продукцией, обменяться отраслевым опытом, укрепить существующие партнёрские связи и наладить новые деловые контакты со специалистами автомобильного сектора. Мы искренне благодарим всех, кто посетил наш стенд и нашёл время для встречи с командой Valesco. Мы с нетерпением ждём новых партнёрств и дальнейшего совместного пути. Valesco — автомобильные масла и жидкости, разработанные для надёжной работы.',
+        description: 'Во время выставки Автомеханика Ташкент команда GPG приветствовала посетителей, партнёров и профессионалов автомобильной отрасли на стенде AM-262, где были представлены наши автомобильные масла и технические жидкости. Мероприятие стало отличной возможностью познакомить гостей с нашей продукцией, обменяться отраслевым опытом, укрепить существующие партнёрские связи и наладить новые деловые контакты со специалистами автомобильного сектора. Мы искренне благодарим всех, кто посетил наш стенд и нашёл время для встречи с командой GPG. Мы с нетерпением ждём новых партнёрств и дальнейшего совместного пути. GPG — автомобильные масла и жидкости, разработанные для надёжной работы.',
         images: [tashTwo, tashThree, tashFour, tashFife],
         position: 'left'
       },
@@ -636,7 +636,7 @@ export const newsData = [
         id: 'frankfurt',
         title: 'Автомеханика Франкфурт',
         location: 'Выставочный центр Messe Frankfurt',
-        description: 'Аутомеханика Франкфурт — одна из ведущих мировых выставок автомобильного вторичного рынка, которая собирает производителей, дистрибьюторов, покупателей и профессионалов отрасли со всего мира. В рамках мероприятия компания Valesco представила свой ассортимент высокоэффективных моторных масел, трансмиссионных жидкостей, антифриза и автомобильных смазочных материалов, укрепив международные партнёрства и расширив своё присутствие на мировом автомобильном рынке.',
+        description: 'Аутомеханика Франкфурт — одна из ведущих мировых выставок автомобильного вторичного рынка, которая собирает производителей, дистрибьюторов, покупателей и профессионалов отрасли со всего мира. В рамках мероприятия компания GPG представила свой ассортимент высокоэффективных моторных масел, трансмиссионных жидкостей, антифриза и автомобильных смазочных материалов, укрепив международные партнёрства и расширив своё присутствие на мировом автомобильном рынке.',
         images: [frankTwo, frankThree, frankFour, frankFife],
         position: 'right'
       },
@@ -940,18 +940,18 @@ export const newsDataEn = [
   {
     id: 6,
     category: "News",
-    world: ["Automechanika Tashkent", "Automechanika Astana", "Automechanika Frankfurt"],
+    world: ["Automechanika Tashkent", "Automechanika Frankfurt", "Automechanika Astana"],
     title: "Automechanika 2026",
     description: ["GPG continues its global journey by participating in leading international automotive exhibitions in 2026. These events provide a platform to showcase our high-quality lubricants, connect with industry professionals, and explore new business opportunities worldwide.", "Through active participation in global exhibitions, GPG strengthens its presence in the automotive aftermarket and reinforces its commitment to innovation, quality, and reliable performance.", "These exhibitions reflect GPG’s vision of building strong partnerships and delivering trusted lubrication solutions to global markets."],
     date: "2026",
     img: news3,
-    image: [tashOne, main26, frankOne],
+    image: [tashOne, frankOne, main26],
     locationData: [
       {
         id: 'tashkent',
         title: 'Automechanika Tashkent',
         location: 'Central Asian Expo (CAEx) in Tashkent, Uzbekistan.',
-        description: 'Automechanika Tashkent during the exhibition, the Valesco team welcomed visitors, partners, and automotive industry professionals to Stand AM-262, presenting our range of automotive lubricants and technical fluids. The event provided an excellent opportunity to introduce our products, exchange industry knowledge, strengthen existing partnerships, and establish new business connections with professionals from across the automotive sector. We sincerely thank everyone who visited our stand and took the time to meet with the Valesco team. We look forward to building new partnerships and continuing our journey together. Valesco — Automotive lubricants and fluids engineered for reliable performance.',
+        description: 'Automechanika Tashkent during the exhibition, the GPG team welcomed visitors, partners, and automotive industry professionals to Stand AM-262, presenting our range of automotive lubricants and technical fluids. The event provided an excellent opportunity to introduce our products, exchange industry knowledge, strengthen existing partnerships, and establish new business connections with professionals from across the automotive sector. We sincerely thank everyone who visited our stand and took the time to meet with the GPG team. We look forward to building new partnerships and continuing our journey together. GPG — Automotive lubricants and fluids engineered for reliable performance.',
         images: [tashTwo, tashThree, tashFour, tashFife],
         position: 'left'
       },
